@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 1;
+}
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+#container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddddbb;
+}
+#sideBar{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 270px;
+  height: 605px;
+  background-color: #777758;
+  display: none;
+  font-family: sans-serif;
+  color: white;
+}
+#sideBar h4{
+  margin-left: 15px;
+  font-family: sans-serif;
+}
+#heading{
+    margin-top: 30px;
+    margin-bottom: -120px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 240px;
+}
+#role, #sentence, #source, #target{
+  padding: 20px;
+  margin-top: 90px;
+}
+#showRole, #showSentence, #showSource, #showTarget{
+  padding: 20px;
+  margin-bottom: -150px;
+  margin-top: -33px;
+  font-size: 15px;
+  line-height: 20px;
+}
