@@ -10,7 +10,7 @@ import com.finnetwork.persistence.hibernate_util;
 
 public class base_network_cntrl {
 	
-	public void get_base_network(int year) {
+	public List<FeiiiInitData> get_base_network(int year) {
 		System.out.println("Call for basenetwork controller..");
 	
 		Session session = hibernate_util.getSessionFactory().openSession();
@@ -23,5 +23,6 @@ public class base_network_cntrl {
 		System.out.println("size of the selected data list : " +list.size());
 		session.getTransaction().commit();
 		session.close();
+		return list;
 	}
 }
