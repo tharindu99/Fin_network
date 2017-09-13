@@ -1,5 +1,5 @@
-package com.finnetwork.hibernate;
-// Generated Sep 11, 2017 3:53:40 PM by Hibernate Tools 3.4.0.CR1
+package com.finnetwork.models;// default package
+// Generated Sep 13, 2017 10:47:25 AM by Hibernate Tools 3.4.0.CR1
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

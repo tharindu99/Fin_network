@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated Sep 11, 2017 3:53:40 PM by Hibernate Tools 3.4.0.CR1 -->
+<!-- Generated Sep 13, 2017 10:47:26 AM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
     <class name="FeiiiInitData" table="feiii_init_data" catalog="fin_network">
         <id name="relationId" type="java.lang.Integer">
