@@ -11,10 +11,12 @@ import com.finnetwork.models.Node;
 import com.finnetwork.persistence.hibernate_util;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 public class base_network_cntrl {
 	
-	public List<Node> get_base_network(int year) {
+	public JsonObject get_base_network(int year) {
 		System.out.println("Call for basenetwork controller...");
 	
 		Session session = hibernate_util.getSessionFactory().openSession();
@@ -59,15 +61,17 @@ public class base_network_cntrl {
 			System.out.println(node.getId() + ", " + node.getEquity());
 		}*/
 		
-		Gson nodeGson = new GsonBuilder().setPrettyPrinting().create();
-		String jsonNode = nodeGson.toJson(nodes);
-		System.out.println(jsonNode);
-		String jsonLink = nodeGson.toJson(links);
-		System.out.println(jsonLink);
-		
+		Gson gson = new Gson();
+		JsonObject listToBeSent = new JsonObject();
+		JsonElement jsonNodes = gson.toJsonTree(nodes);
+		JsonElement jsonLinks = gson.toJsonTree(links);
+		listToBeSent.add("nodes", jsonNodes);
+		listToBeSent.add("links", jsonLinks);
+		System.out.println(listToBeSent);		
 		
 		session.getTransaction().commit();
 		session.close();
-		return nodes;
+		
+		return listToBeSent;
 	}
 }
