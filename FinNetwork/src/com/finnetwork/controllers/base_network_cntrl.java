@@ -9,6 +9,8 @@ import com.finnetwork.models.FeiiiInitData;
 import com.finnetwork.models.Link;
 import com.finnetwork.models.Node;
 import com.finnetwork.persistence.hibernate_util;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class base_network_cntrl {
 	
@@ -24,7 +26,6 @@ public class base_network_cntrl {
 		List<Link> links = queryLink.list();
 		
 		System.out.println("link size : " + links.size());
-		System.out.println(links.get(2).getRole());
 	
 		Query querySource = session.createQuery("SELECT DISTINCT source FROM Link WHERE fillingDate LIKE :year");
 		querySource.setParameter("year", "%"+year);
@@ -54,9 +55,16 @@ public class base_network_cntrl {
 		queryNodes.setParameter("ids", sources);
 		List<Node> nodes = queryNodes.list();
 		System.out.println("\nFinal size is : " + nodes.size());
-		for (Node node : nodes) {
+		/*for (Node node : nodes) {
 			System.out.println(node.getId() + ", " + node.getEquity());
-		}
+		}*/
+		
+		Gson nodeGson = new GsonBuilder().setPrettyPrinting().create();
+		String jsonNode = nodeGson.toJson(nodes);
+		System.out.println(jsonNode);
+		String jsonLink = nodeGson.toJson(links);
+		System.out.println(jsonLink);
+		
 		
 		session.getTransaction().commit();
 		session.close();
