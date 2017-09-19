@@ -7,8 +7,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.finnetwork.controllers.base_network_cntrl;
-import com.google.gson.JsonObject;
+
 
 @Path("/base_network")
 public class base_network {
@@ -19,8 +20,10 @@ public class base_network {
 	public Response getResponse (@PathParam("param") int req){
 		
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
-		JsonObject finalList = base_net_cntrl.get_base_network(req);
-		Response response = Response.status(200).entity(finalList).build();				
+		JsonNode jsn_baseNet = base_net_cntrl.get_base_network(req);
+		//JsonObject finalList = base_net_cntrl.get_base_network(req);
+		//System.out.println(finalList.toString());
+		Response response = Response.ok(jsn_baseNet, MediaType.APPLICATION_JSON).build();		
 		return response;
 	}
 }
