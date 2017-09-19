@@ -7,8 +7,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.finnetwork.controllers.base_network_cntrl;
-import com.google.gson.JsonObject;
+
 
 @Path("/base_network")
 public class base_network {
@@ -16,15 +17,13 @@ public class base_network {
 	@GET
 	@Path("/{param}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getResponse (@PathParam("param") int year){
+	public Response getResponse (@PathParam("param") int req){
 		
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
-		
-		//	Pass the year parameter to get JSON object which has all the nodes and links for a given year
-		JsonObject finalList = base_net_cntrl.get_base_network(year);
-		String result = finalList.toString();
-		Response response = Response.status(200).entity(result).build();		
-		
+		JsonNode jsn_baseNet = base_net_cntrl.get_base_network(req);
+		//JsonObject finalList = base_net_cntrl.get_base_network(req);
+		//System.out.println(finalList.toString());
+		Response response = Response.ok(jsn_baseNet, MediaType.APPLICATION_JSON).build();		
 		return response;
 	}
 }
