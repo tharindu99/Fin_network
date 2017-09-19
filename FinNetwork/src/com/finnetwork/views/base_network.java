@@ -16,11 +16,15 @@ public class base_network {
 	@GET
 	@Path("/{param}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getResponse (@PathParam("param") int req){
+	public Response getResponse (@PathParam("param") int year){
 		
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
-		JsonObject finalList = base_net_cntrl.get_base_network(req);
-		Response response = Response.status(200).entity(finalList).build();				
+		
+		//	Pass the year parameter to get JSON object which has all the nodes and links for a given year
+		JsonObject finalList = base_net_cntrl.get_base_network(year);
+		String result = finalList.toString();
+		Response response = Response.status(200).entity(result).build();		
+		
 		return response;
 	}
 }
