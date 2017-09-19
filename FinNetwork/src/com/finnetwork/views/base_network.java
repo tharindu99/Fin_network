@@ -17,13 +17,16 @@ public class base_network {
 	@GET
 	@Path("/{param}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getResponse (@PathParam("param") int req){
+	public Response getResponse (@PathParam("param") int year){
 		
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
-		JsonNode jsn_baseNet = base_net_cntrl.get_base_network(req);
-		//JsonObject finalList = base_net_cntrl.get_base_network(req);
-		//System.out.println(finalList.toString());
-		Response response = Response.ok(jsn_baseNet, MediaType.APPLICATION_JSON).build();		
+		
+		//	Call the relevant method with requested year parameter 
+		JsonNode json_baseNet = base_net_cntrl.get_base_network(year);
+		
+		//	Create a Response and return a JSON
+		Response response = Response.ok(json_baseNet, MediaType.APPLICATION_JSON).build();		
 		return response;
+		
 	}
 }
