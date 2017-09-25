@@ -14,12 +14,13 @@ import com.finnetwork.persistence.hibernate_util;
 
 
 public class base_network_cntrl {
-	
+	//	take the year parameter and return ObjectNode
 	public ObjectNode get_base_network(int year) {
 		System.out.println("Call for basenetwork controller...");
-	
-		Session session = hibernate_util.getSessionFactory().openSession();
 		
+		//	Creata a session
+		Session session = hibernate_util.getSessionFactory().openSession();
+		//	Begin transaction
 		session.beginTransaction();		
 		
 		//	Retrieve all the links for a given year
@@ -33,8 +34,8 @@ public class base_network_cntrl {
 		List<Integer> sources  = querySource.list();
 		
 		//	Select all the distinct target nodes from given year
-		Query queryTarget = session.createQuery("SELECT DISTINCT source FROM Link WHERE fillingDate LIKE :year");
-		queryTarget.setParameter("year", "%"+year+ " limit 1");
+		Query queryTarget = session.createQuery("SELECT DISTINCT target FROM Link WHERE fillingDate LIKE :year");
+		queryTarget.setParameter("year", "%"+year);
 		List<Integer> targets = queryTarget.list();
 		
 		// 	List of all the nodes for a given year 
