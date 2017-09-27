@@ -1,3 +1,9 @@
+function draw_me(filename){
+
+  console.log(filename +" trying to draw");
+
+d3.select("#container").selectAll("svg").remove();
+
 var graphDiv = document.getElementById("container");
 var svg = d3.select(graphDiv).append("svg")
             .attr('width', '100%')
@@ -28,10 +34,9 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-
-d3.json("data/fin_network.json", function(error, graph) {
+d3.json("data/"+filename+".json", function(error, graph) {
   if (error) throw error;
-  
+
   var link = svg.append("g")
     .attr("class", "links")
     .selectAll("line")
@@ -45,7 +50,7 @@ d3.json("data/fin_network.json", function(error, graph) {
     .on('click', edge_click);
 
  var node = svg.selectAll("circle")
-      .data(graph.nodes)  
+      .data(graph.nodes)
     .enter().append("g")
       .attr("class", "nodes")
       .call(d3.drag()
@@ -60,9 +65,6 @@ d3.json("data/fin_network.json", function(error, graph) {
       .attr("fill", "#3F4061")
       .on('mouseover', node_mouseover(0))
       .on('mouseout', node_mouseout);
-
-  //retrive number of nodes
- // alert(d3.selectAll(graph.nodes).size());
 
  /* var node = svg.append("g")
     .attr("class", "nodes")
@@ -281,10 +283,17 @@ function zoomed() {
   svg.attr("transform", "translate(" + d3.event.transform.x + "," + d3.event.transform.y + ")" + " scale(" + d3.event.transform.k + ")");
 }
 function edge_click(d){
-  $('#container').css('left', '270px');
-  $('#sideBar').css('display', 'block');
-  $('#showSource').text(d.source.equity);
-  $('#showTarget').text(d.target.equity);
-  $('#showRole').text(d.ROLE);
-  $('#showSentence').text(d.THREE_SENTENCES);
+  new PNotify({
+      title: 'Edge Details',
+      text: 'Source: '+d.source.equity+'<br> Target: '+d.target.equity+'<br>Role: '+d.ROLE+'<br>Senteces: '+d.THREE_SENTENCES,
+      type: 'success',
+      styling: 'bootstrap3'
+  });
 }
+}
+
+
+
+
+
+
