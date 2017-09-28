@@ -1,0 +1,442 @@
+{
+  "nodes":
+  [
+   {
+     "id": 3,
+     "equity": "BANK OF AMERICA CORP"
+   },
+   {
+     "id": 6,
+     "equity": "CAPITAL ONE FINANCIAL CORP"
+   },
+   {
+     "id": 14,
+     "equity": "GOLDMAN SACHS GROUP INC"
+   },
+   {
+     "id": 16,
+     "equity": "JPMORGAN CHASE & CO"
+   },
+   {
+     "id": 19,
+     "equity": "MORGAN STANLEY"
+   },
+   {
+     "id": 25,
+     "equity": "US_BANCORP"
+   },
+   {
+     "id": 84,
+     "equity": "Bank of America"
+   },
+   {
+     "id": 85,
+     "equity": "JPMorgan Chase"
+   },
+   {
+     "id": 88,
+     "equity": "U.S. Bank"
+   },
+   {
+     "id": 97,
+     "equity": "Bank of America Corporation"
+   },
+   {
+     "id": 116,
+     "equity": "U.S. Bank, National Association"
+   },
+   {
+     "id": 122,
+     "equity": "U.S. Bank National Association"
+   },
+   {
+     "id": 140,
+     "equity": "Bank of America Capital Trust VI"
+   },
+   {
+     "id": 157,
+     "equity": "U.S. Bank Trust National Association"
+   },
+   {
+     "id": 158,
+     "equity": "Bank of America California"
+   },
+   {
+     "id": 165,
+     "equity": "Bank of America, N.A."
+   },
+   {
+     "id": 202,
+     "equity": "U.S. Bank, N.A."
+   },
+   {
+     "id": 204,
+     "equity": "Capital One Financial Corporation"
+   },
+   {
+     "id": 205,
+     "equity": "CAPITAL ONE FINANCIAL CORPORATION NOTES"
+   },
+   {
+     "id": 215,
+     "equity": "JPMorgan Chase Bank, N.A."
+   },
+   {
+     "id": 384,
+     "equity": "Goldman Sachs"
+   },
+   {
+     "id": 395,
+     "equity": "The Goldman Sachs Group, Inc."
+   },
+   {
+     "id": 431,
+     "equity": "J.P.Morgan"
+   },
+   {
+     "id": 435,
+     "equity": "J.P. Morgan"
+   },
+   {
+     "id": 437,
+     "equity": "JPMorgan Chase Bank, National Association"
+   },
+   {
+     "id": 439,
+     "equity": "JPMorgan Chase Bank, N"
+   },
+   {
+     "id": 440,
+     "equity": "JPMorgan Chase Financial Company"
+   },
+   {
+     "id": 442,
+     "equity": "JPMorgan Chase & Co."
+   },
+   {
+     "id": 445,
+     "equity": "J.P. Morgan Securities LLC"
+   },
+   {
+     "id": 446,
+     "equity": "JPMorgan"
+   },
+   {
+     "id": 476,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-4SL"
+   },
+   {
+     "id": 478,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-14SL"
+   },
+   {
+     "id": 480,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-4SL"
+   },
+   {
+     "id": 482,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-13ARX"
+   },
+   {
+     "id": 483,
+     "equity": "Morgan Stanley Mortgage Capital Holdings LLC"
+   },
+   {
+     "id": 484,
+     "equity": "Morgan Stanley Mortgage Capital Inc."
+   },
+   {
+     "id": 487,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-10SL"
+   },
+   {
+     "id": 490,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust, Series 2007-NC1"
+   },
+   {
+     "id": 494,
+     "equity": "Morgan Stanley ABS Capital I Inc."
+   },
+   {
+     "id": 496,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-2AX"
+   },
+   {
+     "id": 497,
+     "equity": "Morgan Stanley ABS Capital I, Inc."
+   },
+   {
+     "id": 507,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust 2007-NC4"
+   },
+   {
+     "id": 508,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust, Series 2007-NC3"
+   },
+   {
+     "id": 512,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-12"
+   }
+  ],
+  "links":
+  [
+    {
+      "source": 3,
+      "target": 84,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "Our borrowing costs and ability to raise funds are directly impacted by our credit ratings. In addition, credit ratings may be important to customers or counterparties when we compete in 6 Bank of America 2015 certain markets and when we seek to engage in"
+    },
+    {
+      "source": 3,
+      "target": 88,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Oral argument is expected to be held in the second quarter of 2016. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, National Association (U.S. Bank), as trustee for the HarborView Mortgage Loan Trust 2005-10 (the Trust),"
+    },
+    {
+      "source": 3,
+      "target": 97,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Oral argument is expected to be held in the second quarter of 2016. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, National Association (U.S. Bank), as trustee for the HarborView Mortgage Loan Trust 2005-10 (the Trust),"
+    },
+    {
+      "source": 3,
+      "target": 116,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Oral argument is expected to be held in the second quarter of 2016. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, National Association (U.S. Bank), as trustee for the HarborView Mortgage Loan Trust 2005-10 (the Trust),"
+    },
+    {
+      "source": 3,
+      "target": 122,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Oral argument is expected to be held in the second quarter of 2016. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, National Association (U.S. Bank), as trustee for the HarborView Mortgage Loan Trust 2005-10 (the Trust),"
+    },
+    {
+      "source": 3,
+      "target": 140,
+      "ROLE": "Issuer",
+      "THREE_SENTENCES": "196 Bank of America 2015 The Trust Securities Summary table details the outstanding Trust Securities and the related Notes previously issued which remained outstanding at December 31, 2015 . Trust Securities Summary (Dollars in millions) December 31, 2015"
+    },
+    {
+      "source": 3,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "(b) Amended and Restated Bylaws of the Corporation, as in effect on the date hereof, incorporated by reference to Exhibit 3.1 of registrant?s Current Report on Form 8-K (File No. 1-6523) filed on March 20, 2015. 4(a) Indenture dated as of January 1, 1995"
+    },
+    {
+      "source": 3,
+      "target": 158,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "212 Bank of America 2015 NOTE 16 Regulatory Requirements and Restrictions The Federal Reserve, Office of the Comptroller of the Currency (OCC) and FDIC (collectively, U.S. banking regulators) jointly establish regulatory capital adequacy guidelines for U."
+    },
+    {
+      "source": 3,
+      "target": 165,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "The amount of additional collateral required depends on the contract and is usually a fixed incremental amount and/or the market value of the exposure. At December 31, 2015 , the amount of collateral, calculated based on the terms of the contracts, that t"
+    },
+    {
+      "source": 6,
+      "target": 202,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Plaintiffs seek specific performance of the repurchase obligations with respect to the loans for which they have provided notice of alleged breaches as well as all other allegedly breaching loans, rescissory damages, indemnification, costs and interest. I"
+    },
+    {
+      "source": 6,
+      "target": 204,
+      "ROLE": "counterparty",
+      "THREE_SENTENCES": "As of January 1, 2015, the Company changed its accounting principle to begin offsetting derivative assets and liabilities for purposes of balance sheet presentation where a right of setoff exists. As of December 31, 2015 and 2014 , derivative contracts th"
+    },
+    {
+      "source": 6,
+      "target": 205,
+      "ROLE": "counterparty",
+      "THREE_SENTENCES": "As of January 1, 2015, the Company changed its accounting principle to begin offsetting derivative assets and liabilities for purposes of balance sheet presentation where a right of setoff exists. As of December 31, 2015 and 2014 , derivative contracts th"
+    },
+    {
+      "source": 14,
+      "target": 384,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "Due to the broad scope of our businesses and our client base, we regularly address potential conflicts of\ninterest, including situations where our services to a particular client or our own investments or other interests conflict, or are perceived to conf"
+    },
+    {
+      "source": 14,
+      "target": 395,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "3.2\nAmended and Restated By-Laws of The Goldman Sachs Group, Inc., amended as of February 18, 2016.\n4.1\nIndenture, dated as of May 19, 1999, between The Goldman Sachs Group, Inc. and The Bank of New York, as trustee (incorporated by\nreference to Exhibit 6"
+    },
+    {
+      "source": 16,
+      "target": 85,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The repurchase program does not include specific price targets or timetables; may be executed through open market purchases or privately negotiated transactions, or utilizing Rule 10b5-1 programs; and may be suspended at any time. For additional informati"
+    },
+    {
+      "source": 16,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "4.1 Indenture, dated as of October 21, 2010, between JPMorgan Chase & Co. and Deutsche Bank Trust Company Americas, as Trustee (incorporated by reference to Exhibit 4.1 to the Current Report on Form 8-K of JPMorgan Chase & Co. (File No.1-5805) filed Octob"
+    },
+    {
+      "source": 16,
+      "target": 215,
+      "ROLE": "Agent",
+      "THREE_SENTENCES": "JPMorgan Chase Bank, N.A. participated in, and was the Administrative Agent on behalf of a syndicate of lenders on, a $1.5 billion syndicated Term Loan facility (\"Term Loan\") for General Motors Corporation (\"GM\"). In July 2009, in connection with the GM b"
+    },
+    {
+      "source": 16,
+      "target": 431,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "Private label securitizations The liability related to repurchase demands associated with private label securitizations is separately evaluated by the Firm in establishing its litigation reserves. JPMorgan Chase & Co./2015 Annual Report 293 Notes to conso"
+    },
+    {
+      "source": 16,
+      "target": 435,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "Private label securitizations The liability related to repurchase demands associated with private label securitizations is separately evaluated by the Firm in establishing its litigation reserves. JPMorgan Chase & Co./2015 Annual Report 293 Notes to conso"
+    },
+    {
+      "source": 16,
+      "target": 437,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The following table shows the aggregate fair value of net derivative payables related to OTC and OTC-cleared derivatives that contain contingent collateral or termination features that may be triggered upon a ratings downgrade, and the associated collater"
+    },
+    {
+      "source": 16,
+      "target": 439,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The following table shows the aggregate fair value of net derivative payables related to OTC and OTC-cleared derivatives that contain contingent collateral or termination features that may be triggered upon a ratings downgrade, and the associated collater"
+    },
+    {
+      "source": 16,
+      "target": 440,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Item 5 Other Information None. Item 6 Exhibits 4.1 Indenture, dated as of February 19, 2016, among JPMorgan Chase Financial Company LLC, JPMorgan Chase & Co. and Deutsche Bank Trust Company Americas, as Trustee (incorporated by reference to Exhibit 4(a)(7"
+    },
+    {
+      "source": 16,
+      "target": 442,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The following table shows the aggregate fair value of net derivative payables related to OTC and OTC-cleared derivatives that contain contingent collateral or termination features that may be triggered upon a ratings downgrade, and the associated collater"
+    },
+    {
+      "source": 16,
+      "target": 445,
+      "ROLE": "agent",
+      "THREE_SENTENCES": "The Firm may provide various services to a TOB trust, including remarketing agent, liquidity or tender option provider, and/or sponsor. JPMorgan Chase & Co./2015 Annual Report 269 Notes to consolidated financial statements J.P. Morgan Securities LLC may s"
+    },
+    {
+      "source": 16,
+      "target": 446,
+      "ROLE": "counterparty",
+      "THREE_SENTENCES": "Market risk RWA is calculated on a generally consistent basis between Basel III Standardized and Basel III Advanced. 175 ROE: Return on equity ROTCE: Return on tangible common equity RSU(s): Restricted stock units S&P: Standard and Poor?s 500 Index SAR(s)"
+    },
+    {
+      "source": 19,
+      "target": 19,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information,\nthe Company believes that it could incur a loss in this action of up to approximately $240 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 88,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes it could incur a loss in this action of up to\napproximately $81 million, plus pre-judgment interest, fees and costs. On August 7, 2012, U.S. Bank, in its capacity as trustee, filed a complaint"
+    },
+    {
+      "source": 19,
+      "target": 122,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "The Company may be entitled to be indemnified for some of these losses.\nOn July 8, 2013, U.S. Bank National Association, in its\ncapacity as trustee, filed a complaint against the Company styled U.S. Bank National Association, solely in its capacity as Tru"
+    },
+    {
+      "source": 19,
+      "target": 476,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes it could incur a loss in this action of up to\napproximately $81 million, plus pre-judgment interest, fees and costs. On August 7, 2012, U.S. Bank, in its capacity as trustee, filed a complaint"
+    },
+    {
+      "source": 19,
+      "target": 478,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Company received repurchase demands that it did not repurchase, plus pre- and post-judgment interest, fees and costs, but plaintiff is seeking to expand the number of loans at issue and the\npossible range of loss could increase. On\nAugust 8, 2012, U.S. Ba"
+    },
+    {
+      "source": 19,
+      "target": 480,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Company received repurchase demands that it did not repurchase, plus pre- and post-judgment interest, fees and costs, but plaintiff is seeking to expand the number of loans at issue and the\npossible range of loss could increase. On\nAugust 8, 2012, U.S. Ba"
+    },
+    {
+      "source": 19,
+      "target": 482,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately\n$527 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 483,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately\n$527 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 484,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately\n$527 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 487,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $170 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 490,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Civil Litigation.\nOn April 21, 2016, the Company filed a motion for summary judgment in The Charles Schwab Corp. v. BNP Paribas Securities Corp., et\nal . On April 12, 2016, the court in\nDeutsche Bank National Trust Company, as Trustee for the Morgan Stanl"
+    },
+    {
+      "source": 19,
+      "target": 494,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available\ninformation, the Company believes that it could incur a loss in this action of up to approximately $292 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 496,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "The Company may be entitled to be indemnified for some of these losses.\nOn July 8, 2013, U.S. Bank National Association, in its\ncapacity as trustee, filed a complaint against the Company styled U.S. Bank National Association, solely in its capacity as Tru"
+    },
+    {
+      "source": 19,
+      "target": 497,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Civil Litigation.\nOn April 21, 2016, the Company filed a motion for summary judgment in The Charles Schwab Corp. v. BNP Paribas Securities Corp., et\nal . On April 12, 2016, the court in\nDeutsche Bank National Trust Company, as Trustee for the Morgan Stanl"
+    },
+    {
+      "source": 19,
+      "target": 507,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available\ninformation, the Company believes that it could incur a loss in this action of up to approximately $292 million, the total original unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 508,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On April 21, 2016, the Company filed a motion for summary judgment in The Charles Schwab Corp. v. BNP Paribas Securities Corp., et\nal . On April 12, 2016, the court in\nDeutsche Bank National Trust Company, as Trustee for the Morgan Stanley ABS Capital I I"
+    },
+    {
+      "source": 19,
+      "target": 512,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently\navailable information, the Firm believes that it could incur a loss in this action of up to approximately $240 million, the total original unpaid balance of the mortgage loans for which the Firm received repurchase demands that it did n"
+    },
+    {
+      "source": 25,
+      "target": 122,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "These actions are currently pending in the Supreme Court of the State of New York, New York County, and in the United States District\nCourt for the Southern District of New York. In these lawsuits, the investors allege that U.S. Bank National Association"
+    }
+  ]
+}

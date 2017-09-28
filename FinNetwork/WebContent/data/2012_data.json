@@ -1,0 +1,316 @@
+{
+  "nodes":
+  [
+   {
+     "id": 3,
+     "equity": "BANK OF AMERICA CORP"
+   },
+   {
+     "id": 6,
+     "equity": "CAPITAL ONE FINANCIAL CORP"
+   },
+   {
+     "id": 14,
+     "equity": "GOLDMAN SACHS GROUP INC"
+   },
+   {
+     "id": 16,
+     "equity": "JPMORGAN CHASE & CO"
+   },
+   {
+     "id": 19,
+     "equity": "MORGAN STANLEY"
+   },
+   {
+     "id": 25,
+     "equity": "US_BANCORP"
+   },
+   {
+     "id": 84,
+     "equity": "Bank of America"
+   },
+   {
+     "id": 85,
+     "equity": "JPMorgan Chase"
+   },
+   {
+     "id": 88,
+     "equity": "U.S. Bank"
+   },
+   {
+     "id": 97,
+     "equity": "Bank of America Corporation"
+   },
+   {
+     "id": 98,
+     "equity": "BAC Home Loans Servicing, LP"
+   },
+   {
+     "id": 104,
+     "equity": "Bank of America Capital Trust I"
+   },
+   {
+     "id": 116,
+     "equity": "U.S. Bank, National Association"
+   },
+   {
+     "id": 122,
+     "equity": "U.S. Bank National Association"
+   },
+   {
+     "id": 157,
+     "equity": "U.S. Bank Trust National Association"
+   },
+   {
+     "id": 165,
+     "equity": "Bank of America, N.A."
+   },
+   {
+     "id": 194,
+     "equity": "Capital Management"
+   },
+   {
+     "id": 206,
+     "equity": "Capital One"
+   },
+   {
+     "id": 384,
+     "equity": "Goldman Sachs"
+   },
+   {
+     "id": 395,
+     "equity": "The Goldman Sachs Group, Inc."
+   },
+   {
+     "id": 424,
+     "equity": "J.P. Morgan Securities plc"
+   },
+   {
+     "id": 436,
+     "equity": "J.P. Morgan Securities Ltd."
+   },
+   {
+     "id": 442,
+     "equity": "JPMorgan Chase & Co."
+   },
+   {
+     "id": 445,
+     "equity": "J.P. Morgan Securities LLC"
+   },
+   {
+     "id": 476,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-4SL"
+   },
+   {
+     "id": 478,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-14SL"
+   },
+   {
+     "id": 480,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-4SL"
+   },
+   {
+     "id": 482,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-13ARX"
+   },
+   {
+     "id": 484,
+     "equity": "Morgan Stanley Mortgage Capital Inc."
+   },
+   {
+     "id": 487,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-10SL"
+   },
+   {
+     "id": 514,
+     "equity": "Morgan Stanley Smith Barney LLC"
+   },
+   {
+     "id": 517,
+     "equity": "Morgan Stanley Private Bank, National Association"
+   }
+  ],
+  "links":
+  [
+    {
+      "source": 3,
+      "target": 84,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Risk Factors . Representations and Warranties Bulk Settlement Actions Beginning in the fourth quarter of 2010, we have settled, or entered into agreements to settle, certain bulk representations and warranties claims with a trustee for certain legacy Coun"
+    },
+    {
+      "source": 3,
+      "target": 88,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+    },
+    {
+      "source": 3,
+      "target": 97,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "On August 15, 2011, the JPML ordered multiple federal court cases involving Countrywide MBS consolidated for pretrial purposes in the U.S. District Court for the Central District of California, in a multi-district litigation entitled In re Countrywide Fin"
+    },
+    {
+      "source": 3,
+      "target": 98,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The following provides a summary of the larger bulk settlement actions beginning in the fourth quarter of 2010 followed by details of the Corporation?s representations and warranties liability, including claims status. Settlement with the Bank of New York"
+    },
+    {
+      "source": 3,
+      "target": 104,
+      "ROLE": "Issuer",
+      "THREE_SENTENCES": "For additional information on Trust Securities for regulatory capital purposes, see Note 18 ? Regulatory Requirements and Restrictions . 218 Bank of America 2011 Table of Contents Trust Securities Summary (Dollars in millions) Issuer Issuance Date Aggrega"
+    },
+    {
+      "source": 3,
+      "target": 116,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+    },
+    {
+      "source": 3,
+      "target": 122,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+    },
+    {
+      "source": 3,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "(b) Amended and Restated Bylaws of registrant as of February 24, 2011, as in effect on the date hereof, incorporated by reference to Exhibit 3(b) of registrant?s 2010 Annual Report on Form 10-K (File No. 1-6523) filed on February 25, 2011 (the \"2010 10-K"
+    },
+    {
+      "source": 3,
+      "target": 165,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+    },
+    {
+      "source": 6,
+      "target": 194,
+      "ROLE": "Sellers",
+      "THREE_SENTENCES": "While we continue to expect that the combined acquisitions will deliver compelling financial performance and strategic benefit in 2013 and beyond, we anticipate a potentially significant negative impact from the acquisitions to\nour 2012 earnings per share"
+    },
+    {
+      "source": 6,
+      "target": 206,
+      "ROLE": "Sellers",
+      "THREE_SENTENCES": "There can be no assurance that we will declare and pay any dividends.\nIssuance of Shares to ING Sellers In exchange for the equity interests and assets and liabilities associated with the ING Direct acquisition, we issued 54,028,086 shares of Capital One"
+    },
+    {
+      "source": 14,
+      "target": 384,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "A reduction in our credit ratings could adversely affect our liquidity and competitive position, increase our borrowing costs, limit our access to the capital markets or trigger our obligations under certain provisions in some of\nour trading and collatera"
+    },
+    {
+      "source": 14,
+      "target": 395,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "4.1\nIndenture, dated as of May 19, 1999, between The Goldman Sachs Group, Inc. and The Bank of New York, as trustee (incorporated by reference to Exhibit 6 to the\nRegistrant?s registration statement on Form 8-A, filed June 29, 1999).4.2"
+    },
+    {
+      "source": 16,
+      "target": 85,
+      "ROLE": "issuers",
+      "THREE_SENTENCES": "116 Contractual maturities and yields The following table presents the amortized cost and estimated fair value at March 31, 2012, of JPMorgan Chase ?s AFS and HTM securities by contractual maturity. By remaining maturity March 31, 2012 (in millions) Due i"
+    },
+    {
+      "source": 16,
+      "target": 424,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "These actions are based on theories of mistake and restitution, among other theories, and seek to recover payments made to defendants by the funds totaling approximately $155 million . Pursuant to an agreement with the Trustee, the liquidators of Fairfiel"
+    },
+    {
+      "source": 16,
+      "target": 436,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "These actions are based on theories of mistake and restitution and seek to recover payments made to defendants by the funds totaling approximately $155 million . Pursuant to an agreement with the Trustee, the liquidators of Fairfield have voluntarily dism"
+    },
+    {
+      "source": 16,
+      "target": 442,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "In the first, Wells Fargo, as trustee for a single MBS trust, has filed an action against EMC Mortgage in Delaware state court alleging that EMC breached various representations and warranties and seeking the repurchase of more than 1,300 mortgage loans b"
+    },
+    {
+      "source": 16,
+      "target": 445,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "The market for many such securities had frozen and a significant number of auctions for those securities began to fail in February 2008. The Firm, on behalf of itself and affiliates, agreed to a settlement in principle with the New York Attorney General?s"
+    },
+    {
+      "source": 19,
+      "target": 19,
+      "ROLE": "agent",
+      "THREE_SENTENCES": "Sanctions that may be imposed for such failure include the suspension\nof individual employees, limitations on the Company engaging in various asset management activities for specified periods of time or specified types of clients, the revocation of regist"
+    },
+    {
+      "source": 19,
+      "target": 88,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Other Litigation. On February 29, 2012, U.S. Bank National Association, in its\ncapacity as Trustee (?U.S. Bank?), filed a summons with notice on behalf of Morgan Stanley Mortgage Loan Trust 2006-4SL and Mortgage Pass-Through Certificates, Series 2006-4SL"
+    },
+    {
+      "source": 19,
+      "target": 122,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Other Litigation. On February 29, 2012, U.S. Bank National Association, in its\ncapacity as Trustee (?U.S. Bank?), filed a summons with notice on behalf of Morgan Stanley Mortgage Loan Trust 2006-4SL and Mortgage Pass-Through Certificates, Series 2006-4SL"
+    },
+    {
+      "source": 19,
+      "target": 476,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Other Litigation. On February 29, 2012, U.S. Bank National Association, in its\ncapacity as Trustee (?U.S. Bank?), filed a summons with notice on behalf of Morgan Stanley Mortgage Loan Trust 2006-4SL and Mortgage Pass-Through Certificates, Series 2006-4SL"
+    },
+    {
+      "source": 19,
+      "target": 478,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The notice seeks, among other relief, an order requiring the Company to comply with the loan breach remedy procedures in the transaction documents, unspecified damages, and interest.\nOn August 8, 2012, U.S. Bank, in its capacity as Trustee, filed a compla"
+    },
+    {
+      "source": 19,
+      "target": 480,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The notice seeks, among other relief, an order requiring the Company to comply with the loan breach remedy procedures in the transaction documents, unspecified damages, and interest.\nOn August 8, 2012, U.S. Bank, in its capacity as Trustee, filed a compla"
+    },
+    {
+      "source": 19,
+      "target": 482,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On October 9, 2012, the Company filed a motion to dismiss the complaint.\nOn September 28, 2012, U.S. Bank, in its capacity as Trustee, filed a complaint on behalf of Morgan Stanley Mortgage Loan Trust 2006-13ARX against\nthe Company. The complaint is style"
+    },
+    {
+      "source": 19,
+      "target": 484,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On October 11, 2012, defendants filed motions to dismiss the amended complaint in Federal Home\nLoan Bank of Boston v. Ally Financial, Inc. F/K/A GMAC LLC et al. On August 3, 2012, the court in Western and Southern Life\nInsurance Company et al. v. Morgan S"
+    },
+    {
+      "source": 19,
+      "target": 487,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On October 8, 2012, the Company filed a motion to dismiss the complaint. On July 27, 2012, U.S.\nBank, in its capacity as Trustee, filed a summons with notice on behalf of Morgan Stanley Mortgage Loan Trust 2006-10SL and Mortgage Pass-Through Certificates,"
+    },
+    {
+      "source": 19,
+      "target": 514,
+      "ROLE": "affiliate",
+      "THREE_SENTENCES": "As an FDIC-insured national bank, MSBNA is subject to\nsupervision, regulation and examination by the OCC. MS Private\nBank conducts certain mortgage lending activities primarily for customers of its affiliate retail broker-dealer, Morgan Stanley Smith Barn"
+    },
+    {
+      "source": 19,
+      "target": 517,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "In addition, Global Wealth Management Group offers education savings programs, financial and wealth planning services, and annuity and other insurance products. In addition, Global Wealth Management Group offers its clients access to several cash manageme"
+    },
+    {
+      "source": 25,
+      "target": 122,
+      "ROLE": "Affiliates",
+      "THREE_SENTENCES": "An FDIC claim for cross-guarantee liability against a depository institution is generally superior in right of payment to claims of the holding company and its affiliates against the depository institution.\nTransactions with Affiliates There are various l"
+    }
+  ]
+}

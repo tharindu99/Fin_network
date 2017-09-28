@@ -1,0 +1,242 @@
+{
+  "nodes":
+  [
+   {
+     "id": 3,
+     "equity": "BANK OF AMERICA CORP"
+   },
+   {
+     "id": 14,
+     "equity": "GOLDMAN SACHS GROUP INC"
+   },
+   {
+     "id": 16,
+     "equity": "JPMORGAN CHASE & CO"
+   },
+   {
+     "id": 19,
+     "equity": "MORGAN STANLEY"
+   },
+   {
+     "id": 25,
+     "equity": "US_BANCORP"
+   },
+   {
+     "id": 84,
+     "equity": "Bank of America"
+   },
+   {
+     "id": 85,
+     "equity": "JPMorgan Chase"
+   },
+   {
+     "id": 88,
+     "equity": "U.S. Bank"
+   },
+   {
+     "id": 97,
+     "equity": "Bank of America Corporation"
+   },
+   {
+     "id": 98,
+     "equity": "BAC Home Loans Servicing, LP"
+   },
+   {
+     "id": 122,
+     "equity": "U.S. Bank National Association"
+   },
+   {
+     "id": 130,
+     "equity": "Morgan Stanley & Co., Inc."
+   },
+   {
+     "id": 157,
+     "equity": "U.S. Bank Trust National Association"
+   },
+   {
+     "id": 165,
+     "equity": "Bank of America, N.A."
+   },
+   {
+     "id": 170,
+     "equity": "Banc of America Securities, LLC"
+   },
+   {
+     "id": 185,
+     "equity": "Capital Securities"
+   },
+   {
+     "id": 202,
+     "equity": "U.S. Bank, N.A."
+   },
+   {
+     "id": 384,
+     "equity": "Goldman Sachs"
+   },
+   {
+     "id": 426,
+     "equity": "JP Morgan Securities Ltd."
+   },
+   {
+     "id": 442,
+     "equity": "JPMorgan Chase & Co."
+   },
+   {
+     "id": 445,
+     "equity": "J.P. Morgan Securities LLC"
+   },
+   {
+     "id": 446,
+     "equity": "JPMorgan"
+   },
+   {
+     "id": 491,
+     "equity": "Central Mortgage Company"
+   },
+   {
+     "id": 514,
+     "equity": "Morgan Stanley Smith Barney LLC"
+   }
+  ],
+  "links":
+  [
+    {
+      "source": 3,
+      "target": 84,
+      "ROLE": "insurers",
+      "THREE_SENTENCES": "We have had limited experience with most\nof the monoline insurers in the repurchase process, which has\nconstrained our ability to resolve the open claims with such\ncounterparties. Also, certain monoline insurers have instituted\nlitigation against legacy C"
+    },
+    {
+      "source": 3,
+      "target": 88,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "This action makes allegations similar to those in the prior Walnut Place LLC, et al. v. Countrywide Home Loans, Inc. et al . lawsuit with respect to an additional securitization trust. U.S. Bank Litigation On August 29, 2011, U.S. Bank, N.A. (U.S. Bank),"
+    },
+    {
+      "source": 3,
+      "target": 97,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "At December 31, 2010 and 2009, the\nCorporation held cash and securities collateral of\n$76.0 billion and $67.7 billion, and posted cash and\nsecurities collateral of $61.2 billion and\n$62.2 billion in the normal course of business under\nderivative agreement"
+    },
+    {
+      "source": 3,
+      "target": 98,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The following provides a summary of the larger bulk settlement actions beginning in the fourth quarter of 2010 followed by details of the Corporation's representations and warranties liability, including claims status. Settlement with the Bank of New York"
+    },
+    {
+      "source": 3,
+      "target": 122,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "This action makes allegations similar to those in the prior Walnut Place LLC, et al. v. Countrywide Home Loans, Inc. et al . lawsuit with respect to an additional securitization trust. U.S. Bank Litigation On August 29, 2011, U.S. Bank, N.A. (U.S. Bank),"
+    },
+    {
+      "source": 3,
+      "target": 130,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "Cambridge\nPlace Investment Management LitigationCambridge Place Investment Management Inc. (CPIM), as the\nalleged exclusive assignee of certain entities that allegedly\npurchased MBS offered or sold by BAS, MLPFS and CSC, brought an\naction against BAS, MLP"
+    },
+    {
+      "source": 3,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "4(a)Indenture dated as of January 1, 1995 between registrant\n(successor to NationsBank Corporation) and BankAmerica National\nTrust Company incorporated by reference to Exhibit 4.1\nof registrant?s Registration Statement on\nForm S-3\n(Registration\nNo. 33-575"
+    },
+    {
+      "source": 3,
+      "target": 165,
+      "ROLE": "Agent",
+      "THREE_SENTENCES": "(g)Amended and Restated Agency Agreement dated as of July 22,\n2010, among the registrant, Bank of America, N.A., London\nBranch, as Principal Agent, and Merrill Lynch International Bank\nLimited, as Registrar and Transfer Agent, incorporated by\nreference to"
+    },
+    {
+      "source": 3,
+      "target": 170,
+      "ROLE": "underwriter",
+      "THREE_SENTENCES": "On September 23, 2011, the objector filed a notice of appeal challenging the district court's dismissal of the objection to the settlement. Lehman Brothers Holdings, Inc. Litigation On September 23, 2011, the majority of the underwriter defendants, includ"
+    },
+    {
+      "source": 3,
+      "target": 202,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "This action makes allegations similar to those in the prior Walnut Place LLC, et al. v. Countrywide Home Loans, Inc. et al . lawsuit with respect to an additional securitization trust. U.S. Bank Litigation On August 29, 2011, U.S. Bank, N.A. (U.S. Bank),"
+    },
+    {
+      "source": 14,
+      "target": 384,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "A reduction\nin our credit ratings could adversely affect our liquidity and\ncompetitive position, increase our borrowing costs, limit our\naccess to the capital markets or trigger our obligations under\ncertain provisions in some of our trading and collatera"
+    },
+    {
+      "source": 16,
+      "target": 85,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "In such a case, the Federal Reserve Board could instead require the\ndivestiture of the depository institution and impose operating restrictions pending the\ndivestiture.The bank subsidiaries of JPMorgan Chase are subject to certain restrictions imposed by"
+    },
+    {
+      "source": 16,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "4.2\nIndenture, dated as of October 21, 2010, between JPMorgan Chase & Co. and U.S. Bank Trust\nNational Association, as Trustee (incorporated by reference to Exhibit 4.2 to the Current\nReport on Form 8-K of JPMorgan Chase & Co. (File No.1-5805) filed Octob"
+    },
+    {
+      "source": 16,
+      "target": 426,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "These actions advanced theories of mistake and restitution and sought to recover payments previously made to defendants by the funds totaling\napproximately $140 million . Fairfield and the Madoff Trustee reached an agreement pursuant to which\nthe complain"
+    },
+    {
+      "source": 16,
+      "target": 442,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "o Yes x NoThe aggregate market value of JPMorgan Chase & Co. common stock held by non-affiliates of\nJPMorgan Chase & Co. on June 30, 2010 was approximately $144,824,681,723.Number of shares of common stock outstanding on January 31, 2011: 3,983,509,889"
+    },
+    {
+      "source": 16,
+      "target": 445,
+      "ROLE": "agent",
+      "THREE_SENTENCES": "For these vehicles there\nexists a reimbursement obligation which requires the residual interest holders to post, during the\nlife of the vehicle, additional collateral to the Firm, as liquidity\nprovider, on a daily basis should\nthe market value of the muni"
+    },
+    {
+      "source": 16,
+      "target": 446,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "The market for many such securities had frozen and a significant number of\nauctions for those securities began to fail in February 2008.The Firm, on behalf of itself and affiliates, agreed to a settlement in principle with the New York\nAttorney General?s"
+    },
+    {
+      "source": 19,
+      "target": 19,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "4.1\nIndenture dated as of February 24, 1993 between Morgan Stanley and The Bank of New York, as trustee (Exhibit 4 to Morgan Stanley?s Registration Statement on Form S-3\n(No. 33-57202)).4.2"
+    },
+    {
+      "source": 19,
+      "target": 202,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "The Company and Barclays have a dispute regarding whether the Company breached any obligations under the swap agreements and, if so, whether any such breaches were cured. The trustee for Tourmaline, interpleader plaintiff\nU.S. Bank, N.A., has refrained fr"
+    },
+    {
+      "source": 19,
+      "target": 491,
+      "ROLE": "servicer",
+      "THREE_SENTENCES": "On August 18, 2011, the Supreme Court of the State of Delaware reversed the Court of Chancery of the\nState of Delaware?s August 19, 2010 decision to dismiss the complaint in a matter styled Central Mortgage Company v. Morgan Stanley Mortgage Capital Holdi"
+    },
+    {
+      "source": 19,
+      "target": 514,
+      "ROLE": "affiliate",
+      "THREE_SENTENCES": "As an\nFDIC-insured national bank, MSBNA is subject to supervision, regulation and examination by the OCC. MS Private Bank conducts certain mortgage lending activities primarily for customers of its affiliate retail broker Morgan Stanley Smith Barney LLC ("
+    },
+    {
+      "source": 25,
+      "target": 122,
+      "ROLE": "Affiliates",
+      "THREE_SENTENCES": "An FDIC claim for cross-guarantee liability against\na depository institution is generally superior in right of\npayment to claims of the holding company and its affiliates\nagainst the depository institution.Transactions with Affiliates There are various\nle"
+    },
+    {
+      "source": 25,
+      "target": 185,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "For copies of\nany of these documents, holders should write to Investor\nRelations, U.S. Bancorp, 800 Nicollet Mall,\nMinneapolis, Minnesota 55402, or call\n(866) 775-9668.The following table identifies the (i) closing date for\neach transaction, (ii) issuer,"
+    }
+  ]
+}
