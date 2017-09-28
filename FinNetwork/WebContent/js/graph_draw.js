@@ -1,5 +1,5 @@
 function draw_me(url){
-  alert(url)
+
   console.log(url +" trying to draw");
 
 d3.select("#container").selectAll("svg").remove();
@@ -35,7 +35,7 @@ var simulation = d3.forceSimulation()
     .force("center", d3.forceCenter(width / 2, height / 2));
  
 
-d3.json(url, function(error, graph) {
+d3.json(  url , function(error, graph) {
   if (error) throw error;
   
   console.log(graph);
@@ -288,7 +288,7 @@ function zoomed() {
 function edge_click(d){
   new PNotify({
       title: 'Edge Details',
-      text: 'Source: '+d.source.equity+'<br> Target: '+d.target.equity+'<br>Role: '+d.ROLE+'<br>Senteces: '+d.THREE_SENTENCES,
+      text: 'Source: '+d.source.equity+'<br> Target: '+d.target.equity+'<br>Role: '+d.role+'<br>Senteces: '+d.three_sentences,
       type: 'success',
       styling: 'bootstrap3'
   });
