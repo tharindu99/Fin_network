@@ -47,7 +47,7 @@ d3.json(  url , function(error, graph) {
     .enter().append("line")
     .attr("marker-end", "url(#arrow)")
     .attr("stroke-width", 1)
-    .style("stroke",function(d) { return color(d.ROLE); })
+    .style("stroke",function(d) { return color(d.role); })
     .on('mouseover', edge_mouseover)
     .on('mouseout', edge_mouseout)
     .on('click', edge_click);
@@ -228,7 +228,7 @@ function edge_mouseout(d) {
 function connectedNodes() {
     if (toggle == 0) {
         //Reduce the opacity of all but the neighbouring nodes
-        d = d3.select(this).node().__data__;
+        d = d3.select(this).node().__url__;
         node.style("opacity", function (o) {
             return neighboring(d, o) | neighboring(o, d) ? 1 : 0;
         });
@@ -245,7 +245,7 @@ function connectedNodes() {
             .style("font-weight", "bold")
             .style('fill', '#55584E')
             .attr("startOffset", "50%")
-            .text(function (o) {return d.index==o.source.index | d.index==o.target.index ? o.ROLE : "";});
+            .text(function (o) {return d.index==o.source.index | d.index==o.target.index ? o.role : "";});
 
         $('#sideBar').css('display', 'none');
         $('#container').css('left', '0px');
