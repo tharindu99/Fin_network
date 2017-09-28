@@ -1,6 +1,6 @@
-function draw_me(filename){
-
-  console.log(filename +" trying to draw");
+function draw_me(url){
+  alert(url)
+  console.log(url +" trying to draw");
 
 d3.select("#container").selectAll("svg").remove();
 
@@ -33,9 +33,12 @@ var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) {return d.id;}).distance(200))
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
+ 
 
-d3.json("data/"+filename+".json", function(error, graph) {
+d3.json(url, function(error, graph) {
   if (error) throw error;
+  
+  console.log(graph);
 
   var link = svg.append("g")
     .attr("class", "links")
