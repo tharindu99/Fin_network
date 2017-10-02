@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 1;
+}
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+#container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddddbb;
+}
+#sideBar{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 605px;
+  background-color: #777758;
+  display: none;
+  color: #1D1D05;
+}
+#sideBar h3{
+  margin-top: -130px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+#role, #sentence, #showRole, #showSentence, #source, #target{
+  width: 240px;
+  padding: 20px;
+}
+#role, #source, #target{
+  height: 60px;
+}
+#sentence{
+  margin-top: -60px;
+  height: 100px;
+}
+#heading{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 240px;
+}
+#showRole, #showSentence, #showSource, #showTarget{
+  font-size: 15px;
+  line-height: 20px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  margin-top: -35px;
+  padding-left: 20px;
+}

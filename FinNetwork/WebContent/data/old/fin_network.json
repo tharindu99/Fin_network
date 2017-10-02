@@ -1,0 +1,1177 @@
+{
+  "nodes":
+  [
+  {
+    "id": 1,
+    "equity": "Ally Financial Inc"
+  },
+  {
+    "id": 2,
+    "equity": "AMERICAN EXPRESS CO"
+  },
+  {
+    "id": 3,
+    "equity": "BANK OF AMERICA CORP"
+  },
+  {
+    "id": 4,
+    "equity": "Bank of New York Mellon Corp"
+  },
+  {
+    "id": 5,
+    "equity": "BB&T CORP"
+  },
+  {
+    "id": 6,
+    "equity": "CAPITAL ONE FINANCIAL CORP"
+  },
+  {
+    "id": 7,
+    "equity": "CITIGROUP INC"
+  },
+  {
+    "id": 8,
+    "equity": "COMERICA INC"
+  },
+  {
+    "id": 9,
+    "equity": "Discover Financial Services"
+  },
+  {
+    "id": 10,
+    "equity": "FEDERAL_HOME_LOAN_MORTGAGE_CORP"
+  },
+  {
+    "id": 11,
+    "equity": "FEDERAL_NATIONAL_MORTGAGE_ASSOCIATION_FANNIE_MAE"
+  },
+  {
+    "id": 12,
+    "equity": "FIFTH THIRD BANCORP"
+  },
+  {
+    "id": 13,
+    "equity": "GENERAL ELECTRIC CO"
+  },
+  {
+    "id": 14,
+    "equity": "GOLDMAN SACHS GROUP INC"
+  },
+  {
+    "id": 15,
+    "equity": "HUNTINGTON BANCSHARES INC"
+  },
+  {
+    "id": 16,
+    "equity": "JPMORGAN CHASE & CO"
+  },
+  {
+    "id": 17,
+    "equity": "KEYCORP"
+  },
+  {
+    "id": 18,
+    "equity": "M&T BANK CORP"
+  },
+  {
+    "id": 19,
+    "equity": "MORGAN STANLEY"
+  },
+  {
+    "id": 20,
+    "equity": "NORTHERN TRUST CORP"
+  },
+  {
+    "id": 21,
+    "equity": "PNC FINANCIAL SERVICES GROUP INC"
+  },
+  {
+    "id": 22,
+    "equity": "SCHWAB_CHARLES_CORP"
+  },
+  {
+    "id": 23,
+    "equity": "STATE STREET CORP"
+  },
+  {
+    "id": 24,
+    "equity": "SUNTRUST BANKS INC"
+  },
+  {
+    "id": 25,
+    "equity": "US_BANCORP"
+  },
+  {
+    "id": 26,
+    "equity": "WELLS FARGO & COMPANY"
+  },
+  {
+    "id": 27,
+    "equity": "ZIONS BANCORPORATION"
+  },
+  {
+    "id": 28,
+    "equity": "Corporate Federal Credit Union"
+  },
+  {
+    "id": 29,
+    "equity": "Goldman, Sachs & Co."
+  },
+  {
+    "id": 30,
+    "equity": "Mortgage Securities Corp."
+  },
+  {
+    "id": 31,
+    "equity": "GS Mortgage Securities Corp."
+  },
+  {
+    "id": 32,
+    "equity": "Ally"
+  },
+  {
+    "id": 33,
+    "equity": "Long Beach Securities Corp."
+  },
+  {
+    "id": 34,
+    "equity": "Ally Bank"
+  },
+  {
+    "id": 35,
+    "equity": "MBIA Insurance Corporation"
+  },
+  {
+    "id": 36,
+    "equity": "Ally Financial"
+  },
+  {
+    "id": 37,
+    "equity": "New York County"
+  },
+  {
+    "id": 38,
+    "equity": "Freddie Mac"
+  },
+  {
+    "id": 39,
+    "equity": "GMAC Capital Trust I"
+  },
+  {
+    "id": 40,
+    "equity": "Equity Securities"
+  },
+  {
+    "id": 41,
+    "equity": "New York"
+  },
+  {
+    "id": 42,
+    "equity": "Advance Funding"
+  },
+  {
+    "id": 43,
+    "equity": "IB Finance"
+  },
+  {
+    "id": 44,
+    "equity": "Cerberus Capital Management"
+  },
+  {
+    "id": 45,
+    "equity": "GMAC Continental Corporation"
+  },
+  {
+    "id": 46,
+    "equity": "Ally Financial Inc."
+  },
+  {
+    "id": 47,
+    "equity": "GMAC Continental"
+  },
+  {
+    "id": 48,
+    "equity": "Ally US LLC"
+  },
+  {
+    "id": 49,
+    "equity": "Ally Securities LLC"
+  },
+  {
+    "id": 50,
+    "equity": "IB Finance Holding Company, LLC"
+  },
+  {
+    "id": 51,
+    "equity": "Ally Securities"
+  },
+  {
+    "id": 52,
+    "equity": "GMAC Latin America Holdings LLC"
+  },
+  {
+    "id": 53,
+    "equity": "Assured Guaranty"
+  },
+  {
+    "id": 54,
+    "equity": "GMAC International Holdings B.V."
+  },
+  {
+    "id": 55,
+    "equity": "Queens University of Charlotte"
+  },
+  {
+    "id": 56,
+    "equity": "Equity Securities Market"
+  },
+  {
+    "id": 57,
+    "equity": "GMAC Continental LLC."
+  },
+  {
+    "id": 58,
+    "equity": "Citigroup Global Markets Inc."
+  },
+  {
+    "id": 59,
+    "equity": "Cerberus Capital Management, L.P."
+  },
+  {
+    "id": 60,
+    "equity": "Morgan Stanley & Co. LLC and"
+  },
+  {
+    "id": 61,
+    "equity": "Deloitte & Touche"
+  },
+  {
+    "id": 62,
+    "equity": "Barclays Capital Inc."
+  },
+  {
+    "id": 63,
+    "equity": "Guaranty Trust Company of New York"
+  },
+  {
+    "id": 64,
+    "equity": "Morgan Stanley & Co. LLC."
+  },
+  {
+    "id": 65,
+    "equity": "The Bank of New York Mellon"
+  },
+  {
+    "id": 66,
+    "equity": "Comerica Bank"
+  },
+  {
+    "id": 67,
+    "equity": "Computershare Trust Company, N.A."
+  },
+  {
+    "id": 68,
+    "equity": "GMACM"
+  },
+  {
+    "id": 69,
+    "equity": "IB Finance Holding Company LLC"
+  },
+  {
+    "id": 70,
+    "equity": "IB Finance Holding Company, LLC."
+  },
+  {
+    "id": 71,
+    "equity": "GMAC Continental Corporation."
+  },
+  {
+    "id": 72,
+    "equity": "Ally Consolidated"
+  },
+  {
+    "id": 73,
+    "equity": "GMAC Mortgage LLC"
+  },
+  {
+    "id": 74,
+    "equity": "GMAC Mortgage"
+  },
+  {
+    "id": 75,
+    "equity": "Residential Funding Company LLC"
+  },
+  {
+    "id": 76,
+    "equity": "Residential Funding Securities LLC"
+  },
+  {
+    "id": 77,
+    "equity": "Residential Accredit Loans, Inc."
+  },
+  {
+    "id": 78,
+    "equity": "Residential Asset Mortgage Products, Inc."
+  },
+  {
+    "id": 79,
+    "equity": "National Credit Union"
+  },
+  {
+    "id": 80,
+    "equity": "Central Federal Credit Union"
+  },
+  {
+    "id": 81,
+    "equity": "American Express"
+  },
+  {
+    "id": 82,
+    "equity": "Bank of Canada"
+  },
+  {
+    "id": 83,
+    "equity": "American Express Travel Related Services Company, Inc."
+  },
+  {
+    "id": 84,
+    "equity": "Bank of America"
+  },
+  {
+    "id": 85,
+    "equity": "JPMorgan Chase"
+  },
+  {
+    "id": 86,
+    "equity": "Capital One Financial"
+  },
+  {
+    "id": 87,
+    "equity": "Discover"
+  },
+  {
+    "id": 88,
+    "equity": "U.S. Bank"
+  },
+  {
+    "id": 89,
+    "equity": "Travelers"
+  },
+  {
+    "id": 90,
+    "equity": "American Express international"
+  },
+  {
+    "id": 91,
+    "equity": "Merrill Lynch"
+  },
+  {
+    "id": 92,
+    "equity": "BNY Mellon"
+  },
+  {
+    "id": 93,
+    "equity": "Lehman Brothers Special Financing Inc."
+  },
+  {
+    "id": 94,
+    "equity": "Countrywide"
+  },
+  {
+    "id": 95,
+    "equity": "FHA"
+  },
+  {
+    "id": 96,
+    "equity": "State of New York, New York County"
+  },
+  {
+    "id": 97,
+    "equity": "Bank of America Corporation"
+  },
+  {
+    "id": 98,
+    "equity": "BAC Home Loans Servicing, LP"
+  },
+  {
+    "id": 99,
+    "equity": "Countrywide Home Loans, Inc. et al"
+  }
+]
+,"links":[
+  {
+    "source": 1,
+    "target": 28,
+    "ROLE": "underwriter",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 29,
+    "ROLE": "underwriter",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 30,
+    "ROLE": "agent",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 31,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 32,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "74 Table of Contents Notes to Condensed Consolidated Financial Statements (unaudited) Ally Financial Inc. * Form 10-Q December 31, 2011 ($ in millions) Parent (a) Guarantors Nonguarantors (a) Consolidating adjustments Ally consolidated Assets Cash and cas"
+  },
+  {
+    "source": 1,
+    "target": 33,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 34,
+    "ROLE": "affiliate",
+    "THREE_SENTENCES": "Pursuant to these restrictions, unless otherwise exempted, \"covered transactions,\" including Ally Bank's extensions of credit to and asset purchases from its nonbank affiliates, generally (1) are limited to 10% of Ally Bank's capital stock and surplus wit"
+  },
+  {
+    "source": 1,
+    "target": 35,
+    "ROLE": "Insurer",
+    "THREE_SENTENCES": "The court denied the plaintiffs' motion, and an appeal from that decision is pending. Private-label Monoline Bond Insurer Claims MBIA Litigation MBIA Insurance Corporation (MBIA) filed complaints on December 4, 2008, and April 1, 2010, in the New York Cou"
+  },
+  {
+    "source": 1,
+    "target": 36,
+    "ROLE": "Affiliate",
+    "THREE_SENTENCES": "Because Ally controls Ally Bank, Ally is an affiliate of Ally Bank for purposes of the Affiliate Transaction Restrictions. Thus, retail financing transactions by Ally Bank involving vehicles for which Ally provided floorplan financing are subject to the A"
+  },
+  {
+    "source": 1,
+    "target": 37,
+    "ROLE": "Insurer",
+    "THREE_SENTENCES": "The court denied the plaintiffs' motion, and an appeal from that decision is pending. Private-label Monoline Bond Insurer Claims MBIA Litigation MBIA Insurance Corporation (MBIA) filed complaints on December 4, 2008, and April 1, 2010, in the New York Cou"
+  },
+  {
+    "source": 1,
+    "target": 38,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "The subpoenas relating to Fannie Mae investments have been withdrawn with prejudice. The FHFA indicated that documents provided in response to the remaining subpoenas will enable the FHFA to determine whether they believe issuers of private-label MBS are"
+  },
+  {
+    "source": 1,
+    "target": 39,
+    "ROLE": "trustees",
+    "THREE_SENTENCES": "4.7 Form of Guarantee Agreement related to Ally Financial Inc. Senior Unsecured Guaranteed Notes Filed as Exhibit 4.7 to the Company's Annual Report for the period ended December 31, 2010, on Form 10-K (File No. 1-3754), incorporated herein by reference."
+  },
+  {
+    "source": 1,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Mine Safety Disclosures 26 Part II Item 5. Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 27 Item 6. Selected Financial Data 28 Item 7."
+  },
+  {
+    "source": 1,
+    "target": 41,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "On June 4, 2012, Berkshire Hathaway Inc. filed a motion in the Bankruptcy Court for the appointment of an independent examiner to investigate, among other things, certain of the Debtors' transactions with AFI occurring prior to the Petition Date, any clai"
+  },
+  {
+    "source": 1,
+    "target": 42,
+    "ROLE": "Servicer",
+    "THREE_SENTENCES": "We did not provide any noncontractual financial support to any of these entities during the six months ended June 30, 2012 and 2011 . Other Variable Interest Entities Servicer Advance Funding Entity We previously assisted in the financing of our servicer"
+  },
+  {
+    "source": 1,
+    "target": 46,
+    "ROLE": "servicers",
+    "THREE_SENTENCES": "Master-servicing rights represent our right to service mortgage- and asset-backed securities and whole-loan packages issued for investors. Master-servicing involves the collection of borrower payments from primary servicers and the 134 Table of Contents N"
+  },
+  {
+    "source": 1,
+    "target": 48,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc., are Ally US LLC, IB F"
+  },
+  {
+    "source": 1,
+    "target": 50,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc., are Ally US LLC, IB F"
+  },
+  {
+    "source": 1,
+    "target": 52,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc., are Ally US LLC, IB F"
+  },
+  {
+    "source": 1,
+    "target": 54,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc., are Ally US LLC, IB F"
+  },
+  {
+    "source": 1,
+    "target": 59,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "237 Table of Contents Ally Financial Inc. * Form 10-K Certain Corporate Governance Matters Election of Directors - Our current directors were elected pursuant to the terms of the Amended and Restated Governance Agreement dated May 21, 2009 (the Governance"
+  },
+  {
+    "source": 1,
+    "target": 61,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "254 Table of Contents Ally Financial Inc. * Form 10-K Item 14. Principal Accountant Fees and Services We retained Deloitte & Touche LLP, the member firms of Deloitte Touche Tohmatsu Limited, and their respective affiliates (collectively, Deloitte & Touche"
+  },
+  {
+    "source": 1,
+    "target": 63,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "3.2 Bylaws of Ally Financial Inc., dated as of March 25, 2011 Filed as Exhibit 3.2 to the Company's Current Report on Form 8-K dated as of March 25, 2011, (File No. 1-3754), incorporated herein by reference. 4.1 Form of Indenture dated as of July 1, 1982,"
+  },
+  {
+    "source": 1,
+    "target": 66,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "4.2.2 Form of Second Supplemental Indenture dated as of June 20, 2006, supplementing the Indenture designated as Exhibit 4.2 Filed as Exhibit 4(a)(2) to the Company's Registration Statement No. 33-136021, incorporated herein by reference. 4.3 Form of Inde"
+  },
+  {
+    "source": 1,
+    "target": 68,
+    "ROLE": "servicer",
+    "THREE_SENTENCES": "The majority of Ally Bank?s serviced mortgage assets are subserviced by GMAC Mortgage, LLC (GMACM), a subsidiary of ResCap, pursuant to a servicing agreement. GMACM is required to maintain certain servicer ratings in accordance with master agreements with"
+  },
+  {
+    "source": 1,
+    "target": 69,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc., are Ally US LLC, IB F"
+  },
+  {
+    "source": 1,
+    "target": 70,
+    "ROLE": "guarantor",
+    "THREE_SENTENCES": "The Guarantors fully and unconditionally guarantee the senior notes on a joint and several basis. In order to simplify our note guarantor structure and to provide additional flexibility with respect to potential strategic transactions relating to our inte"
+  },
+  {
+    "source": 1,
+    "target": 71,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "Parent and Guarantor Consolidating Financial Statements Certain of our senior notes are guaranteed by a group of subsidiaries (the Guarantors). The Guarantors, each of which is a 100% directly owned subsidiary of Ally Financial Inc, are Ally US LLC, IB Fi"
+  },
+  {
+    "source": 1,
+    "target": 72,
+    "ROLE": "Guarantors",
+    "THREE_SENTENCES": "The elimination entries set forth in the following condensed consolidating financial statements eliminate distributed and undistributed income of subsidiaries, investments in subsidiaries, and intercompany balances and transactions between the parent, Gua"
+  },
+  {
+    "source": 1,
+    "target": 73,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Set forth below are descriptions of certain of these legal proceedings. Allstate Litigation On February 14, 2011, the Allstate Insurance Company and various of its subsidiaries and affiliates (collectively, Allstate) filed a complaint in Hennepin County D"
+  },
+  {
+    "source": 1,
+    "target": 74,
+    "ROLE": "Insurer",
+    "THREE_SENTENCES": "The court denied the plaintiffs' motion, and an appeal from that decision is pending. Private-label Monoline Bond Insurer Claims MBIA Litigation MBIA Insurance Corporation (MBIA) filed complaints on December 4, 2008, and April 1, 2010, in the New York Cou"
+  },
+  {
+    "source": 1,
+    "target": 75,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Set forth below are descriptions of certain of these legal proceedings. Allstate Litigation On February 14, 2011, the Allstate Insurance Company and various of its subsidiaries and affiliates (collectively, Allstate) filed a complaint in Hennepin County D"
+  },
+  {
+    "source": 1,
+    "target": 76,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Set forth below are descriptions of certain of these legal proceedings. Allstate Litigation On February 14, 2011, the Allstate Insurance Company and various of its subsidiaries and affiliates (collectively, Allstate) filed a complaint in Hennepin County D"
+  },
+  {
+    "source": 1,
+    "target": 77,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Set forth below are descriptions of certain of these legal proceedings. Allstate Litigation On February 14, 2011, the Allstate Insurance Company and various of its subsidiaries and affiliates (collectively, Allstate) filed a complaint in Hennepin County D"
+  },
+  {
+    "source": 1,
+    "target": 78,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Set forth below are descriptions of certain of these legal proceedings. Allstate Litigation On February 14, 2011, the Allstate Insurance Company and various of its subsidiaries and affiliates (collectively, Allstate) filed a complaint in Hennepin County D"
+  },
+  {
+    "source": 1,
+    "target": 79,
+    "ROLE": "agent",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 1,
+    "target": 80,
+    "ROLE": "agent",
+    "THREE_SENTENCES": "The defendants' motion to dismiss was granted in February 2012, subject to certain additional provisions, which could result in certain of the original counts being reinstated against certain Ally entities. NCUAB Litigation On August 9, 2011, the National"
+  },
+  {
+    "source": 2,
+    "target": 9,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Card-Issuing Business ? Competition Our proprietary Card business encounters substantial and intense competition in the United States and internationally. As a card issuer,we compete in the United States with financial institutions (such as Citibank, Ban"
+  },
+  {
+    "source": 2,
+    "target": 40,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "ITEM 5.MARKET FOR REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES(a) Our common stock trades principally on The New York Stock Exchange under the trading symbol AXP."
+  },
+  {
+    "source": 2,
+    "target": 81,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Under Dodd-Frank, the Federal Reserve is also authorized to regulate interchange fees paid to financial institutions on debit card and certain general-use prepaid card transactions to ensure that they are ?reasonable and proportional? to the cost of proce"
+  },
+  {
+    "source": 2,
+    "target": 84,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Card-Issuing Business ? Competition Our proprietary Card business encounters substantial and intense competition in the United States and internationally. As a card issuer, we compete in the United States with financial institutions (such as Citibank, Ban"
+  },
+  {
+    "source": 2,
+    "target": 85,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Card-Issuing Business ? Competition Our proprietary Card business encounters substantial and intense competition in the United States and internationally. As a card issuer,we compete in the United States with financial institutions (such as Citibank, Ban"
+  },
+  {
+    "source": 2,
+    "target": 86,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Card-Issuing Business ? Competition Our proprietary Card business encounters substantial and intense competition in the United States and internationally. As a card issuer, we compete in the United States with financial institutions (such as Citibank, Ban"
+  },
+  {
+    "source": 2,
+    "target": 87,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "Card-Issuing Business ? Competition Our proprietary Card business encounters substantial and intense competition in the United States and internationally. As a card issuer, we compete in the United States with financial institutions (such as Citibank, Ban"
+  },
+  {
+    "source": 2,
+    "target": 88,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "Table of Contents issuers such as U.S. Bank, JPMorgan Chase and Citibank to build and support data collection and reporting necessary to satisfy customer requirements. Moreover, in the current economic environment, the interest in expense management tools"
+  },
+  {
+    "source": 2,
+    "target": 89,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "FOREIGN OPERATIONS We derive a significant portion of our revenues from the use of our Card products, Travelers Cheques, travel and other financial products and services in countries outside the United States and continue to broaden the use of these produ"
+  },
+  {
+    "source": 3,
+    "target": 37,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+  },
+  {
+    "source": 3,
+    "target": 38,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "These statements can be identified by the fact that they do not relate strictly to historical or current facts. Forward-looking statements often use words such as \"expects,\" \"anticipates,\" \"believes,\" \"estimates,\" \"targets,\" \"intends,\" \"plans,\" \"goal\" and"
+  },
+  {
+    "source": 3,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Mine Safety Disclosures None 22 Bank of America 2011 Table of Contents Part II Bank of America Corporation and Subsidiaries Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities The principal"
+  },
+  {
+    "source": 3,
+    "target": 41,
+    "ROLE": "underwriters",
+    "THREE_SENTENCES": "The complaint seeks an unspecified amount in disgorgement, penalties, restitution, and damages and other equitable relief. 228 Bank of America 2011 Table of Contents Montgomery The Corporation, several current and former officers and directors, BAS, MLPF&"
+  },
+  {
+    "source": 3,
+    "target": 53,
+    "ROLE": "insurers",
+    "THREE_SENTENCES": "Our limited experience with most of the monoline insurers has varied in terms of process, and experience with these counterparties has not been predictable. Our limited claims experience with the monoline insurers, other than Assured Guaranty and Syncora,"
+  },
+  {
+    "source": 3,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "On May 17, 2011, the Corporation and Sellers jointly moved to dismiss the amended complaint. On August 2, 2011, plaintiffs filed a separate action entitled Walnut Place LLC, et al. v. Countrywide Home Loans, Inc. et al ., in New York Supreme Court, New Yo"
+  },
+  {
+    "source": 3,
+    "target": 84,
+    "ROLE": "underwriters",
+    "THREE_SENTENCES": "The complaint seeks an unspecified amount in disgorgement, penalties, restitution, and damages and other equitable relief. 228 Bank of America 2011 Table of Contents Montgomery The Corporation, several current and former officers and directors, BAS, MLPF&"
+  },
+  {
+    "source": 3,
+    "target": 88,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+  },
+  {
+    "source": 3,
+    "target": 91,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "On October 15, 2010, the Federal Home Loan Bank of Chicago (FHLB Chicago) filed a complaint against the Corporation, Countrywide, MLPF&S and related entities in Illinois Circuit Court, Cook County, entitled Federal Home Loan Bank of Chicago v. Banc of Ame"
+  },
+  {
+    "source": 3,
+    "target": 92,
+    "ROLE": "trustees",
+    "THREE_SENTENCES": "In private-label securitizations, certain presentation thresholds need to be met in order for investors to direct a trustee to assert repurchase claims. Recent increases in new private-label claims are primarily related to repurchase requests received fro"
+  },
+  {
+    "source": 3,
+    "target": 94,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "Certain of the motions to intervene and/or notices of intent to object allege various purported bases for opposition to the settlement. These include challenges to the nature of the court proceeding and the lack of an opt-out mechanism, alleged conflicts"
+  },
+  {
+    "source": 3,
+    "target": 95,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Under the terms of the Global AIP, the federal and participating state governments would release the Corporation from further liability for certain alleged residential mortgage origination, servicing and foreclosure deficiencies. In settling origination i"
+  },
+  {
+    "source": 3,
+    "target": 97,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "CHL and the Corporation have filed motions to dismiss the case, to withdraw the reference to the Bankruptcy Court, and for transfer of venue to the United States District Court for the Central District of California. U.S. Bank Litigation On August 29, 201"
+  },
+  {
+    "source": 3,
+    "target": 98,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "The following provides a summary of the larger bulk settlement actions beginning in the fourth quarter of 2010 followed by details of the Corporation?s representations and warranties liability, including claims status. Settlement with the Bank of New York"
+  },
+  {
+    "source": 4,
+    "target": 37,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "See Note 11 of the Notes to Consolidated Financial Statements for additional information. Mortgage-Securitization Trusts Proceeding As previously disclosed, The Bank of New York Mellon as trustee is the petitioner in a legal proceeding filed in New York S"
+  },
+  {
+    "source": 4,
+    "target": 40,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "ITEM 5. MARKET FOR REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES Our common stock is listed on the New York Stock Exchange under the ticker symbol BK. BNY Capital IV?s 6.875% Preferred Trust Securities,"
+  },
+  {
+    "source": 4,
+    "target": 41,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "See Note 11 of the Notes to Consolidated Financial Statements for additional information. Mortgage-Securitization Trusts Proceeding As previously disclosed, The Bank of New York Mellon as trustee is the petitioner in a legal proceeding filed in New York S"
+  },
+  {
+    "source": 4,
+    "target": 65,
+    "ROLE": "counterparty",
+    "THREE_SENTENCES": "In connection with our role as a clearing bank for the tri-party repurchase transaction market, or tri-party repo market, we work with dealers who use repos (i.e., repurchase transactions) to finance their securities by selling them to counterparties and"
+  },
+  {
+    "source": 4,
+    "target": 92,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "Pershing LLC (?Pershing?), our clearing service, takes a consultative approach, working with more than 1,500 financial organizations and 100,000 investment professionals who collectively represent approximately 5.5 million active accounts by delivering de"
+  },
+  {
+    "source": 4,
+    "target": 94,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "See Note 11 of the Notes to Consolidated Financial Statements for additional information. Mortgage-Securitization Trusts Proceeding As previously disclosed, The Bank of New York Mellon as trustee is the petitioner in a legal proceeding filed in New York S"
+  },
+  {
+    "source": 4,
+    "target": 97,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "See Note 11 of the Notes to Consolidated Financial Statements for additional information. Mortgage-Securitization Trusts Proceeding As previously disclosed, The Bank of New York Mellon as trustee is the petitioner in a legal proceeding filed in New York S"
+  },
+  {
+    "source": 6,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Table of ContentsIssuer Purchases of Equity Securities The following table presents information related to repurchases of shares of our common stock during the fourth quarter of 2011. Total Number of Shares Purchased (1)"
+  },
+  {
+    "source": 6,
+    "target": 56,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "PART II Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities Market Information Our common stock is listed on the NYSE and is traded under the symbol ?COF.? As of January 31, 2012, there were"
+  },
+  {
+    "source": 6,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "4.4.2 Amended and Restated Declaration of Trust of Capital One Capital II, dated as of June 6, 2006, between Capital One Financial Corporation as Sponsor, The Bank of New York Mellon, as institutional trustee, BNY Mellon Trust of Delaware, as Delaware Tru"
+  },
+  {
+    "source": 6,
+    "target": 81,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "COMPETITION Each of our business segments operates in a highly competitive environment, and we face competition in all aspects of our business from numerous bank and non-bank providers of financial services. Our Credit Card business competes with internat"
+  },
+  {
+    "source": 6,
+    "target": 87,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "COMPETITION Each of our business segments operates in a highly competitive environment, and we face competition in all aspects of our business from numerous bank and non-bank providers of financialservices. Our Credit Card business competes with internat"
+  },
+  {
+    "source": 8,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "21 PART II 21 Item 5. Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities. 21 Item 6."
+  },
+  {
+    "source": 9,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "There can be no assurance that we will declare and pay any dividends or repurchase any shares of our common stock in the future. For additional information regarding capital, dividends and share repurchases, see \"Business - Supervision and Regulation - Ca"
+  },
+  {
+    "source": 9,
+    "target": 87,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "Merchant acceptance of the Discover card, however, has continued to increase and we are making investments to further grow acceptance both domestically and internationally. In our payment services business, we compete with other networks for volume and to"
+  },
+  {
+    "source": 10,
+    "target": 32,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Specifically, Mr. Renzi has been recused from serving as the final decision-maker, and from influencing final decisions, relating to: (a) any and all aspects of Freddie Mac?s relationship with Ally or its affiliates pertaining to both performing and non-p"
+  },
+  {
+    "source": 10,
+    "target": 38,
+    "ROLE": "seller",
+    "THREE_SENTENCES": "GMAC Residential Capital, LLC, GMAC Mortgage Corporation, GMAC Mortgage, LLC, and Residential Funding Company, LLC are all affiliated entities, and are now reorganized as subsidiaries of Ally Financial Inc., or Ally.GMAC Mortgage, LLC, is a seller/service"
+  },
+  {
+    "source": 10,
+    "target": 40,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "See ?NOTE 12: FREDDIE MAC STOCKHOLDERS? EQUITY (DEFICIT)? in our 2011 Annual Report for more information. Dividend Restrictions Our payment of dividends on Freddie Mac common stock or any series of Freddie Mac preferred stock (other than senior preferred"
+  },
+  {
+    "source": 10,
+    "target": 41,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "Freddie Mac was not a party to this agreement, but agreed to retract any previously delivered notices of non-performance upon final court approval of the settlement.The Bank of New York Mellon, as trustee, filed the settlement in state court in New York a"
+  },
+  {
+    "source": 10,
+    "target": 46,
+    "ROLE": "servicer",
+    "THREE_SENTENCES": "Residential Capital LLC (?ResCap?) and a number of its subsidiaries, including GMAC Mortgage, LLC and Residential Funding Company, LLC (with GMAC Mortgage, LLC, collectively, ?GMAC?), filed for bankruptcy in the U.S. Bankruptcy Court for the Southern Dist"
+  },
+  {
+    "source": 10,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "Freddie Mac was not a party to this agreement, but agreed to retract any previously delivered notices of non-performance upon final court approval of the settlement.The Bank of New York Mellon, as trustee, filed the settlement in state court in New York a"
+  },
+  {
+    "source": 10,
+    "target": 94,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "The effectiveness of our efforts is highly uncertain and any potential recoveries may take significant time to realize.In June 2011, Bank of America Corporation announced that it, BAC Home Loans Servicing, LP, Countrywide Financial Corporation and Country"
+  },
+  {
+    "source": 10,
+    "target": 95,
+    "ROLE": "insurers",
+    "THREE_SENTENCES": "In recent periods, we also reached the maximum limit of recovery on certain pool insurance contracts. For information about counterparty risk associated with mortgage insurers, see ?NOTE 15: CONCENTRATION OF CREDIT AND OTHER RISKS ? Mortgage Insurers.?We"
+  },
+  {
+    "source": 10,
+    "target": 98,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "The agreement did not have a material impact on our 2011 or 2010 consolidated statements of income and comprehensive income.On December 31, 2010, we entered into an agreement with Bank of America, N.A., and two of its affiliates, BAC Home Loans Servicing,"
+  },
+  {
+    "source": 11,
+    "target": 26,
+    "ROLE": "servicers",
+    "THREE_SENTENCES": "The servicer foreclosure process deficiencies have generated significant concern and have been reviewed by various government agencies and the various state attorneys general. On February 9, 2012, a settlement was announced between five of the nation?s la"
+  },
+  {
+    "source": 11,
+    "target": 32,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "In 2010, we entered into an agreement with certain wholly-owned subsidiaries of Ally Financial, Inc. (?Ally?). Under the agreement, we received $462 million in exchange for our release of specified Ally affiliates from potential liability relating to cert"
+  },
+  {
+    "source": 11,
+    "target": 38,
+    "ROLE": "issuers",
+    "THREE_SENTENCES": "These contracts generally increase in value as interest rates rise and decrease in value as interest rates fall. ?Private-label securities? refers to mortgage-related securities issued by entities other than agency issuers Fannie Mae, Freddie Mac or Ginni"
+  },
+  {
+    "source": 11,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "PART II Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities Our common stock is traded in the over-the-counter market and quoted on the OTC Bulletin Board under the ticker symbol ?FNMA.? The"
+  },
+  {
+    "source": 11,
+    "target": 46,
+    "ROLE": "servicers",
+    "THREE_SENTENCES": "These actions halted or significantly delayed not only existing, but new foreclosures. In addition to the new legislative, regulatory, and judicial requirements applicable to servicers generally, five of the nation?s largest mortgage servicers (Bank of Am"
+  },
+  {
+    "source": 11,
+    "target": 84,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "Three lender customers, Wells Fargo Bank, N.A., JPMorgan Chase Bank, NA and Bank of America, N.A., including their respective affiliates, in the aggregate accounted for more than 48% of our single-family business volume for 2011. In this report, we may re"
+  },
+  {
+    "source": 11,
+    "target": 95,
+    "ROLE": "insurers",
+    "THREE_SENTENCES": "Table of Contents characteristics of our loan acquisitions, in more detail in ?MD&A?Risk Management?Credit Risk Management?Single-Family Mortgage Credit Risk Management.? Whether the loans we acquire in the future will exhibit an overall credit profile si"
+  },
+  {
+    "source": 11,
+    "target": 97,
+    "ROLE": "servicers",
+    "THREE_SENTENCES": "These actions halted or significantly delayed not only existing, but new foreclosures. In addition to the new legislative, regulatory, and judicial requirements applicable to servicers generally, five of the nation?s largest mortgage servicers (Bank of Am"
+  },
+  {
+    "source": 11,
+    "target": 98,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "(1)Recorded investment consists of unpaid principal balance, unamortized premiums, discounts and other cost basis adjustments, and accrued interest receivable. On December 31, 2010, we entered into an agreement with Bank of America, N.A., and its affilia"
+  },
+  {
+    "source": 12,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Item 5.Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 162"
+  },
+  {
+    "source": 13,
+    "target": 19,
+    "ROLE": "Agents",
+    "THREE_SENTENCES": "(x)Three-Year Credit Agreement dated March 19, 2010 among NBC Universal, Inc., the Financial Institutions Party Thereto JPMorgan Chase Bank, N.A., as Administrative Agent and Issuing Lender, Goldman Sachs Credit Partners L.P. and Morgan Stanley Senior Fun"
+  },
+  {
+    "source": 13,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity SecuritiesWith respect to \"Market Information,\" in the United States, GE common stock is listed on the New York Stock Exchange (its principal market)"
+  },
+  {
+    "source": 13,
+    "target": 58,
+    "ROLE": "Agents",
+    "THREE_SENTENCES": "(x)Three-Year Credit Agreement dated March 19, 2010 among NBC Universal, Inc., the Financial Institutions Party Thereto JPMorgan Chase Bank, N.A., as Administrative Agent and Issuing Lender, Goldman Sachs Credit Partners L.P. and Morgan Stanley Senior Fun"
+  },
+  {
+    "source": 14,
+    "target": 38,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "On October 17, 2011, the Goldman Sachs defendants moved to dismiss.Various alleged purchasers of, and counterparties involved in transactions relating to, mortgage pass-through certificates, CDOs and other mortgage-related products (including certain Alls"
+  },
+  {
+    "source": 14,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "PART II Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity SecuritiesThe principal market on which our common stock is traded is the NYSE."
+  },
+  {
+    "source": 14,
+    "target": 41,
+    "ROLE": "underwriters",
+    "THREE_SENTENCES": "RALI Pass-Through Certificates Litigation. GS&Co. is among numerous underwriters named as defendants in a putative securities class action initially filed in September 2008 in New York Supreme Court, and subsequently removed to the U.S. District Court for"
+  },
+  {
+    "source": 14,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "4.5 Senior Debt Indenture, dated as of July 16, 2008, between The Goldman Sachs Group, Inc. and The Bank of New York Mellon, as trustee (incorporated by reference to Exhibit 4.82 to the Registrant?s Post-Effective Amendment No. 11 to Form S-3 (No. 333-130"
+  },
+  {
+    "source": 14,
+    "target": 77,
+    "ROLE": "underwriters",
+    "THREE_SENTENCES": "As to the underwriters, plaintiffs allege that the offering documents in connection with various offerings of mortgage-backed pass-through certificates violated the disclosure requirements of the federal securities laws. In addition to the underwriters, t"
+  },
+  {
+    "source": 15,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "PART II Item 5: Market for Registrant?s Common Equity, Related Shareholder Matters and Issuer Purchases of Equity Securities The common stock of Huntington Bancshares Incorporated is traded on the NASDAQ Stock Market under the symbol ?HBAN?. The stock is"
+  },
+  {
+    "source": 16,
+    "target": 38,
+    "ROLE": "servicer",
+    "THREE_SENTENCES": "In nonrecourse servicing, the principal credit risk to the Firm is the cost of temporary servicing advances of funds (i.e., normal servicing advances). In recourse servicing, the servicer agrees to share credit risk with the owner of the mortgage loans, s"
+  },
+  {
+    "source": 16,
+    "target": 41,
+    "ROLE": "underwriter",
+    "THREE_SENTENCES": "There are currently pending and tolled investor and monoline claims involving approximately $120 billion of such securities. In the actions against the Firm as an MBS issuer (and, in some cases, also as an underwriter of its own MBS offerings), three purp"
+  },
+  {
+    "source": 16,
+    "target": 85,
+    "ROLE": "seller",
+    "THREE_SENTENCES": "See the table on page 178 of this Note for further information on interests held in nonconsolidated securitizations. Multi-seller conduits For a more detailed description of JPMorgan Chase?s principal involvement with Firm-administered multi-seller condui"
+  },
+  {
+    "source": 17,
+    "target": 40,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "PART II ITEM 5. MARKET FOR THE REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES The dividend restrictions discussion in the Supervision and Regulation section in Item 1 of this report, and the following dis"
+  },
+  {
+    "source": 17,
+    "target": 95,
+    "ROLE": "Underwriter",
+    "THREE_SENTENCES": "l Real Estate Capital professionals who are located in select markets across the country and provide financial services for public and private owners, investors and developers of nonowner-occupied commercial real estate properties. In addition to direct l"
+  },
+  {
+    "source": 18,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "(c)Issuer Purchases of Equity Securities Period"
+  },
+  {
+    "source": 19,
+    "target": 35,
+    "ROLE": "counterparty",
+    "THREE_SENTENCES": "Monoline Insurers . The results for the quarter and six months ended June 30, 2011 included gains of $471 million and $153 million, respectively, related to the Company?s counterparty credit exposures to Monolines, principally MBIA Insurance Corporation ("
+  },
+  {
+    "source": 19,
+    "target": 37,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "The complaints each raise claims under federal securities law and the Alabama Securities Act and each seeks, among other things, compensatory damages associated with Colonial Bank?s purchase of such certificates. On August 24, 2012, HSH Nordbank AG and ce"
+  },
+  {
+    "source": 19,
+    "target": 38,
+    "ROLE": "servicer",
+    "THREE_SENTENCES": "On December 14,2009, Central Mortgage Company (?CMC?) filed a complaint against the Company, in a matter styled Central Mortgage Company v. Morgan Stanley Mortgage Capital Holdings LLC , pending in the Court of Chancery of the State of Delaware.The comp"
+  },
+  {
+    "source": 19,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "The table below sets forth the information with respect to purchases made by or on behalf of the Company of its common stock during the quarterly period ended September 30, 2012.Issuer Purchases of Equity Securities (dollars in millions, except per share"
+  },
+  {
+    "source": 19,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "4.4*Seventh Supplemental Senior Indenture dated as of November 21, 2011 between Morgan Stanley and The Bank of New York Mellon, as trustee.(1)For purposes of this Exhibit Index, references to ?The Bank of New York? mean in some instances the entity succ"
+  },
+  {
+    "source": 19,
+    "target": 88,
+    "ROLE": "Trustee",
+    "THREE_SENTENCES": "On October 11, 2012, defendants filed motions to dismiss the amended complaint in Federal Home Loan Bank of Boston v. Ally Financial, Inc. F/K/A GMAC LLC et al. On August 3, 2012, the court in Western and Southern Life Insurance Company et al. v. Morgan S"
+  },
+  {
+    "source": 19,
+    "target": 91,
+    "ROLE": "affiliates",
+    "THREE_SENTENCES": "On October 16, 2012, plaintiffs filed an amended complaint in The Prudential Insurance Company of America et al. v. Morgan Stanley et al. Among other things, the amended complaint increases the total amount of the certificates at issue by approximately $8"
+  },
+  {
+    "source": 20,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Table of ContentsPART II Item 5?Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities The information called for by Item 5(a) relating to market price, dividend and related stockholder information is"
+  },
+  {
+    "source": 21,
+    "target": 65,
+    "ROLE": "trustee",
+    "THREE_SENTENCES": "PNC P ENSION P LAN A SSETS Assets related to our qualified pension plan (the Plan) are held in trust (the Trust). Effective July 1, 2011, the trustee is The Bank of New York Mellon; prior to that date, the trustee was PNC Bank, National Association, (PNC"
+  },
+  {
+    "source": 21,
+    "target": 95,
+    "ROLE": "issuer",
+    "THREE_SENTENCES": "FNMA and FHLMC generally securitize our transferred loans into mortgage-backed securities for sale into the secondary market through special purpose entities (SPEs) that they sponsor. We, as an authorized GNMA issuer/servicer, pool Federal Housing Adminis"
+  },
+  {
+    "source": 22,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities CSC?s common stock is listed on The New York Stock Exchange under the ticker symbol SCHW. The number of common stockholders of record as o"
+  },
+  {
+    "source": 23,
+    "target": 41,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "As of the same date, we also provided approximately $8.44 billion of credit and liquidity facilities to municipal issuers as a form of credit enhancement. The following tables present our combined credit exposure to state and municipal obligors which repr"
+  },
+  {
+    "source": 23,
+    "target": 56,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "ITEM 5. MARKET FOR REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES MARKET FOR REGISTRANT?S COMMON EQUITY Our common stock is listed on the New York Stock Exchange under the ticker symbol STT. There were 3,"
+  },
+  {
+    "source": 24,
+    "target": 38,
+    "ROLE": "seller",
+    "THREE_SENTENCES": "See Note 10 , \"Derivative Financial Instruments,\" for further discussion of the Company?s hedging activities. As seller, the Company has made certain representations and warranties with respect to the originally transferred loans, including those transfer"
+  },
+  {
+    "source": 24,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "24 Item 4: Mine Safety Disclosures. 24 PART II Item 5: Market for Registrant's Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities. 25 Item 6: Selected Financial Data."
+  },
+  {
+    "source": 24,
+    "target": 41,
+    "ROLE": "underwriters",
+    "THREE_SENTENCES": "UGRIC has filed an appeal of the Court's rulings. Lehman Brothers Holdings, Inc. Litigation Beginning in October 2008, STRH, along with other underwriters and individuals, were named as defendants in several individual and putative class action complaints"
+  },
+  {
+    "source": 25,
+    "target": 40,
+    "ROLE": "Issuer",
+    "THREE_SENTENCES": "Item 5. Market for Registrant?s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities On March 18, 2011, the Company announced that its Board of Directors had approved an authorization to repurchase 50 million shares of comm"
+  },
+  {
+    "source": 26,
+    "target": 56,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "ITEM 5. MARKET FOR REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES MARKET INFORMATION The Company?s common stock is listed on the NYSE (symbol ?WFC?). The Quarterly Financial Data table of the 2011 Annual"
+  },
+  {
+    "source": 26,
+    "target": 95,
+    "ROLE": "servicer",
+    "THREE_SENTENCES": "Both principal and interest for government insured/guaranteed loans secured by the foreclosed real estate are collectible because the loans are insured by the FHA or guaranteed by the VA.(2) Foreclosed government insured/guaranteed loans are temporarily t"
+  },
+  {
+    "source": 27,
+    "target": 56,
+    "ROLE": "ISSUER",
+    "THREE_SENTENCES": "ITEM 5.MARKET FOR REGISTRANT?S COMMON EQUITY, RELATED STOCKHOLDER MATTERS AND ISSUER PURCHASES OF EQUITY SECURITIES MARKET INFORMATION The Company?s common stock is traded on the NASDAQ Global Select Market under the symbol ?ZION.? The last reported sale"
+  }
+]
+}

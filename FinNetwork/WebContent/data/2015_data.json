@@ -1,0 +1,502 @@
+{
+  "nodes":
+  [
+   {
+     "id": 3,
+     "equity": "BANK OF AMERICA CORP"
+   },
+   {
+     "id": 6,
+     "equity": "CAPITAL ONE FINANCIAL CORP"
+   },
+   {
+     "id": 14,
+     "equity": "GOLDMAN SACHS GROUP INC"
+   },
+   {
+     "id": 16,
+     "equity": "JPMORGAN CHASE & CO"
+   },
+   {
+     "id": 19,
+     "equity": "MORGAN STANLEY"
+   },
+   {
+     "id": 25,
+     "equity": "US_BANCORP"
+   },
+   {
+     "id": 84,
+     "equity": "Bank of America"
+   },
+   {
+     "id": 85,
+     "equity": "JPMorgan Chase"
+   },
+   {
+     "id": 88,
+     "equity": "U.S. Bank"
+   },
+   {
+     "id": 97,
+     "equity": "Bank of America Corporation"
+   },
+   {
+     "id": 98,
+     "equity": "BAC Home Loans Servicing, LP"
+   },
+   {
+     "id": 116,
+     "equity": "U.S. Bank, National Association"
+   },
+   {
+     "id": 122,
+     "equity": "U.S. Bank National Association"
+   },
+   {
+     "id": 135,
+     "equity": "U.S. trust"
+   },
+   {
+     "id": 140,
+     "equity": "Bank of America Capital Trust VI"
+   },
+   {
+     "id": 157,
+     "equity": "U.S. Bank Trust National Association"
+   },
+   {
+     "id": 165,
+     "equity": "Bank of America, N.A."
+   },
+   {
+     "id": 202,
+     "equity": "U.S. Bank, N.A."
+   },
+   {
+     "id": 204,
+     "equity": "Capital One Financial Corporation"
+   },
+   {
+     "id": 205,
+     "equity": "CAPITAL ONE FINANCIAL CORPORATION NOTES"
+   },
+   {
+     "id": 215,
+     "equity": "JPMorgan Chase Bank, N.A."
+   },
+   {
+     "id": 384,
+     "equity": "Goldman Sachs"
+   },
+   {
+     "id": 395,
+     "equity": "The Goldman Sachs Group, Inc."
+   },
+   {
+     "id": 431,
+     "equity": "J.P.Morgan"
+   },
+   {
+     "id": 433,
+     "equity": "J.P. Morgan Clearing Corp."
+   },
+   {
+     "id": 435,
+     "equity": "J.P. Morgan"
+   },
+   {
+     "id": 437,
+     "equity": "JPMorgan Chase Bank, National Association"
+   },
+   {
+     "id": 439,
+     "equity": "JPMorgan Chase Bank, N"
+   },
+   {
+     "id": 442,
+     "equity": "JPMorgan Chase & Co."
+   },
+   {
+     "id": 445,
+     "equity": "J.P. Morgan Securities LLC"
+   },
+   {
+     "id": 446,
+     "equity": "JPMorgan"
+   },
+   {
+     "id": 476,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-4SL"
+   },
+   {
+     "id": 478,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-14SL"
+   },
+   {
+     "id": 480,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-4SL"
+   },
+   {
+     "id": 482,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-13ARX"
+   },
+   {
+     "id": 483,
+     "equity": "Morgan Stanley Mortgage Capital Holdings LLC"
+   },
+   {
+     "id": 484,
+     "equity": "Morgan Stanley Mortgage Capital Inc."
+   },
+   {
+     "id": 487,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2006-10SL"
+   },
+   {
+     "id": 490,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust, Series 2007-NC1"
+   },
+   {
+     "id": 494,
+     "equity": "Morgan Stanley ABS Capital I Inc."
+   },
+   {
+     "id": 496,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-2AX"
+   },
+   {
+     "id": 497,
+     "equity": "Morgan Stanley ABS Capital I, Inc."
+   },
+   {
+     "id": 498,
+     "equity": "Morgan Stanley Mortgage Capital Inc"
+   },
+   {
+     "id": 501,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust, Series 2007-NC4"
+   },
+   {
+     "id": 503,
+     "equity": "Morgan Stanley ABS Capital I Inc"
+   },
+   {
+     "id": 507,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust 2007-NC4"
+   },
+   {
+     "id": 508,
+     "equity": "Morgan Stanley ABS Capital I Inc. Trust, Series 2007-NC3"
+   },
+   {
+     "id": 512,
+     "equity": "Morgan Stanley Mortgage Loan Trust 2007-12"
+   },
+   {
+     "id": 514,
+     "equity": "Morgan Stanley Smith Barney LLC"
+   },
+   {
+     "id": 517,
+     "equity": "Morgan Stanley Private Bank, National Association"
+   }
+  ],
+  "links":
+  [
+    {
+      "source": 3,
+      "target": 84,
+      "ROLE": "servicer",
+      "THREE_SENTENCES": "For more information regarding the BNY Mellon Settlement, see Note 7 ? Representations and Warranties Obligations and Corporate Guarantees to the Consolidated Financial Statements . 11 Bank of America 2014 Failure to satisfy our obligations as servicer fo"
+    },
+    {
+      "source": 3,
+      "target": 88,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "On February 5, 2015, the court granted in part and denied in part defendants? motion to dismiss those complaints, granting plaintiff leave to replead in certain respects. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, N"
+    },
+    {
+      "source": 3,
+      "target": 97,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On February 5, 2015, the court granted in part and denied in part defendants? motion to dismiss those complaints, granting plaintiff leave to replead in certain respects. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, N"
+    },
+    {
+      "source": 3,
+      "target": 98,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The following provides a summary of the settlement with Bank of New York Mellon (BNY Mellon), which remains subject to the satisfaction of certain conditions. For a discussion of other large settlement actions entered into by the Corporation in recent yea"
+    },
+    {
+      "source": 3,
+      "target": 116,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "On February 5, 2015, the court granted in part and denied in part defendants? motion to dismiss those complaints, granting plaintiff leave to replead in certain respects. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, N"
+    },
+    {
+      "source": 3,
+      "target": 122,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On February 5, 2015, the court granted in part and denied in part defendants? motion to dismiss those complaints, granting plaintiff leave to replead in certain respects. Mortgage Repurchase Litigation U.S. Bank Litigation On August 29, 2011, U.S. Bank, N"
+    },
+    {
+      "source": 3,
+      "target": 135,
+      "ROLE": "seller",
+      "THREE_SENTENCES": "The Corporation?s continuing involvement with the U.S. securitization trust includes servicing the receivables, retaining an undivided interest (seller?s interest) in the receivables, and holding certain retained interests including senior and subordinate"
+    },
+    {
+      "source": 3,
+      "target": 140,
+      "ROLE": "Issuer",
+      "THREE_SENTENCES": "For more information on Trust Securities for regulatory capital purposes, see Note 16 ? Regulatory Requirements and Restrictions . Trust Securities Summary (Dollars in millions) December 31, 2014 Issuer Issuance Date Aggregate Principal Amount of Trust Se"
+    },
+    {
+      "source": 3,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "(b) Amended and Restated Bylaws of the Corporation, as in effect on the date hereof, incorporated by reference to Exhibit 3.1 of the Corporation?s Current Report on Form 8-K (File No. 1-6523) filed on October 1, 2014. 4(a) Indenture dated as of January 1,"
+    },
+    {
+      "source": 3,
+      "target": 165,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "The amount of additional collateral required depends on the contract and is usually a fixed incremental amount and/or the market value of the exposure. At March 31, 2015 , the amount of collateral, calculated based on the terms of the contracts, that the"
+    },
+    {
+      "source": 6,
+      "target": 202,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "GreenPoint moved to dismiss the case as untimely under New York?s statute of limitations, and the court denied the motion without prejudice to renew it after the completion of relevant discovery. In July 2013, Lehman XS Trust, Series 2006-4N, by its trust"
+    },
+    {
+      "source": 6,
+      "target": 204,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "The parties resolved the case in November 2014. In May, June, and July 2012, FHFA (acting as conservator for Freddie Mac) filed three summonses with notice in the New York state court against GreenPoint, on behalf of the trustees for three RMBS trusts bac"
+    },
+    {
+      "source": 6,
+      "target": 205,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "The parties resolved the case in November 2014. In May, June, and July 2012, FHFA (acting as conservator for Freddie Mac) filed three summonses with notice in the New York state court against GreenPoint, on behalf of the trustees for three RMBS trusts bac"
+    },
+    {
+      "source": 14,
+      "target": 384,
+      "ROLE": "counterparties",
+      "THREE_SENTENCES": "A reduction in our credit ratings could adversely affect our liquidity and competitive position, increase our borrowing costs, limit our access to the\ncapital markets or trigger our obligations under certain provisions in some of our trading and collatera"
+    },
+    {
+      "source": 14,
+      "target": 395,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "4.1\nIndenture, dated as of May 19, 1999, between The Goldman Sachs Group, Inc. and The Bank of New York, as trustee (incorporated by reference to\nExhibit 6 to the Registrant?s Registration Statement on Form 8-A, filed June 29, 1999).4.2"
+    },
+    {
+      "source": 16,
+      "target": 85,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "Restrictions on transactions with affiliates . The bank subsidiaries of JPMorgan Chase are subject to certain restrictions imposed by federal law on extensions of credit to, and certain other transactions with, JPMorgan Chase and certain other affiliates,"
+    },
+    {
+      "source": 16,
+      "target": 157,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "24 4.1 Indenture, dated as of October 21, 2010, between JPMorgan Chase & Co. and Deutsche Bank Trust Company Americas, as Trustee (incorporated by reference to Exhibit 4.1 to the Current Report on Form 8-K of JPMorgan Chase & Co. (File No.1-5805) filed Oc"
+    },
+    {
+      "source": 16,
+      "target": 215,
+      "ROLE": "Agent",
+      "THREE_SENTENCES": "JPMorgan Chase Bank, N.A. participated in, and was the Administrative Agent on behalf of a syndicate of lenders on, a $1.5 billion syndicated Term Loan facility (\"Term Loan\") for General Motors Corporation (\"GM\"). In July 2009, in connection with the GM b"
+    },
+    {
+      "source": 16,
+      "target": 431,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "Private label securitizations The liability related to repurchase demands associated with private label securitizations is separately evaluated by the Firm in establishing its litigation reserves. On November 15, 2013, the Firm announced that it had reach"
+    },
+    {
+      "source": 16,
+      "target": 433,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The repurchase program does not include specific price targets or timetables; may be executed through open market purchases or privately negotiated transactions, or utilizing Rule 10b5-1 programs; and may be suspended at any time. For additional informati"
+    },
+    {
+      "source": 16,
+      "target": 435,
+      "ROLE": "trustees",
+      "THREE_SENTENCES": "Private label securitizations The liability related to repurchase demands associated with private label securitizations is separately evaluated by the Firm in establishing its litigation reserves. On November 15, 2013, the Firm announced that it had reach"
+    },
+    {
+      "source": 16,
+      "target": 437,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The following table shows the aggregate fair value of net derivative payables related to OTC and OTC-cleared derivatives that contain contingent collateral or termination features that may be triggered upon a ratings downgrade, and the associated collater"
+    },
+    {
+      "source": 16,
+      "target": 439,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The following table shows the aggregate fair value of net derivative payables related to OTC and OTC-cleared derivatives that contain contingent collateral or termination features that may be triggered upon a ratings downgrade, and the associated collater"
+    },
+    {
+      "source": 16,
+      "target": 442,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "3.14 By-laws of JPMorgan Chase & Co., effective September 17, 2013 (incorporated by reference to Exhibit 3.1 to the Current Report on Form 8-K of JPMorgan Chase & Co. (File No. 1-5805) filed September 20, 2013). 24 4.1 Indenture, dated as of October 21, 2"
+    },
+    {
+      "source": 16,
+      "target": 445,
+      "ROLE": "agent",
+      "THREE_SENTENCES": "Certain residual interest holders may be required to post collateral with the Firm, as liquidity provider, to support such reimbursement obligations should the market value of the municipal bonds decline. JPMorgan Chase Bank, N.A. often serves as the sole"
+    },
+    {
+      "source": 16,
+      "target": 446,
+      "ROLE": "issuer",
+      "THREE_SENTENCES": "The repurchase program does not include specific price targets or timetables; may be executed through open market purchases or privately negotiated transactions, or utilizing Rule 10b5-1 programs; and may be suspended at any time. For additional informati"
+    },
+    {
+      "source": 19,
+      "target": 19,
+      "ROLE": "issuers",
+      "THREE_SENTENCES": "Please call the SEC at 1-800-SEC-0330 for information on the public reference room. The SEC maintains an internet site that contains\nannual, quarterly and current reports, proxy and information statements and other information that issuers (including Morg"
+    },
+    {
+      "source": 19,
+      "target": 88,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The Company may be entitled to be indemnified for some of these losses and to\nan offset for interest received by the plaintiff prior to a judgment. On August 7, 2012, U.S. Bank, in its capacity as Trustee, filed a\ncomplaint on behalf of Morgan Stanley Mor"
+    },
+    {
+      "source": 19,
+      "target": 122,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately $292 million, the total\noriginal unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 476,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "The Company may be entitled to be indemnified for some of these losses and to\nan offset for interest received by the plaintiff prior to a judgment. On August 7, 2012, U.S. Bank, in its capacity as Trustee, filed a\ncomplaint on behalf of Morgan Stanley Mor"
+    },
+    {
+      "source": 19,
+      "target": 478,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $149 million, plus pre- and post-judgment interest, fees and costs. On August 8, 2012, U.S. Bank, in its capacity as\nTrustee, f"
+    },
+    {
+      "source": 19,
+      "target": 480,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $149 million, plus pre- and post-judgment interest, fees and costs. On August 8, 2012, U.S. Bank, in its capacity as\nTrustee, f"
+    },
+    {
+      "source": 19,
+      "target": 482,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $527 million, plus pre- and post-interest, fees and costs. On September 28, 2012, U.S. Bank, in its capacity as Trustee,\nfiled"
+    },
+    {
+      "source": 19,
+      "target": 483,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $527 million, plus pre- and post-interest, fees and costs. On September 28, 2012, U.S. Bank, in its capacity as Trustee,\nfiled"
+    },
+    {
+      "source": 19,
+      "target": 484,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to\napproximately $527 million, plus pre- and post-interest, fees and costs. On September 28, 2012, U.S. Bank, in its capacity as Trustee,\nfiled"
+    },
+    {
+      "source": 19,
+      "target": 487,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action\nof up to approximately $173 million, plus pre- and post-judgment interest, fees and costs. On January 10, 2013, U.S. Bank, in its\ncapacity as Trustee,"
+    },
+    {
+      "source": 19,
+      "target": 490,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "On\nDecember 1, 2014, the Company filed a notice of appeal from the Court?s October 30, 2014 decision. On July 2, 2013, the trustee, Deutsche Bank became the named plaintiff in Federal Housing Finance Agency, as Conservator for the Federal Home Loan Mortga"
+    },
+    {
+      "source": 19,
+      "target": 494,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On January 23, 2015, Deutsche Bank National Trust Company, in its capacity as trustee for Morgan Stanley ABS Capital I\nInc. Trust 2007-NC4, filed a complaint against the Company. The matter is styled Deutsche Bank National Trust Company solely in its capa"
+    },
+    {
+      "source": 19,
+      "target": 496,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately $292 million, the total\noriginal unpaid balance of the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 497,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On\nDecember 1, 2014, the Company filed a notice of appeal from the Court?s October 30, 2014 decision. On July 2, 2013, the trustee, Deutsche Bank became the named plaintiff in Federal Housing Finance Agency, as Conservator for the Federal Home Loan Mortga"
+    },
+    {
+      "source": 19,
+      "target": 498,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On November 24, 2014, the Company filed a motion to dismiss the complaint. On September 19, 2014, Deutsche Bank National Trust Company, in its capacity as trustee of Morgan Stanley ABS Capital I\nInc. Trust, Series 2007-NC4, filed a summons with notice aga"
+    },
+    {
+      "source": 19,
+      "target": 501,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "On November 24, 2014, the Company filed a motion to dismiss the complaint. On September 19, 2014, Deutsche Bank National Trust Company, in its capacity as trustee of Morgan Stanley ABS Capital I\nInc. Trust, Series 2007-NC4, filed a summons with notice aga"
+    },
+    {
+      "source": 19,
+      "target": 503,
+      "ROLE": "Trustee",
+      "THREE_SENTENCES": "On November 24, 2014, the Company filed a motion to dismiss the complaint. On September 19, 2014, Deutsche Bank National Trust Company, in its capacity as trustee of Morgan Stanley ABS Capital I\nInc. Trust, Series 2007-NC4, filed a summons with notice aga"
+    },
+    {
+      "source": 19,
+      "target": 507,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "Based on currently available information, the Company believes that it could incur a loss in this action of up to approximately $240 million, the total original unpaid balance\nof the mortgage loans for which the Company received repurchase demands that it"
+    },
+    {
+      "source": 19,
+      "target": 508,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "On November 17, 2014, the plaintiff filed an amended complaint.\nOn November 6, 2013, Deutsche Bank, in its capacity as trustee, became the named plaintiff in Federal Housing Finance Agency, as Conservator for\nthe Federal Home Loan Mortgage Corporation, on"
+    },
+    {
+      "source": 19,
+      "target": 512,
+      "ROLE": "trustee",
+      "THREE_SENTENCES": "The Company and other defendants moved to dismiss the complaint on December 5, 2014. On December 30, 2013, Wilmington Trust Company, in its capacity as trustee for Morgan Stanley Mortgage Loan Trust 2007-12, filed a complaint against the Company. The matt"
+    },
+    {
+      "source": 19,
+      "target": 514,
+      "ROLE": "affiliate",
+      "THREE_SENTENCES": "MSBNA is an FDIC-insured national\nbank that is subject to supervision, regulation and examination by the OCC. MSPBNA offers certain mortgage and other secured lending products primarily for customers of its affiliate retail broker-dealer, Morgan Stanley S"
+    },
+    {
+      "source": 19,
+      "target": 517,
+      "ROLE": "affiliates",
+      "THREE_SENTENCES": "In addition, Wealth Management offers education savings programs, financial and wealth planning\nservices, and annuity and other insurance products. In addition,\nWealth Management offers its clients access to several cash management services through variou"
+    },
+    {
+      "source": 25,
+      "target": 122,
+      "ROLE": "Affiliates",
+      "THREE_SENTENCES": "An FDIC claim for cross-guarantee liability against a depository institution is generally superior in right of payment to claims of the holding company and its affiliates\nagainst the depository institution. Transactions with Affiliates There are various l"
+    }
+  ]
+}
