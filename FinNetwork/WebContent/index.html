@@ -54,7 +54,7 @@
                       <li><a id="2016_y">2016</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
+               <!--    <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="" id="sid_14">Goldman</a></li>
                       <li><a href="" id="sid_16">JP Morgan Chase</a></li>
@@ -63,7 +63,7 @@
                       <li><a href="" id="sid_6">CapitalOne</a></li>
                       <li><a href="" id="sid_3">Bank of America CORP</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                   
               
                 </ul>
@@ -98,7 +98,7 @@
                   <div class="col-md-6">
                     <h3>Financial Network Activities <small>FEIIIY2 data set</small></h3>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6"> <h3 id="show_year"></h3>
                   </div>
                 </div>
 
@@ -146,12 +146,12 @@
              $('.ui-pnotify').remove();
        
      // draw_me("2011_data");
-      $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2011"); return false; });
-      $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2012"); return false; });
-      $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2013"); return false; });
-      $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2014"); return false; });
-      $('#2015_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2015"); return false; });
-      $('#2016_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2016"); return false; });
+      $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2011"); $("#show_year").text("2011"); return false; });
+      $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2012"); $("#show_year").text("2012");return false; });
+      $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2013"); $("#show_year").text("2013");return false; });
+      $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2014"); $("#show_year").text("2014");return false; });
+      $('#2015_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2015"); $("#show_year").text("2015");return false; });
+      $('#2016_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2016"); $("#show_year").text("2016"); return false; });
   
      });
     </script>
