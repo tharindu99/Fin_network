@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.finnetwork.controllers.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -136,6 +137,8 @@
         <!-- /page content -->
       </div>
     </div>
+
+	<%= SearchController.searchCompanies() %>
 
     <!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>  
