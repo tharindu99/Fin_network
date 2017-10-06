@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.finnetwork.models.FeiiiY2Working" table="feiii_y2_working">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="DOCUMENT_TYPE" type="java.lang.String">
+            <column name="DOCUMENT_TYPE" />
+        </property>
+        <property name="FILER_NAME" type="java.lang.String">
+            <column name="FILER_NAME" />
+        </property>
+        <property name="FILER_CIK" type="java.lang.String">
+            <column name="FILER_CIK" />
+        </property>
+        <property name="FILING_INTERVAL" type="java.lang.String">
+            <column name="FILING_INTERVAL" />
+        </property>
+        <property name="FILING_DATE" type="java.lang.String">
+            <column name="FILING_DATE" />
+        </property>
+        <property name="MENTIONED_FINANCIAL_ENTITY" type="java.lang.String">
+            <column name="MENTIONED_FINANCIAL_ENTITY" />
+        </property>
+        <property name="PP_RSSD_ID" type="java.lang.String">
+            <column name="PP_RSSD_ID" />
+        </property>
+        <property name="ROLE" type="java.lang.String">
+            <column name="ROLE" />
+        </property>
+        <property name="THREE_SENTENCES" type="java.lang.String">
+            <column name="THREE_SENTENCES" />
+        </property>
+    </class>
+</hibernate-mapping>

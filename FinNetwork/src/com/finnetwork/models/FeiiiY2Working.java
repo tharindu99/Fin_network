@@ -1,13 +1,18 @@
 package com.finnetwork.models;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "feiii_y2_working", catalog="fin_network")
 public class FeiiiY2Working {
 	
+	private int id;
 	private String DOCUMENT_TYPE;
 	private String FILER_NAME;
 	private String FILER_CIK;
@@ -33,6 +38,15 @@ public class FeiiiY2Working {
 		this.THREE_SENTENCES = THREE_SENTENCES;
 	}
 	
+	@Id
+	@GeneratedValue(strategy = IDENTITY)
+	@Column(name = "id", unique = true, nullable = false)
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}	
 	@Column(name="DOCUMENT_TYPE")
 	public String getDOCUMENT_TYPE() {
 		return DOCUMENT_TYPE;

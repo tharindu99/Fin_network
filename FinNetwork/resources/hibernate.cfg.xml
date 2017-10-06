@@ -13,5 +13,6 @@
   
   <mapping class="com.finnetwork.models.Node" resource="com/finnetwork/models/Node.hbm.xml"/>
   <mapping class="com.finnetwork.models.Link" resource="com/finnetwork/models/Link.hbm.xml"/>
+  <mapping class="com.finnetwork.models.FeiiiY2Working" resource="com/finnetwork/models/FeiiiY2Working.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>
