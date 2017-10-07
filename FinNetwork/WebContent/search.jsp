@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="com.finnetwork.controllers.*" %>
@@ -110,16 +111,15 @@
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
-               		<ul id="myList">
-               			<li>Sandu</li>
-               			<li>Sulo</li>
-               			<li>Nanda</li>
-               			<li>Ravee</li>
-               			<li>Sithu</li>
-               			<li>Priya</li>
-               			<li>Pani</li>
-               			<li>Anu</li>
-               		</ul>
+               		
+               		<div>
+               		<%  
+						List<String> finalList = SearchController.searchCompanies(); 
+					    for(int i=0; i<finalList.size(); i++){ %>
+					    	<p style="display:none;"><%= finalList.get(i) %></p>
+					   <% }
+					%>
+               		</div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -138,7 +138,7 @@
       </div>
     </div>
 
-	<%= SearchController.searchCompanies() %>
+	
 
     <!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>  
@@ -151,17 +151,20 @@
  
  	<script>
  		function searchCompany(){
+ 			
  			console.log("comapny is being searched...");
  			var input = document.getElementById("myInput");
  			var filter = input.value.toUpperCase();
- 			var list = document.getElementById("myList");
- 			var li = list.getElementsByTagName("li");
+ 			var li = document.getElementsByTagName("p");
+ 			
  			var i;
  			for(i=0; i<li.length; i++){
  				if(li[i].innerHTML.toUpperCase().indexOf(filter) > -1){
  					li[i].style.display = "";
- 					console.log(li[i]);
- 				} else {
+ 				} else{
+ 					li[i].style.display = "none";
+ 				}
+ 				if(!document.getElementById("myInput").value){
  					li[i].style.display = "none";
  				}
  			}
