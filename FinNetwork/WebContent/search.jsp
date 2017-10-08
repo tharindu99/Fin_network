@@ -104,10 +104,8 @@
                 </div>
 
                 <div class="col-md-12 col-sm-9 col-xs-12" >
-                  <div id="container" class="demo-placeholder" style="height: auto;">
-                 	<form action="" method="get">
-					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">
-				   </form>                	  
+                  <div id="container" class="demo-placeholder" style="height: auto;">                 	
+					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">				              	  
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
@@ -119,6 +117,7 @@
 						    for(int i=0; i<finalList.size(); i++){ %>					    	
 						    	<li style="display:none;"><a href="#"><%= finalList.get(i) %></a></li>					    					    	
 					    <% } %>
+					    
 					   </ul>
                		</div>
                 </div>
@@ -151,27 +150,41 @@
     <script src="js/graph_draw.js"></script>
  
  	<script>
- 		function searchCompany(){ 			
- 			console.log("comapny is being searched...");
- 			
- 			var input = document.getElementById("myInput");
- 			var filter = input.value.toUpperCase();
- 			var ul = document.getElementById("finalList");
- 			var li = ul.getElementsByTagName("li");
- 			
- 			var i, a;
- 			for(i=0; i<li.length; i++){
- 				a = li[i].getElementsByTagName("a")[0]; 				
- 				if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
- 					li[i].style.display = "";
- 				} else{
- 					li[i].style.display = "none";
- 				}
- 				if(!document.getElementById("myInput").value){
- 					li[i].style.display = "none";
- 				}
- 			}
- 		}
+ 	
+ 	var input = document.getElementById("myInput");
+ 	var resultArray = [];
+	input.addEventListener("keydown", function (e) {
+ 	    if (e.keyCode === 13) {
+ 	    	console.log(resultArray[0].innerText); 	  
+ 	    	var param = document.getElementById("myInput").value;
+ 	    	window.location = 'http://localhost:8080/FinNetwork/rest/SearchCompanies?myInput=' + param;
+ 	    }
+ 	});
+	
+	function searchCompany(){ 			
+		console.log("comapny is being searched...");	
+		
+		var filter = input.value.toUpperCase();
+		var ul = document.getElementById("finalList");
+		var li = ul.getElementsByTagName("li");
+		
+		var i, a;
+		
+		resultArray = [];
+		for(i=0; i<li.length; i++){
+			a = li[i].getElementsByTagName("a")[0]; 				
+			if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
+				li[i].style.display = "";
+				resultArray.push(li[i]);
+			} else{
+				li[i].style.display = "none";
+			}
+			if(!document.getElementById("myInput").value){
+				li[i].style.display = "none";
+			}			
+		}
+	}	
+
  	</script>
  
   </body>

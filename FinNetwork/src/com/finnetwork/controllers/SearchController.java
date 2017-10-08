@@ -37,6 +37,7 @@ public class SearchController {
 		System.out.println(fillerNameList);
 		System.out.println("Final list size : " + fillerNameList.size());
 		
+		session.close();
 		return fillerNameList;		
 	}	
 }
