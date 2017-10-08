@@ -47,7 +47,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Annual Basis <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-calendar"></i> Annual Basis <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a id="2011_y">2011</a></li>
                       <li><a id="2012_y">2012</a></li>
@@ -113,12 +113,13 @@
                 <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
                		
                		<div>
-               		<%  
-						List<String> finalList = SearchController.searchCompanies(); 
-					    for(int i=0; i<finalList.size(); i++){ %>
-					    	<p style="display:none;"><%= finalList.get(i) %></p>
-					   <% }
-					%>
+               			<%  List<String> finalList = SearchController.searchCompanies(); %> 
+						    <ul id="finalList" style="list-style:none;">
+						    <%
+						    for(int i=0; i<finalList.size(); i++){ %>					    	
+						    	<li style="display:none;"><a href="#"><%= finalList.get(i) %></a></li>					    					    	
+					    <% } %>
+					   </ul>
                		</div>
                 </div>
 
@@ -150,16 +151,18 @@
     <script src="js/graph_draw.js"></script>
  
  	<script>
- 		function searchCompany(){
- 			
+ 		function searchCompany(){ 			
  			console.log("comapny is being searched...");
+ 			
  			var input = document.getElementById("myInput");
  			var filter = input.value.toUpperCase();
- 			var li = document.getElementsByTagName("p");
+ 			var ul = document.getElementById("finalList");
+ 			var li = ul.getElementsByTagName("li");
  			
- 			var i;
+ 			var i, a;
  			for(i=0; i<li.length; i++){
- 				if(li[i].innerHTML.toUpperCase().indexOf(filter) > -1){
+ 				a = li[i].getElementsByTagName("a")[0]; 				
+ 				if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
  					li[i].style.display = "";
  				} else{
  					li[i].style.display = "none";
