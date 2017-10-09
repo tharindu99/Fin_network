@@ -90,22 +90,28 @@ public class base_network_cntrl {
 		System.out.println("compny ID : "+id);
 		
 		//	Retrieve all the links for a given year
-		Query queryLink = session.createQuery("FROM Link WHERE fillingDate Like '%"+year+"%'");
+		//Query queryLink = session.createQuery("FROM Link WHERE fillingDate Like '%"+year+"%'");
+		Query queryLink = session.createQuery("FROM Link WHERE fillingDate Like '%"+year+"%' and source="+id);
 		//queryLink.setParameter("year", "%"+year);		
 		List<Link> links = queryLink.list();
+		System.out.println("number of records to eqals filling date : "+links.size());
 		
 		//	Select all the distinct source nodes from given year
 		Query querySource = session.createQuery("SELECT DISTINCT source FROM Link WHERE fillingDate Like '%"+year+"%' and source="+id);
 		//querySource.setParameter("year", "%"+year);
 		List<Integer> sources  = querySource.list();
-		
+		System.out.println("number of records to eqals sources : "+sources.size());
+
 		//	Select all the distinct target nodes from given year
-		Query queryTarget = session.createQuery("SELECT DISTINCT target FROM Link WHERE fillingDate Like '%"+year+"%' and target="+id);
+		Query queryTarget = session.createQuery("SELECT DISTINCT target FROM Link WHERE fillingDate Like '%"+year+"%' and source="+id);
 		//queryTarget.setParameter("year", "%"+year);
 		List<Integer> targets = queryTarget.list();
+		System.out.println("number of records to eqals targets : "+targets.size());
+
 		
 		// 	List of all the nodes for a given year 
-		sources.removeAll(targets);
+		/*sources.removeAll(targets);
+		sources.addAll(targets);*/
 		sources.addAll(targets);
 		
 		//	Now all the distinct nodes are stored in sources List

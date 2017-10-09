@@ -22,7 +22,7 @@ public class company_name {
 	@Produces(MediaType.APPLICATION_JSON)
 	// url parameter year is stored in int variable called year
 	public Response getResponse(@PathParam("param") int year,@PathParam("param1")String company){
-       
+      
 		// Create an instance of base_network_cntrl class
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
 
