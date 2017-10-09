@@ -82,15 +82,12 @@ public class base_network_cntrl {
 		Session session = hibernate_util.getSessionFactory().openSession();
 		//	Begin transaction
 		session.beginTransaction();	
-		
-	
-		
+			
 		//Retrieve company  id from base_network_nodes table
 		Query queryId = session.createQuery("SELECT id FROM Node WHERE equity = '" + company+"'");
 		List<Integer> Id = queryId.list();
 		int id=Id.get(0);
 		System.out.println("compny ID : "+id);
-		
 		
 		//	Retrieve all the links for a given year
 		Query queryLink = session.createQuery("FROM Link WHERE fillingDate Like '%"+year+"%'");
@@ -127,18 +124,6 @@ public class base_network_cntrl {
 		base_net.putArray("nodes").addAll(array_node);
 		base_net.putArray("links").addAll(array_link);
 				
-		/*
-		Gson gson = new Gson();
-		JsonObject listToBeSent = new JsonObject();
-		JsonElement jsonNodes = gson.toJsonTree(nodes);
-		JsonElement jsonLinks = gson.toJsonTree(links);
-		listToBeSent.add("nodes", jsonNodes);
-		listToBeSent.add("links", jsonLinks);
-		System.out.println(listToBeSent);	
-		*/	
-		
-		
-		
 		session.getTransaction().commit();
 		session.close();
 		

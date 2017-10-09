@@ -14,27 +14,25 @@ import com.finnetwork.controllers.base_network_cntrl;
 // Every url with the format of base_url/base_network will be directed to this class
 @Path("/company_name")
 public class company_name {
-
 	// Every GET request will be handled by this method
 	@GET
 	// URLs with base_url/base_network/year format will be handled here
-	@Path("/{param}")
+	@Path("/{param}&{param1}")
 	// This method producec JSON output
 	@Produces(MediaType.APPLICATION_JSON)
 	// url parameter year is stored in int variable called year
-	public Response getResponse(@PathParam("param") String company1) {
-		int year=2014;
-        String company="BANK OF AMERICA CORP";
+	public Response getResponse(@PathParam("param") int year,@PathParam("param1")String company){
+       
 		// Create an instance of base_network_cntrl class
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
 
 		// Call the relevant method with requested year parameter
 
-		JsonNode json_baseNet = base_net_cntrl.get_base_network(year, company);
+		JsonNode json_baseNet = base_net_cntrl.get_base_network(year,company);
 
 		// Create a Response and return a JSON with status code 200 OK
 		Response response = Response.ok(json_baseNet,
-				MediaType.APPLICATION_JSON).build();
+		MediaType.APPLICATION_JSON).build();
 		return response;
 	}
 }
