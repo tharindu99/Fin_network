@@ -18,7 +18,7 @@ public class base_network {
 	@GET
 	//URLs with base_url/base_network/year format will be handled here
 	@Path("/{param}")
-	//	This method producec JSON output
+	//	This method produces JSON output
 	@Produces(MediaType.APPLICATION_JSON)
 	//	url parameter year is stored in int variable called year
 	public Response getResponse (@PathParam("param") int year){

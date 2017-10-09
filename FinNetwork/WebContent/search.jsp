@@ -157,7 +157,7 @@
  	    if (e.keyCode === 13) {
  	    	console.log(resultArray[0].innerText); 	  
  	    	var param = document.getElementById("myInput").value;
- 	    	window.location = 'http://localhost:8080/FinNetwork/rest/SearchCompanies?myInput=' + param;
+ 	    	window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
  	    }
  	});
 	
