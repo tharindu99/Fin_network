@@ -51,24 +51,30 @@
 								<li><a><i class="fa fa-home"></i> Annual Basis <span
 										class="fa fa-chevron-down"></span></a>
 									<ul class="nav child_menu">
-										<li><a href="companyYearWise.html">2011</a></li>
+										<li><a id="2011_y">2011</a></li>
 										<li><a id="2012_y">2012</a></li>
 										<li><a id="2013_y">2013</a></li>
 										<li><a id="2014_y">2014</a></li>
 										<li><a id="2015_y">2015</a></li>
 										<li><a id="2016_y">2016</a></li>
 									</ul></li>
-								<!--    <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
+							   <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="" id="sid_14">Goldman</a></li>
-                      <li><a href="" id="sid_16">JP Morgan Chase</a></li>
+                      <li><a href="companyYearWise.jsp?param=Ally Financial Inc" id="sid_14">Ally Financial Inc</a></li>
+                      <li><a href="companyYearWise.jsp?param=JP Morgan Chase" id="sid_16">JP Morgan Chase</a></li>
                       <li><a href="" id="sid_25">US Bank</a></li>
                       <li><a href="" id="sid_19">Morgan Stanley</a></li>
                       <li><a href="" id="sid_6">CapitalOne</a></li>
                       <li><a href="" id="sid_3">Bank of America CORP</a></li>
                     </ul>
-                  </li> -->
-
+                  </li>
+                      <li><a><i class="fa fa-home"></i>Compare by years <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="Ally Financial Inc.html">Ally Financial Inc</a></li>
+										<li><a>JP Morgan Chase</a></li>
+										
+						</ul></li>
 
 							</ul>
 						</div>
@@ -178,8 +184,6 @@
       $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2014"); $("#show_year").text("2014");return false; });
       $('#2015_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2015"); $("#show_year").text("2015");return false; });
       $('#2016_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2016"); $("#show_year").text("2016"); return false; });
-
-
       $('#2011').click(function(){ draw_me("../../FinNetwork/rest/base_network/2011"); $("#show_year").text("2011"); return false; });
       $('#2012').click(function(){ draw_me("../../FinNetwork/rest/base_network/2012"); $("#show_year").text("2012");return false; });
       $('#2013').click(function(){ draw_me("../../FinNetwork/rest/base_network/2013"); $("#show_year").text("2013");return false; });
@@ -189,7 +193,6 @@
       
   
      });
-    
     </script>
 
 </body>

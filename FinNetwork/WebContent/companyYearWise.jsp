@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +28,7 @@
 }
 </style>
 </head>
-
+<%String company=request.getParameter("param");%>
 <body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
@@ -50,25 +52,8 @@
 							<ul class="nav side-menu">
 								<li><a><i class="fa fa-home"></i> Annual Basis <span
 										class="fa fa-chevron-down"></span></a>
-									<ul class="nav child_menu">
-										<li><a href="companyYearWise.htm" id="2011">2011</a></li>
-										<li><a id="2012_y">2012</a></li>
-										<li><a id="2013_y">2013</a></li>
-										<li><a id="2014_y">2014</a></li>
-										<li><a id="2015_y">2015</a></li>
-										<li><a id="2016_y">2016</a></li>
-									</ul></li>
-								<!--    <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="" id="sid_14">Goldman</a></li>
-                      <li><a href="" id="sid_16">JP Morgan Chase</a></li>
-                      <li><a href="" id="sid_25">US Bank</a></li>
-                      <li><a href="" id="sid_19">Morgan Stanley</a></li>
-                      <li><a href="" id="sid_6">CapitalOne</a></li>
-                      <li><a href="" id="sid_3">Bank of America CORP</a></li>
-                    </ul>
-                  </li> -->
-
+									</li>
+					
 
 							</ul>
 						</div>
@@ -110,8 +95,29 @@
 							</div>
 
 							<div class="col-md-12 col-sm-9 col-xs-12">
-								<div id="container" class="demo-placeholder"
-									style="height: 500px;"></div>
+								<div id="container" class="demo-placeholder" style="height: 500px;">
+										<nav aria-label="Page navigation example" style="float:right;margin-top:0">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#"
+								aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+							</a></li>
+							<li class="page-item" id="2008"><a class="page-link" ></a></li>
+							<li class="page-item" id="2009"><a class="page-link" >2009</a></li>
+							<li class="page-item" id="2010"><a class="page-link" >2010</a></li>
+							<li class="page-item" id="2011_y"><a class="page-link" >2011</a></li>
+							<li class="page-item" id="2012_y"><a class="page-link" >2012</a></li>
+							<li class="page-item" id="2013_y"><a class="page-link" >2013</a></li>
+							<li class="page-item" id="2014_y"><a class="page-link" >2014</a></li>
+							<li class="page-item" id="2015_y"><a class="page-link" >2015</a></li>
+							<li class="page-item" id="2016_y"><a class="page-link" >2016</a></li>
+							<li class="page-item" id=""><a class="page-link" href="#"
+								aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span
+									class="sr-only">Next</span>
+							</a></li>
+						</ul>
+					</nav>								
+							    </div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-12 bg-white"></div>
 
@@ -123,27 +129,7 @@
 				<br />
 
 				<div class="row">
-					<nav aria-label="Page navigation example" style="float:right;margin-top:0">
-						<ul class="pagination">
-							<li class="page-item"><a class="page-link" href="#"
-								aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
-							</a></li>
-							<li class="page-item" id="2008"><a class="page-link" >2008</a></li>
-							<li class="page-item" id="2009"><a class="page-link" >2009</a></li>
-							<li class="page-item" id="2010"><a class="page-link" >2010</a></li>
-							<li class="page-item" id="2011"><a class="page-link" >2011</a></li>
-							<li class="page-item" id="2012"><a class="page-link" >2012</a></li>
-							<li class="page-item" id="2013"><a class="page-link" >2013</a></li>
-							<li class="page-item" id="2014"><a class="page-link" >2014</a></li>
-							<li class="page-item" id="2015"><a class="page-link" >2015</a></li>
-							<li class="page-item" id="2016"><a class="page-link" >2016</a></li>
-							<li class="page-item" id=""><a class="page-link" href="#"
-								aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span
-									class="sr-only">Next</span>
-							</a></li>
-						</ul>
-					</nav>
+						
 				</div>
 			</div>
 		</div>
@@ -173,11 +159,11 @@
        
      // draw_me("2011_data");
       $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2011"); $("#show_year").text("2011"); return false; });
-      $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2014&AMERICAN EXPRESS CO"); $("#show_year").text("2012");return false; });
-      $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2013"); $("#show_year").text("2013");return false; });
-      $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2014"); $("#show_year").text("2014");return false; });
-      $('#2015_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2015"); $("#show_year").text("2015");return false; });
-      $('#2016_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2016"); $("#show_year").text("2016"); return false; });
+      $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2012&AMERICAN EXPRESS CO"); $("#show_year").text("2012");return false; });
+      $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2013&AMERICAN EXPRESS CO"); $("#show_year").text("2014");return false; });
+      $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2014&AMERICAN EXPRESS CO"); $("#show_year").text("2014");return false; });
+      $('#2015_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2015&AMERICAN EXPRESS CO"); $("#show_year").text("2015");return false; });
+      $('#2016_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2016&AMERICAN EXPRESS CO"); $("#show_year").text("2016"); return false; });
 
 
     
