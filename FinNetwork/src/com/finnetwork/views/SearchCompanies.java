@@ -5,14 +5,23 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.finnetwork.controllers.SearchController;
 
 @Path("/SearchCompanies")
 public class SearchCompanies {
 	
 	@GET	
 	@Produces(MediaType.TEXT_PLAIN)
-	public String getResponse(@QueryParam("myInput") String inputCompany) {
-		return "Hello " + inputCompany;
+	public Response getResponse(@QueryParam("myInput") String inputCompany) {
+		SearchController searchController = new SearchController();
+		//JsonNode jsonCompanyDetails = searchController.getCompanyDetails(inputCompany);
+		searchController.getCompanyDetails(inputCompany);
+		String jsonCompanyDetails = "Hello " + inputCompany;
+		Response response = Response.ok(jsonCompanyDetails, MediaType.APPLICATION_JSON).build();
+		return response;
 	}
 	
 }
