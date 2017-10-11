@@ -79,8 +79,16 @@ public class SearchController {
 		for (int i = 0; i < fillerEntityList.size(); i++) {
 			ArrayList<ConnectionsForYear> connectionsList = new ArrayList<ConnectionsForYear>();
 			for (int j = 0; j < yearArray.length; j++) {
-				System.out.println();
+				Query queryConnections = session.createQuery("SELECT COUNT(*) FROM FeiiiY2Working WHERE FILER_NAME = :companyName AND FILING_DATE LIKE :year");
+				queryConnections.setParameter("companyName", fillerEntityList.get(i));
+				queryConnections.setParameter("year", "%"+yearArray[j]);				
+				long num = (long) queryConnections.uniqueResult();
+				
+				//create new ConnectionsForYear object
+				ConnectionsForYear newConnection = new ConnectionsForYear(yearArray[j], num);
+				connectionsList.add(newConnection);
 			}
+			connectionsForCompany.add(connectionsList);
 		}
 		
 		for (int i = 0; i < connectionsForCompany.size(); i++) {
@@ -88,10 +96,7 @@ public class SearchController {
 				System.out.print(connectionsForCompany.get(i).get(j).getYear() + " : " + connectionsForCompany.get(i).get(j).getConn() + " AND ");
 			}
 			System.out.println();
-		}
-		
-		
-		
+		}		
 		
 		session.close();
 		
