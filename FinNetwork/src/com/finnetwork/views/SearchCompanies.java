@@ -16,10 +16,11 @@ public class SearchCompanies {
 	@GET	
 	@Produces(MediaType.TEXT_PLAIN)
 	public Response getResponse(@QueryParam("myInput") String inputCompany) {
+		
 		SearchController searchController = new SearchController();
-		//JsonNode jsonCompanyDetails = searchController.getCompanyDetails(inputCompany);
-		searchController.getCompanyDetails(inputCompany);
-		String jsonCompanyDetails = "Hello " + inputCompany;
+		
+		JsonNode jsonCompanyDetails = searchController.getCompanyDetails(inputCompany);
+		
 		Response response = Response.ok(jsonCompanyDetails, MediaType.APPLICATION_JSON).build();
 		return response;
 	}

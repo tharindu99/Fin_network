@@ -46,7 +46,7 @@ public class base_network_cntrl {
 		//	It is passed to the query to retrieve all the node details
 		Query queryNodes = session.createQuery("FROM Node WHERE id IN (:ids)");
 		queryNodes.setParameter("ids", sources);
-		List<Node> nodes = queryNodes.list();
+		List<Node> nodes = queryNodes.list();		
 		
 		//	Convert both nodes and links to ArrayNodes
 		ObjectMapper mapper = new ObjectMapper();
@@ -57,16 +57,6 @@ public class base_network_cntrl {
 		ObjectNode base_net = mapper.createObjectNode();
 		base_net.putArray("nodes").addAll(array_node);
 		base_net.putArray("links").addAll(array_link);
-				
-		/*
-		Gson gson = new Gson();
-		JsonObject listToBeSent = new JsonObject();
-		JsonElement jsonNodes = gson.toJsonTree(nodes);
-		JsonElement jsonLinks = gson.toJsonTree(links);
-		listToBeSent.add("nodes", jsonNodes);
-		listToBeSent.add("links", jsonLinks);
-		System.out.println(listToBeSent);	
-		*/	
 		
 		session.getTransaction().commit();
 		session.close();
