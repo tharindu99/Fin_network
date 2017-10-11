@@ -2,6 +2,7 @@ package com.finnetwork.controllers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -56,6 +57,25 @@ public class SearchController {
 		
 		System.out.println(fillerEntityList);
 		System.out.println("filler size is : " + fillerEntityList.size());
+		
+		Query queryCIK = session.createQuery("SELECT DISTINCT FILER_CIK FROM FeiiiY2Working WHERE FILER_NAME IN (:companies)");
+		queryCIK.setParameter("companies", fillerEntityList);
+		List<String> cikList = queryCIK.list();
+		
+		System.out.println("CIK list size : " + cikList.size());
+		System.out.println(cikList);
+		
+		//	combine filer names with their cik s
+		List<String> combinedList = new ArrayList<>();
+		Iterator<String> iFiller = fillerEntityList.iterator();
+		Iterator<String> iCIK = cikList.iterator();
+		
+		while (iFiller.hasNext() && iCIK.hasNext()) {
+			combinedList.add(iFiller.next() + " : " + iCIK.next());
+		}
+		
+		System.out.println("combined list size : " + combinedList.size());
+		System.out.println(combinedList);		
 		
 		String yearArray[] = {"2011", "2012", "2013", "2014", "2015", "2016"};
 		
