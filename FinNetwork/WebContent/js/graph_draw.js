@@ -300,7 +300,7 @@ function edge_click(d){
 
 function draw_me_left(url){
 
-	  console.log(url +" trying to draw");
+	  console.log(url +" trying to draw in left");
 	  
 
 	d3.select("#content_L").selectAll("svg").remove();
@@ -340,6 +340,7 @@ function draw_me_left(url){
 	  if (error) throw error;
 	  
 	  console.log(graph);
+	 // analyseGraph(graph,0);
 
 	  var link = svg.append("g")
 	    .attr("class", "links")
@@ -594,6 +595,8 @@ function draw_me_left(url){
 	      styling: 'bootstrap3'
 	  });
 	}
+	
+    
 	}
 
 function draw_me_right(url){
@@ -636,6 +639,8 @@ function draw_me_right(url){
 	  if (error) throw error;
 	  
 	  console.log(graph);
+	//  analyseGraph(graph,1);
+	
 
 	  var link = svg.append("g")
 	    .attr("class", "links")
@@ -892,7 +897,79 @@ function draw_me_right(url){
 	}
 	}
 
-
+function analyseGraph(url1,side){
+	var url2="../../FinNetwork/rest/company_name/" +url1;
+	var graphRight,graphLeft;
+	
+	console.log(side);
+	d3.json(  url2 , function(error, graph) {
+		  if (error) throw error;	  
+	 
+		  
+	if(side == 1){
+		graphRight=graph;
+		console.log("right links"+Object.keys(graphRight.links).length);
+		console.log("left links "+Object.keys(graphLeft.links).length);
+		
+	 
+	}else{
+		graphLeft=graph;
+		console.log("right links"+Object.keys(graphRight.links).length);
+		console.log("left links "+Object.keys(graphLeft.links).length);
+		
+		
+	} 
+	//analyse different nodes between graphRight and graphLeft-----------------
+	//create array to keep differnt noodes id
+	var differentNode= [];
+	var elementOfD=0;
+	var k=0;
+	var sizeOfLargeJson=0;
+	var sizeOfSmallJson=0;
+	if(  Object.keys(graphRight.nodes).length > Object.keys(graphLeft.nodes).length){
+		sizeOfLargeJson=Object.keys(graphRight.nodes).length;
+		sizeOfSmallJson=Object.keys(graphLeft.nodes).length;
+		 
+		for(var i=0;i<sizeOfSmallJson;i++){
+			for(var j=0;j<sizeOfLargeJson;j++){
+				if(graphLeft.nodes[i].id == graphRight.nodes[j].id){
+					++k;
+				}
+			}
+			if(k==0){
+				differentNode[elementOfD]=graphLeft.nodes[i].id;
+				++elementOfD;
+			}
+		} 
+		
+		
+	}else{
+  		sizeOfLargeJson=Object.keys(graphLeft.nodes).length;
+		sizeOfSmallJson=Object.keys(graphRight.nodes).length;
+		
+	   for(var i=0;i<sizeOfSmallJson;i++){
+			for(var j=0;j<sizeOfLargeJson;j++){
+				if(graphLeft.nodes[i].id == graphRight.nodes[j].id){
+					++k;
+				}
+			}
+			if(k==0){
+				differentNode[elementOfD]=graphLeft.nodes[i].id;
+				++elementOfD;
+			}
+		} 
+	} 
+	
+	
+	
+	var graphDiv = document.getElementById("r1");
+	graphDiv.innerHTML = "coming";  
+	console.log("yes came");
+	console.log(Object.keys(graph.links).length);
+	console.log(Object.keys(graph.nodes).length);
+	
+	}); 
+}
 
 
 

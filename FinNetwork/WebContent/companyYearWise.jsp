@@ -49,11 +49,34 @@
 						class="main_menu_side hidden-print main_menu">
 						<div class="menu_section">
 							<h3>General</h3>
-							<ul class="nav side-menu">
+								<ul class="nav side-menu">
 								<li><a><i class="fa fa-home"></i> Annual Basis <span
 										class="fa fa-chevron-down"></span></a>
-									</li>
-					
+									<ul class="nav child_menu">
+										<li><a >2011</a></li>
+										<li><a >2012</a></li>
+										<li><a >2013</a></li>
+										<li><a >2014</a></li>
+										<li><a >2015</a></li>
+										<li><a >2016</a></li>
+									</ul></li>
+							   <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="companyYearWise.jsp?param=AMERICAN EXPRESS CO" id="sid_14">AMERICAN EXPRESS CO</a></li>
+                      <li><a href="companyYearWise.jsp?param=JP Morgan Chase" id="sid_16">JP Morgan Chase</a></li>
+                      <li><a href="" id="sid_25">US Bank</a></li>
+                      <li><a href="" id="sid_19">Morgan Stanley</a></li>
+                      <li><a href="" id="sid_6">CapitalOne</a></li>
+                      <li><a href="" id="sid_3">Bank of America CORP</a></li>
+                    </ul>
+                  </li>
+                      <li><a><i class="fa fa-home"></i>Compare by years <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu">
+										<li><a href="AMERICAN EXPRESS CO.html">AMERICAN EXPRESS CO</a></li>
+										<li><a>JP Morgan Chase</a></li>
+										
+						</ul></li>
 
 							</ul>
 						</div>
@@ -86,7 +109,7 @@
 							<div class="row x_title">
 								<div class="col-md-6">
 									<h3>
-										Financial Network Activities <small>FEIIIY2 data set</small>
+										AMERICAN EXPRESS CO <small>   </small>
 									</h3>
 								</div>
 								<div class="col-md-6">
@@ -158,7 +181,7 @@
              $('.ui-pnotify').remove();
        
      // draw_me("2011_data");
-      $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/base_network/2011"); $("#show_year").text("2011"); return false; });
+      $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2011&AMERICAN EXPRESS CO"); $("#show_year").text("2011"); return false; });
       $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2012&AMERICAN EXPRESS CO"); $("#show_year").text("2012");return false; });
       $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2013&AMERICAN EXPRESS CO"); $("#show_year").text("2014");return false; });
       $('#2014_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2014&AMERICAN EXPRESS CO"); $("#show_year").text("2014");return false; });
