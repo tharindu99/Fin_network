@@ -22,13 +22,13 @@ public class SearchController {
 		Session session = hibernate_util.getSessionFactory().openSession();
 		session.beginTransaction();
 		
-		Query queryCIK = session.createQuery("SELECT DISTINCT FILER_CIK FROM FeiiiY2Working");
+		Query queryCIK = session.createQuery("SELECT DISTINCT CONCAT('CIK:', FILER_CIK) FROM FeiiiY2Working");
 		List<String> cikList = queryCIK.list();		
 		
-		Query queryFillerEntities = session.createQuery("SELECT DISTINCT FILER_NAME FROM FeiiiY2Working");
+		Query queryFillerEntities = session.createQuery("SELECT DISTINCT CONCAT('filler:', FILER_NAME) FROM FeiiiY2Working");
 		List<String> fillerNameList = queryFillerEntities.list();
 		
-		Query queryMentionedEntities = session.createQuery("SELECT DISTINCT MENTIONED_FINANCIAL_ENTITY FROM FeiiiY2Working");
+		Query queryMentionedEntities = session.createQuery("SELECT DISTINCT CONCAT('mentioned:', MENTIONED_FINANCIAL_ENTITY) FROM FeiiiY2Working");
 		List<String> mentionedEntitiesList = queryMentionedEntities.list();
 		
 		fillerNameList.removeAll(mentionedEntitiesList);
@@ -39,7 +39,7 @@ public class SearchController {
 		return fillerNameList;		
 	}	
 	
-	public ObjectNode getCompanyDetails(String companyName) {
+	public void getCompanyDetails(String companyName) {
 		System.out.println("Call for get company details..." + companyName);
 		
 		Session session = hibernate_util.getSessionFactory().openSession();
@@ -130,18 +130,22 @@ public class SearchController {
 		System.out.println("filler size : " + fillerCompanyDetails.size());
 		
 		
-		// create JSON
-		ObjectMapper mapper = new ObjectMapper();
-		ArrayNode arrayFiller = mapper.valueToTree(fillerCompanyDetails);
-		ArrayNode arrayMentioned = mapper.valueToTree(mentionedCompanyDetails);
 		
-		ObjectNode companyData = mapper.createObjectNode();
-		companyData.putArray("fillerCompanyDetails").addAll(arrayFiller);
-		companyData.putArray("mentionedCompanyDetails").addAll(arrayMentioned);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		session.close();
 		
-		return companyData;
+		
 		
 	}
 }

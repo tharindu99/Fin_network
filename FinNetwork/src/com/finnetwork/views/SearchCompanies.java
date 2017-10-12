@@ -19,8 +19,10 @@ public class SearchCompanies {
 		
 		SearchController searchController = new SearchController();
 		
-		JsonNode jsonCompanyDetails = searchController.getCompanyDetails(inputCompany);
+		//JsonNode jsonCompanyDetails = searchController.getCompanyDetails(inputCompany);
+		searchController.getCompanyDetails(inputCompany);
 		
+		String jsonCompanyDetails = "Hello " + inputCompany;
 		Response response = Response.ok(jsonCompanyDetails, MediaType.APPLICATION_JSON).build();
 		return response;
 	}
