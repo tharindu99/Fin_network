@@ -11,6 +11,7 @@ import org.hibernate.query.Query;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.finnetwork.models.CompanyData;
 import com.finnetwork.models.ConnectionsForYear;
 import com.finnetwork.persistence.hibernate_util;
 
@@ -39,34 +40,49 @@ public class SearchController {
 		return fillerNameList;		
 	}	
 	
-	public void getCompanyDetails(String companyName) {
+	public ObjectNode getCompanyDetails(String companyName) {
 		System.out.println("Call for get company details..." + companyName);
 		
 		Session session = hibernate_util.getSessionFactory().openSession();
-		session.beginTransaction();
-		
-		Query queryMentionedEntities = session.createQuery("SELECT DISTINCT MENTIONED_FINANCIAL_ENTITY FROM FeiiiY2Working WHERE MENTIONED_FINANCIAL_ENTITY LIKE :companyName");
-		queryMentionedEntities.setParameter("companyName", "%"+companyName+"%");	
-		List<String> mentionedEntityList = queryMentionedEntities.list();
-		
-		System.out.println(mentionedEntityList);
-		System.out.println("mention size is : " + mentionedEntityList.size());
+		session.beginTransaction();		
 		
 		Query queryFillerEntities = session.createQuery("SELECT DISTINCT FILER_NAME FROM FeiiiY2Working WHERE FILER_NAME LIKE :companyName or FILER_CIK LIKE :companyName");
 		queryFillerEntities.setParameter("companyName", "%"+companyName+"%");	
 		List<String> fillerEntityList = queryFillerEntities.list();
 		
 		System.out.println(fillerEntityList);
-		System.out.println("filler size is : " + fillerEntityList.size());
+		System.out.println("filler size is : " + fillerEntityList.size());		
 		
-		Query queryCIK = session.createQuery("SELECT DISTINCT FILER_CIK FROM FeiiiY2Working WHERE FILER_NAME IN (:companies)");
-		queryCIK.setParameter("companies", fillerEntityList);
-		List<String> cikList = queryCIK.list();
+		Query queryMentionedEntities = session.createQuery("SELECT DISTINCT MENTIONED_FINANCIAL_ENTITY FROM FeiiiY2Working WHERE MENTIONED_FINANCIAL_ENTITY LIKE :companyName");
+		queryMentionedEntities.setParameter("companyName", "%"+companyName+"%");	
+		List<String> mentionedEntityList = queryMentionedEntities.list();
 		
-		System.out.println("CIK list size : " + cikList.size());
-		System.out.println(cikList);
+		System.out.println(mentionedEntityList);
+		System.out.println("mention size is : " + mentionedEntityList.size());		
+			
 		
+		
+		
+		
+		//	count number of connections for a given company
 		String yearArray[] = {"2011", "2012", "2013", "2014", "2015", "2016"};
+		
+		ArrayList<ArrayList<ConnectionsForYear>> connectionsForFillerCompany = new ArrayList<ArrayList<ConnectionsForYear>>();
+		
+		for (int i = 0; i < fillerEntityList.size(); i++) {
+			ArrayList<ConnectionsForYear> connectionsList = new ArrayList<ConnectionsForYear>();
+			for (int j = 0; j < yearArray.length; j++) {
+				Query queryConnections = session.createQuery("SELECT COUNT(*) FROM FeiiiY2Working WHERE FILER_NAME = :companyName AND FILING_DATE LIKE :year");
+				queryConnections.setParameter("companyName", fillerEntityList.get(i));
+				queryConnections.setParameter("year", "%"+yearArray[j]);				
+				long num = (long) queryConnections.uniqueResult();
+				
+				//create new ConnectionsForYear object
+				ConnectionsForYear newConnection = new ConnectionsForYear(yearArray[j], num);
+				connectionsList.add(newConnection);
+			}
+			connectionsForFillerCompany.add(connectionsList);
+		}	
 		
 		ArrayList<ArrayList<ConnectionsForYear>> connectionsForMentionedCompany = new ArrayList<ArrayList<ConnectionsForYear>>();
 		
@@ -85,67 +101,63 @@ public class SearchController {
 			connectionsForMentionedCompany.add(connectionsList);
 		}
 		
-		ArrayList<ArrayList<ConnectionsForYear>> connectionsForFillerCompany = new ArrayList<ArrayList<ConnectionsForYear>>();
 		
-		for (int i = 0; i < fillerEntityList.size(); i++) {
-			ArrayList<ConnectionsForYear> connectionsList = new ArrayList<ConnectionsForYear>();
-			for (int j = 0; j < yearArray.length; j++) {
-				Query queryConnections = session.createQuery("SELECT COUNT(*) FROM FeiiiY2Working WHERE FILER_NAME = :companyName AND FILING_DATE LIKE :year");
-				queryConnections.setParameter("companyName", fillerEntityList.get(i));
-				queryConnections.setParameter("year", "%"+yearArray[j]);				
-				long num = (long) queryConnections.uniqueResult();
-				
-				//create new ConnectionsForYear object
-				ConnectionsForYear newConnection = new ConnectionsForYear(yearArray[j], num);
-				connectionsList.add(newConnection);
-			}
-			connectionsForFillerCompany.add(connectionsList);
+		
+		// modify filler company names with tags
+		Query queryFillerEntitiesAndCIKs = session.createQuery("SELECT DISTINCT CONCAT('filler:', FILER_NAME, ':', FILER_CIK) FROM FeiiiY2Working WHERE FILER_NAME LIKE :company OR FILER_CIK LIKE :company ");
+		queryFillerEntitiesAndCIKs.setParameter("company", "%"+companyName+"%");	
+		List<String> fillerEntityListAndCIKs = queryFillerEntitiesAndCIKs.list();
+		
+		
+		
+		
+		// modify mentioned company names with a tag
+		for (int i = 0; i < mentionedEntityList.size(); i++) {
+			String name = "mentioned:" + mentionedEntityList.get(i);
+			mentionedEntityList.set(i, name);
 		}
 		
-		List<String> mentionedCompanyDetails = new ArrayList<>();
+		
+		
+		
+		
+		
+		
+		
+		// create one list
+		Iterator<String> iFiller = fillerEntityListAndCIKs.iterator();
+		Iterator<ArrayList<ConnectionsForYear>> iConnectionsForFiller = connectionsForFillerCompany.iterator();
+		
 		Iterator<String> iMentioned = mentionedEntityList.iterator();
-		Iterator<ArrayList<ConnectionsForYear>> iMConnections = connectionsForMentionedCompany.iterator();
+		Iterator<ArrayList<ConnectionsForYear>> iConnectionsForMentioned = connectionsForMentionedCompany.iterator();
 		
-		while (iMentioned.hasNext() && iMConnections.hasNext()) {
-			mentionedCompanyDetails.add(iMentioned.next() + ":" + iMConnections.next());
+		List<CompanyData> companyDataList = new ArrayList<>();		
+		
+		while (iFiller.hasNext() && iConnectionsForFiller.hasNext()) {
+			CompanyData companyData = new CompanyData(iFiller.next(), iConnectionsForFiller.next());	
+			companyDataList.add(companyData);
+		}
+		while (iMentioned.hasNext() && iConnectionsForMentioned.hasNext()) {
+			CompanyData companyData = new CompanyData(iMentioned.next(), iConnectionsForMentioned.next());
+			companyDataList.add(companyData);
 		}
 		
-		for (int i = 0; i < mentionedCompanyDetails.size(); i++) {
-			System.out.println(mentionedCompanyDetails.get(i));
+		for (int i = 0; i < companyDataList.size(); i++) {
+			System.out.println(companyDataList.get(i).getCompanyName());
+			for (int j = 0; j < yearArray.length; j++) {
+				System.out.print(companyDataList.get(i).getConnectionDetails().get(j).getYear() + " has " + companyDataList.get(i).getConnectionDetails().get(j).getConn() + ", ");
+			}
+			System.out.println();
 		}
-		System.out.println("mentioned size : " + mentionedCompanyDetails.size());
+	
 		
-		List<String> fillerCompanyDetails = new ArrayList<>();
-		Iterator<String> iFiller = fillerEntityList.iterator();
-		Iterator<String> iCIK = cikList.iterator();
-		Iterator<ArrayList<ConnectionsForYear>> iFConnections = connectionsForFillerCompany.iterator();
+		// create JSON
+		ObjectMapper mapper = new ObjectMapper();
+		ArrayNode arrayData = mapper.valueToTree(companyDataList);
+		ObjectNode finalOutput = mapper.createObjectNode();
+		finalOutput.putArray("companyData").addAll(arrayData);	
 		
-		while (iFiller.hasNext() && iCIK.hasNext() && iFConnections.hasNext()) {
-			fillerCompanyDetails.add(iFiller.next()+":"+iCIK.next()+":"+iFConnections.next());
-		}
-		
-		for (int i = 0; i < fillerCompanyDetails.size(); i++) {
-			System.out.println(fillerCompanyDetails.get(i));
-		}
-		System.out.println("filler size : " + fillerCompanyDetails.size());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		session.close();
-		
-		
-		
+		session.close();	
+		return finalOutput;
 	}
 }

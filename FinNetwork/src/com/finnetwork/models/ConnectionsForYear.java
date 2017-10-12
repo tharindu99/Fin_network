@@ -6,7 +6,7 @@ public class ConnectionsForYear {
 	private long conn;
 	
 	public ConnectionsForYear() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public ConnectionsForYear(String year, long conn) {

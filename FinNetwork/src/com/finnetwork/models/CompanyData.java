@@ -1,17 +1,19 @@
 package com.finnetwork.models;
 
+import java.util.List;
+
 public class CompanyData {
 	
 	private String companyName;
-	private ConnectionsForYear connectionDetails;
+	private List<ConnectionsForYear> connectionDetails;
 	
 	public CompanyData() {
-		// TODO Auto-generated constructor stub
+		
 	}
 	
-	public CompanyData(String companyName, ConnectionsForYear connectionDetais) {
+	public CompanyData(String companyName, List<ConnectionsForYear> connectionDetails) {
 		this.companyName = companyName;
-		this.connectionDetails = connectionDetais;
+		this.connectionDetails = connectionDetails;
 	}
 
 	public String getCompanyName() {
@@ -22,12 +24,12 @@ public class CompanyData {
 		this.companyName = companyName;
 	}
 
-	public ConnectionsForYear getConnectionDetails() {
+	public List<ConnectionsForYear> getConnectionDetails() {
 		return connectionDetails;
 	}
 
-	public void setConnectionDetails(ConnectionsForYear connectionDetails) {
+	public void setConnectionDetails(List<ConnectionsForYear> connectionDetails) {
 		this.connectionDetails = connectionDetails;
 	}
-	
+
 }
