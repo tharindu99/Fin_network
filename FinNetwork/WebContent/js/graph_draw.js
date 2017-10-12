@@ -304,7 +304,7 @@ function draw_us(url,side){
 		d3.select("#content_L").selectAll("svg").remove();
 		var graphDiv = document.getElementById("content_L");
     }else{
-    	console.log(url +" trying to draw");
+    	console.log(url +" trying to draw in right");
     	d3.select("#content_R").selectAll("svg").remove();
     	var graphDiv = document.getElementById("content_R");
     }
@@ -602,47 +602,54 @@ function draw_us(url,side){
 	}
 
 
-function analyseGraph(url1,side1){
-	var url2="../../FinNetwork/rest/company_name/" +url1;
+function analyseGraph(url,leftYear){
+	var urlR="../../FinNetwork/rest/company_name/" +url;
+	var urlL="../../FinNetwork/rest/company_name/" +leftYear+"&AMERICAN EXPRESS CO";
+	//var urlL="../../FinNetwork/rest/company_name/" +"2014&AMERICAN EXPRESS CO";
 	var graphRight,graphLeft;
 	
-	console.log(side1);
-	d3.json(  url2 , function(error, graph) {
-		  if (error) throw error;	  
-	 
-		  
-	if(side1 == 1){
-		graphRight=graph;
-		console.log("right links"+Object.keys(graphRight.links).length);
-		console.log("left links "+Object.keys(graphLeft.links).length);
-		
-	 
-	}else{
-		graphLeft=graph;
-		console.log("right links"+Object.keys(graphRight.links).length);
-		console.log("left links "+Object.keys(graphLeft.links).length);
-		
-		
-	} 
+	console.log("url right "+urlR);
+	console.log("url left  "+urlL);
+	var nu_of_node;
+	d3.json(  urlR , function(error,graphRight) {
+		  if (error) throw error;
+		  console.log(graphRight);
+		  console.log("here we come right");
+		  console.log("right links on here :  "+Object.keys(graphRight.links).length);
+		  nu_of_node=Object.keys(graphRight.nodes).length;
+		  var graphDiv = document.getElementById("r1");
+		  graphDiv.innerHTML ="right nodes on here :  "+ nu_of_node;  
+		 
+
+	
+	
+	d3.json(  urlL , function(error, graphLeft) {
+		console.log("here we come ereeeeeeeeeeeeeeeeeeeeeeeeeor");
+		  if (error) throw error;
+		  console.log("here we left");
+		  console.log("left links on here  : "+Object.keys(graphLeft.links).length);
+	
+	  
+
 	//analyse different nodes between graphRight and graphLeft-----------------
 	//create array to keep differnt noodes id
-	var differentNode= [];
+    var differentNode= [];
 	var elementOfD=0;
 	var k=0;
 	var sizeOfLargeJson=0;
 	var sizeOfSmallJson=0;
-/*	if(  Object.keys(graphRight.nodes).length > Object.keys(graphLeft.nodes).length){
+	if(  Object.keys(graphRight.nodes).length > Object.keys(graphLeft.nodes).length){
 		sizeOfLargeJson=Object.keys(graphRight.nodes).length;
 		sizeOfSmallJson=Object.keys(graphLeft.nodes).length;
-		 
-		for(var i=0;i<sizeOfSmallJson;i++){
-			for(var j=0;j<sizeOfLargeJson;j++){
-				if(graphLeft.nodes[i].id == graphRight.nodes[j].id){
+		
+		for(var j=0;j<sizeOfLargeJson;j++){
+			for(var i=0;i<sizeOfSmallJson;i++){
+				if(graphLeft.nodes[j].id == graphRight.nodes[i].id){
 					++k;
 				}
 			}
 			if(k==0){
-				differentNode[elementOfD]=graphLeft.nodes[i].id;
+				differentNode[elementOfD]=graphLeft.nodes[j].id;
 				++elementOfD;
 			}
 		} 
@@ -651,29 +658,24 @@ function analyseGraph(url1,side1){
 	}else{
   		sizeOfLargeJson=Object.keys(graphLeft.nodes).length;
 		sizeOfSmallJson=Object.keys(graphRight.nodes).length;
-		
-	   for(var i=0;i<sizeOfSmallJson;i++){
-			for(var j=0;j<sizeOfLargeJson;j++){
-				if(graphLeft.nodes[i].id == graphRight.nodes[j].id){
+	  console.log(graphLeft.nodes[0].id);
+	  for(var j=0;j<sizeOfLargeJson;j++){
+		  for(var i=0;i<sizeOfSmallJson;i++){
+				if(graphLeft.nodes[j].id == graphRight.nodes[i].id){
 					++k;
 				}
-			}
+		  }
 			if(k==0){
-				differentNode[elementOfD]=graphLeft.nodes[i].id;
+				differentNode[elementOfD]=graphLeft.nodes[j].id;
 				++elementOfD;
 			}
 		} 
-	} */
-	
-	
-	
-	var graphDiv = document.getElementById("r1");
-	graphDiv.innerHTML = "coming";  
-	console.log("yes came");
-	console.log(Object.keys(graph.links).length);
-	console.log(Object.keys(graph.nodes).length);
-	
+	} 
+
+	console.log(elementOfD);
+	});
 	}); 
+	
 }
 
 
