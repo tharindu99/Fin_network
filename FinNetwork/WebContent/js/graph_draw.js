@@ -608,26 +608,25 @@ function analyseGraph(url,leftYear){
 	//var urlL="../../FinNetwork/rest/company_name/" +"2014&AMERICAN EXPRESS CO";
 	var graphRight,graphLeft;
 	
-	console.log("url right "+urlR);
-	console.log("url left  "+urlL);
-	var nu_of_node;
+	//console.log("url right "+urlR);
+	//console.log("url left  "+urlL);
+
 	d3.json(  urlR , function(error,graphRight) {
 		  if (error) throw error;
-		  console.log(graphRight);
-		  console.log("here we come right");
-		  console.log("right links on here :  "+Object.keys(graphRight.links).length);
-		  nu_of_node=Object.keys(graphRight.nodes).length;
-		  var graphDiv = document.getElementById("r1");
-		  graphDiv.innerHTML ="right nodes on here :  "+ nu_of_node;  
+		 // console.log(graphRight);
+		 // console.log("here we come right");
+		 // console.log("right links on here :  "+Object.keys(graphRight.links).length);
+		
+		 
 		 
 
 	
 	
 	d3.json(  urlL , function(error, graphLeft) {
-		console.log("here we come ereeeeeeeeeeeeeeeeeeeeeeeeeor");
+		//console.log("here we come ereeeeeeeeeeeeeeeeeeeeeeeeeor");
 		  if (error) throw error;
-		  console.log("here we left");
-		  console.log("left links on here  : "+Object.keys(graphLeft.links).length);
+		 // console.log("here we left");
+		 // console.log("left links on here  : "+Object.keys(graphLeft.links).length);
 	
 	  
 
@@ -638,6 +637,7 @@ function analyseGraph(url,leftYear){
 	var k=0;
 	var sizeOfLargeJson=0;
 	var sizeOfSmallJson=0;
+	//console.log(Object.keys(graphLeft.nodes).length);
 	if(  Object.keys(graphRight.nodes).length > Object.keys(graphLeft.nodes).length){
 		sizeOfLargeJson=Object.keys(graphRight.nodes).length;
 		sizeOfSmallJson=Object.keys(graphLeft.nodes).length;
@@ -658,21 +658,38 @@ function analyseGraph(url,leftYear){
 	}else{
   		sizeOfLargeJson=Object.keys(graphLeft.nodes).length;
 		sizeOfSmallJson=Object.keys(graphRight.nodes).length;
-	  console.log(graphLeft.nodes[0].id);
+	 // console.log(graphLeft.nodes[0].id);
 	  for(var j=0;j<sizeOfLargeJson;j++){
+		 // console.log("nu of time big for loop"+j);
 		  for(var i=0;i<sizeOfSmallJson;i++){
+			  console.log("manual compare : "+graphLeft.nodes[j].id +" : "+graphRight.nodes[i].id);
 				if(graphLeft.nodes[j].id == graphRight.nodes[i].id){
 					++k;
+					// console.log("nu of time if comditon true ");
 				}
 		  }
-			if(k==0){
+		//  console.log("value of k"+k);
+			if(k == 0){
 				differentNode[elementOfD]=graphLeft.nodes[j].id;
 				++elementOfD;
+			}else{
+				k=0;
 			}
 		} 
+	  
+	 
+	   console.log("number of elements  in differnt array : "+elementOfD);
+	   
+	  
 	} 
-
-	console.log(elementOfD);
+	if(elementOfD !==0){
+		var nu_of_different_companies=elementOfD+1;
+	}else{
+		var nu_of_different_companies=elementOfD;
+	}
+	 var graphDiv = document.getElementById("r1");
+	 graphDiv.innerHTML ="There are "+nu_of_different_companies+" differnt companies are connected with AMERICAN EXPRESS CO in these two years";  
+	
 	});
 	}); 
 	
