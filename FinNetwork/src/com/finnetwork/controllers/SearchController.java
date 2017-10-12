@@ -48,20 +48,11 @@ public class SearchController {
 		
 		Query queryFillerEntities = session.createQuery("SELECT DISTINCT FILER_NAME FROM FeiiiY2Working WHERE FILER_NAME LIKE :companyName or FILER_CIK LIKE :companyName");
 		queryFillerEntities.setParameter("companyName", "%"+companyName+"%");	
-		List<String> fillerEntityList = queryFillerEntities.list();
-		
-		System.out.println(fillerEntityList);
-		System.out.println("filler size is : " + fillerEntityList.size());		
+		List<String> fillerEntityList = queryFillerEntities.list();	
 		
 		Query queryMentionedEntities = session.createQuery("SELECT DISTINCT MENTIONED_FINANCIAL_ENTITY FROM FeiiiY2Working WHERE MENTIONED_FINANCIAL_ENTITY LIKE :companyName");
 		queryMentionedEntities.setParameter("companyName", "%"+companyName+"%");	
 		List<String> mentionedEntityList = queryMentionedEntities.list();
-		
-		System.out.println(mentionedEntityList);
-		System.out.println("mention size is : " + mentionedEntityList.size());		
-			
-		
-		
 		
 		
 		//	count number of connections for a given company
@@ -102,26 +93,17 @@ public class SearchController {
 		}
 		
 		
-		
 		// modify filler company names with tags
 		Query queryFillerEntitiesAndCIKs = session.createQuery("SELECT DISTINCT CONCAT('filler:', FILER_NAME, ':', FILER_CIK) FROM FeiiiY2Working WHERE FILER_NAME LIKE :company OR FILER_CIK LIKE :company ");
 		queryFillerEntitiesAndCIKs.setParameter("company", "%"+companyName+"%");	
-		List<String> fillerEntityListAndCIKs = queryFillerEntitiesAndCIKs.list();
-		
-		
+		List<String> fillerEntityListAndCIKs = queryFillerEntitiesAndCIKs.list();		
 		
 		
 		// modify mentioned company names with a tag
 		for (int i = 0; i < mentionedEntityList.size(); i++) {
 			String name = "mentioned:" + mentionedEntityList.get(i);
 			mentionedEntityList.set(i, name);
-		}
-		
-		
-		
-		
-		
-		
+		}	
 		
 		
 		// create one list
