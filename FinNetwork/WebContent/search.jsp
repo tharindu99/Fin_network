@@ -27,6 +27,13 @@
 	  padding: 12px 20px 12px 40px;
 	  border: 1px solid #ddd;
 	}
+	#resultDiv a:hover{
+		text-decoration: underline;
+	}
+	#barChart{
+		height: 200px;
+		background-color: white;
+	}
 </style>
 </head>
 <body class="nav-md">
@@ -108,7 +115,7 @@
 					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">				              	  
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+                <div class="col-md-4 col-sm-3 col-xs-12 bg-white">
                		
                		<div>
                			<%  List<String> finalList = SearchController.searchCompanies(); %> 
@@ -122,17 +129,25 @@
                		</div>
                 </div>
 
-                <div class="clearfix"></div>
+                <div class="clearfix">
+                	
+                </div>
               </div>
             </div>
 
           </div>
           <br />
 
-          <div class="row">
-              </div>
-            </div>
+          <div class="row" id="resultDiv">
+          	<h4><a href="#" id="resultHeading">Ally Bank</a></h4>
+          	<font class="col-md-1 col-sm-3 col-xs-12" id="type">Filler Entity</font> <font class="col-md-1 col-sm-3 col-xs-12" id="cik">40726</font>
+          	<div class="col-md-10 col-sm-3 col-xs-12">nothing goes here...</div>
+          	<div id="barChart" class="col-md-5">          		
+          	</div>          	
           </div>
+             
+        </div>
+        </div>
         </div>
         <!-- /page content -->
       </div>
@@ -147,35 +162,32 @@
     <script src="build/js/custom.min.js"></script>
     <script src="js/d3.v4.min.js"></script>
     <script src="js/d3-selection-multi.v1.js"></script>
-    <script src="js/graph_draw.js"></script>
+    <script src="js/search_result.js"></script>
  
  	<script>
  	
  	var input = document.getElementById("myInput");
- 	var resultArray = [];
+ 	
 	input.addEventListener("keydown", function (e) {
- 	    if (e.keyCode === 13) {
- 	    	console.log(resultArray[0].innerText); 	  
+ 	    if (e.keyCode === 13) { 	    	  
  	    	var param = document.getElementById("myInput").value;
- 	    	window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
+ 	    	//window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
+ 	    	dispalyResult("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
  	    }
  	});
 	
 	function searchCompany(){ 			
-		console.log("comapny is being searched...");	
-		
+				
 		var filter = input.value.toUpperCase();
 		var ul = document.getElementById("finalList");
 		var li = ul.getElementsByTagName("li");
 		
-		var i, a;
+		var i, a;		
 		
-		resultArray = [];
 		for(i=0; i<li.length; i++){
 			a = li[i].getElementsByTagName("a")[0]; 				
 			if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
-				li[i].style.display = "";
-				resultArray.push(li[i]);
+				li[i].style.display = "";				
 			} else{
 				li[i].style.display = "none";
 			}
