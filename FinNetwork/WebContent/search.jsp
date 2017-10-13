@@ -30,9 +30,9 @@
 	#resultDiv a:hover{
 		text-decoration: underline;
 	}
-	#barChart{
-		height: 200px;
-		background-color: white;
+	#resultDiv{
+		height: auto;
+		background-color: #80bfff;
 	}
 </style>
 </head>
@@ -115,7 +115,7 @@
 					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">				              	  
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-3 col-xs-12 bg-white">
+                <div class="col-md-6 col-sm-3 col-xs-12 bg-white">
                		
                		<div>
                			<%  List<String> finalList = SearchController.searchCompanies(); %> 
@@ -139,11 +139,7 @@
           <br />
 
           <div class="row" id="resultDiv">
-          	<h4><a href="#" id="resultHeading">Ally Bank</a></h4>
-          	<font class="col-md-1 col-sm-3 col-xs-12" id="type">Filler Entity</font> <font class="col-md-1 col-sm-3 col-xs-12" id="cik">40726</font>
-          	<div class="col-md-10 col-sm-3 col-xs-12">nothing goes here...</div>
-          	<div id="barChart" class="col-md-5">          		
-          	</div>          	
+          	    	
           </div>
              
         </div>
@@ -152,10 +148,8 @@
         <!-- /page content -->
       </div>
     </div>
-
-	
-
-    <!-- jQuery -->
+ 
+ 	<!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>  
     <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
@@ -163,6 +157,7 @@
     <script src="js/d3.v4.min.js"></script>
     <script src="js/d3-selection-multi.v1.js"></script>
     <script src="js/search_result.js"></script>
+ 
  
  	<script>
  	
@@ -173,8 +168,9 @@
  	    	var param = document.getElementById("myInput").value;
  	    	//window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
  	    	dispalyResult("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
+ 	    	
  	    }
- 	});
+ 	});	
 	
 	function searchCompany(){ 			
 				
@@ -198,6 +194,10 @@
 	}	
 
  	</script>
- 
+ 	
+ 	
+ 	
+    
+ 	
   </body>
 </html>
