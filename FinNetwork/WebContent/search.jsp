@@ -32,7 +32,6 @@
 	}
 	#resultDiv{
 		height: auto;
-		background-color: #80bfff;
 	}
 </style>
 </head>
@@ -154,7 +153,8 @@
     <!-- Bootstrap -->
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="build/js/custom.min.js"></script>
-    <script src="js/d3.v4.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/c3.min.js"></script>
     <script src="js/d3-selection-multi.v1.js"></script>
     <script src="js/search_result.js"></script>
  
@@ -168,7 +168,7 @@
  	    	var param = document.getElementById("myInput").value;
  	    	//window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
  	    	dispalyResult("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
- 	    	
+ 	    	//chart("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
  	    }
  	});	
 	
