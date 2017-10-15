@@ -166,9 +166,8 @@
 	input.addEventListener("keydown", function (e) {
  	    if (e.keyCode === 13) { 	    	  
  	    	var param = document.getElementById("myInput").value;
- 	    	//window.location = '../../FinNetwork/rest/SearchCompanies?myInput=' + param;
  	    	dispalyResult("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
- 	    	//chart("../../FinNetwork/rest/SearchCompanies?myInput=" + param);
+ 	    	document.getElementById("myInput").value = null;
  	    }
  	});	
 	

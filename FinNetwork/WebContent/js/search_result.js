@@ -1,15 +1,19 @@
 function dispalyResult(url){
+
 	console.log("drawing " + url);
 
 	d3.json(url, function(error, data) {
 
 			var numOfDiv = Object.keys(data.companyData).length;
 
+			document.getElementById("resultDiv").innerHTML = null;
+
 			for (var i = 0; i < numOfDiv; i++) {
-				var nameDiv = document.createElement('div');
-				nameDiv.id = 'companyName'+i;
-				document.getElementById("resultDiv").appendChild(nameDiv);
-				nameDiv.textContent = data.companyData[i].companyName;
+				var nameLink = document.createElement('a');
+				nameLink.id = 'companyName'+i;
+				document.getElementById("resultDiv").appendChild(nameLink);
+				var companyName = data.companyData[i].companyName;
+				nameLink.textContent = companyName.split(":")[1];
 
 				var chartDiv = document.createElement('div');
 				chartDiv.id = 'barChart'+i;
@@ -23,7 +27,7 @@ function dispalyResult(url){
 			var chartData = [];
 			data.companyData.forEach(
 				function(d, i) {
-					var item = ['year'];
+					var item = ['connections'];
 					d.connectionDetails.forEach(
 						function(j) {
 							item.push(j.conn);
@@ -39,20 +43,23 @@ function dispalyResult(url){
 			}
 
 			function drawChart(tagID, datax, datay) {
-				console.log(datax);
-				console.log(datay);
-				console.log(tagID);
 
 				var chart = c3.generate({
 					bindto: tagID,
 			    data: {
-							x : 'x',
-	        columns: [
-	            datax,
-	            datay,
-	        ],
-	        type: 'bar',
-					labels: true
+						x : 'x',
+		        columns: [
+		            datax,
+		            datay,
+		        ],
+		        type: 'bar',
+						colors: {
+		            connections: '#27576c'
+		        },
+						labels: true
+			    },
+			    tooltip: {
+			        show: false
 			    },
 					axis: {
 			        x: {
