@@ -145,8 +145,7 @@
         </div>
         </div>
         <!-- /page content -->
-      </div>
-    </div>
+ 
  
  	<!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>  
@@ -154,10 +153,11 @@
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="build/js/custom.min.js"></script>
     <script src="js/d3.v3.min.js"></script>
+    
     <script src="js/c3.min.js"></script>
     <script src="js/d3-selection-multi.v1.js"></script>
     <script src="js/search_result.js"></script>
- 
+ 	<script src="js/graph_draw.js"></script>
  
  	<script>
  	

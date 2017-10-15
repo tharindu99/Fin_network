@@ -11,10 +11,19 @@ function dispalyResult(url){
 			for (var i = 0; i < numOfDiv; i++) {
 				var nameLink = document.createElement('a');
 				nameLink.id = 'companyName'+i;
+				nameLink.style.fontSize = "15px";
 				document.getElementById("resultDiv").appendChild(nameLink);
-				var companyName = data.companyData[i].companyName;
-				nameLink.textContent = companyName.split(":")[1];
 
+				var companyName = data.companyData[i].companyName;
+				if(companyName.split(":").length == 3){
+					nameLink.textContent = companyName.split(":")[1] + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + " Type : " + companyName.split(":")[0] + " entity" + '\xa0\xa0\xa0\xa0 CIK : ' + companyName.split(":")[2];
+				}
+				else{
+					nameLink.textContent = companyName.split(":")[1] + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + " Type : " + companyName.split(":")[0] + " entity";
+				}
+
+				document.getElementById("companyName"+i).href = "#";
+								
 				var chartDiv = document.createElement('div');
 				chartDiv.id = 'barChart'+i;
 				chartDiv.style.width = '500px';
