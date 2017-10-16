@@ -53,15 +53,8 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-calendar"></i> Annual Basis <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a id="2011_y">2011</a></li>
-                      <li><a id="2012_y">2012</a></li>
-                      <li><a id="2013_y">2013</a></li>
-                      <li><a id="2014_y">2014</a></li>
-                      <li><a id="2015_y">2015</a></li>
-                      <li><a id="2016_y">2016</a></li>
-                    </ul>
+                  <li><a href="index.html"><i class="fa fa-calendar"></i> Annual Basis <span class="fa fa-chevron-down"></span></a>
+                    
                   </li>
                   <li><a><i class="fa fa-home"></i> Company Basis <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -152,11 +145,9 @@
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>  
     <script src="build/js/custom.min.js"></script>
     <script src="js/d3.v3.min.js"></script>
-    
     <script src="js/c3.min.js"></script>
     <script src="js/d3-selection-multi.v1.js"></script>
     <script src="js/search_result.js"></script>
- 	<script src="js/graph_draw.js"></script>
  
  	<script>
  	
@@ -194,13 +185,9 @@
 				li[i].style.display = "none";
 			}			
 		}
-	}	
-
- 	</script>
- 	
- 	
- 	
-    
+	}
+	
+ 	</script>    
  	
   </body>
 </html>

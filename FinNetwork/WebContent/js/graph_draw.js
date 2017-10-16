@@ -13,11 +13,9 @@ var height = graphDiv.clientHeight;
 
 var node_color = ['red','blue'];
 
-//svg = svg.call(d3.zoom().on("zoom", zoomed));
+svg = svg.call(d3.zoom().on("zoom", zoomed));
 
-svg = d3.behavior.zoom()
-.scaleExtent([1, 10])
-.on("zoom", zoomed);
+
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
