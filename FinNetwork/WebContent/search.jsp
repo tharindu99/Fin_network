@@ -107,6 +107,10 @@
 					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">				              	  
                   </div>
                 </div>
+                
+				<!-- When the page is loaded, list of all the companies is sent from server side to client side
+					 and they are hidden
+				 -->
                 <div class="col-md-6 col-sm-3 col-xs-12 bg-white">               		
                		<div>
                			<%  List<String> finalList = SearchController.searchCompanies(); %> 
@@ -128,7 +132,8 @@
 
           </div>
           <br />
-
+			
+		  <!-- Created a div to display search results -->	
           <div class="row" id="resultDiv">
           	    	
           </div>
@@ -151,6 +156,9 @@
  
  	<script>
  	
+ 	/* If user click a particular link without hitting enter key, this function get invoked 
+ 	    and passes the url along with the company name or CIK as a parameter
+ 	*/
  	function returnURL(url){
  		var companyName = url.innerHTML.split(":")[1];
  		window.location = '../../FinNetwork/companyYearWise.jsp?param=' + companyName;
@@ -158,6 +166,11 @@
  	
  	var input = document.getElementById("myInput");
  	
+ 	
+ 	/* Add a event listener to catch the enter key press.
+ 	   If enter is pressed, displayResult function get called with the url 
+ 	   	which passes along with the company name or CIK as a parameter
+ 	*/
 	input.addEventListener("keydown", function (e) {
  	    if (e.keyCode === 13) { 	    	  
  	    	var param = document.getElementById("myInput").value;
@@ -166,6 +179,8 @@
  	    }
  	});	
 	
+	
+	// function to filter searching companies
 	function searchCompany(){ 			
 				
 		var filter = input.value.toUpperCase();
@@ -175,12 +190,16 @@
 		var i, a;		
 		
 		for(i=0; i<li.length; i++){
-			a = li[i].getElementsByTagName("a")[0]; 				
+			a = li[i].getElementsByTagName("a")[0]; 	
+			
+			// companies that contain the input value will be displayed and other remain hidden
 			if(a.innerHTML.toUpperCase().indexOf(filter) > -1){
 				li[i].style.display = "";				
 			} else{
 				li[i].style.display = "none";
 			}
+			
+			// if the search box value is null, all the list items wil be hidden
 			if(!document.getElementById("myInput").value){
 				li[i].style.display = "none";
 			}			
