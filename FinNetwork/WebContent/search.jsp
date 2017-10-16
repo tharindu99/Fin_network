@@ -114,14 +114,13 @@
 					    <input type="text" id="myInput" onkeyup="searchCompany()" placeholder="Search for companies..." title="Type in a name">				              	  
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-3 col-xs-12 bg-white">
-               		
+                <div class="col-md-6 col-sm-3 col-xs-12 bg-white">               		
                		<div>
                			<%  List<String> finalList = SearchController.searchCompanies(); %> 
 						    <ul id="finalList" style="list-style:none;">
 						    <%
 						    for(int i=0; i<finalList.size(); i++){ %>					    	
-						    	<li style="display:none;"><a href="#"><%= finalList.get(i) %></a></li>					    					    	
+						    	<li style="display:none;"><a href="#" onclick="returnURL(this); return false;"><%= finalList.get(i) %></a></li>					    					    	
 					    <% } %>
 					    
 					   </ul>
@@ -160,6 +159,11 @@
  	<script src="js/graph_draw.js"></script>
  
  	<script>
+ 	
+ 	function returnURL(url){
+ 		var companyName = url.innerHTML.split(":")[1];
+ 		window.location = '../../FinNetwork/companyYearWise.jsp?param=' + companyName;
+ 	}
  	
  	var input = document.getElementById("myInput");
  	

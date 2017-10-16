@@ -22,7 +22,7 @@ function dispalyResult(url){
 					nameLink.textContent = companyName.split(":")[1] + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0' + " Type : " + companyName.split(":")[0] + " entity";
 				}
 
-				document.getElementById("companyName"+i).href = "#";
+				document.getElementById("companyName"+i).href = "../../FinNetwork/companyYearWise.jsp?param=" + companyName.split(":")[1];
 								
 				var chartDiv = document.createElement('div');
 				chartDiv.id = 'barChart'+i;
