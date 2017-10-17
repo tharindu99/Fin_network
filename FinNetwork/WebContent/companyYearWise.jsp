@@ -109,7 +109,7 @@
 							<div class="row x_title">
 								<div class="col-md-6">
 									<h3>
-										AMERICAN EXPRESS CO <small>   </small>
+										AMERICAN EXPRESS CO <small>Annual Basis</small>
 									</h3>
 								</div>
 								<div class="col-md-6">
@@ -126,8 +126,8 @@
 									<span class="sr-only">Previous</span>
 							</a></li>
 						
-							<li class="page-item" id="2009"><a class="page-link" >2009</a></li>
-							<li class="page-item" id="2010"><a class="page-link" >2010</a></li>
+							<li class="page-item" id="2009_y"><a class="page-link" >2009</a></li>
+							<li class="page-item" id="2010_y"><a class="page-link" >2010</a></li>
 							<li class="page-item" id="2011_y"><a class="page-link" >2011</a></li>
 							<li class="page-item" id="2012_y"><a class="page-link" >2012</a></li>
 							<li class="page-item" id="2013_y"><a class="page-link" >2013</a></li>
@@ -181,6 +181,8 @@
              $('.ui-pnotify').remove();
        
      // draw_me("2011_data");
+      $('#2009_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2009&AMERICAN EXPRESS CO"); $("#show_year").text("2009"); return false; });
+       $('#2010_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2010&AMERICAN EXPRESS CO"); $("#show_year").text("2010"); return false; });
       $('#2011_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2011&AMERICAN EXPRESS CO"); $("#show_year").text("2011"); return false; });
       $('#2012_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2012&AMERICAN EXPRESS CO"); $("#show_year").text("2012");return false; });
       $('#2013_y').click(function(){ draw_me("../../FinNetwork/rest/company_name/2013&AMERICAN EXPRESS CO"); $("#show_year").text("2014");return false; });

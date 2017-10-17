@@ -190,9 +190,12 @@
              $('#2016_R').click(function(){ draw_us("../../FinNetwork/rest/company_name/2016&AMERICAN EXPRESS CO",1);$("#yearShowR").text("2016"); return false;});
      });
      $(document).ready(function(){
+    	 
     	    $("#2011_R").click(function(){
     	        var leftYear= $("#yearShow").text();
+    	     
     	        analyseGraph("2011&AMERICAN EXPRESS CO",leftYear);
+    	       
     	    });
 
     	    $("#2013_R").click(function(){
@@ -211,6 +214,31 @@
     	    $("#2016_R").click(function(){
     	        var leftYear= $("#yearShow").text();
     	        analyseGraph("2016&AMERICAN EXPRESS CO",leftYear);
+    	    });
+
+    	    $("#2011_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2011&AMERICAN EXPRESS CO",rightYear);
+    	    });
+    	    $("#2012_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2012&AMERICAN EXPRESS CO",rightYear);
+    	    });
+    	    $("#2013_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2013&AMERICAN EXPRESS CO",rightYear);
+    	    });
+    	    $("#2014_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2014&AMERICAN EXPRESS CO",rightYear);
+    	    });
+    	    $("#2015_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2015&AMERICAN EXPRESS CO",rightYear);
+    	    });
+    	    $("#2016_L").click(function(){
+    	        var rightYear= $("#yearShowR").text();
+    	        analyseGraph("2016&AMERICAN EXPRESS CO",rightYear);
     	    });
      });
     </script>

@@ -1,6 +1,6 @@
 function draw_me(url){
 
-  console.log(url +" trying to draw");
+  //console.log(url +" trying to draw");
   
 	
 
@@ -40,7 +40,7 @@ var simulation = d3.forceSimulation()
 d3.json(  url , function(error, graph) {
   if (error) throw error;
   
-  console.log(graph);
+ // console.log(graph);
 
   var link = svg.append("g")
     .attr("class", "links")
@@ -602,15 +602,17 @@ function draw_us(url,side){
 	}
 
 
-function analyseGraph(url,leftYear){
+function analyseGraph(url,otherYear){
 	var urlR="../../FinNetwork/rest/company_name/" +url;
-	var urlL="../../FinNetwork/rest/company_name/" +leftYear+"&AMERICAN EXPRESS CO";
+	var urlL="../../FinNetwork/rest/company_name/" +otherYear+"&AMERICAN EXPRESS CO";
 	var graphRight,graphLeft;
-
+	console.log("came here");
 	d3.json(  urlR , function(error,graphRight) {
 		  if (error) throw error;
+		  console.log("came here2 : "+Object.keys(graphRight.nodes).length);
 		  	d3.json(  urlL , function(error, graphLeft) {	
 		  		if (error) throw error;
+		  		 console.log("came here3 : "+Object.keys(graphLeft.nodes).length);
 	//analyse different nodes between graphRight and graphLeft-----------------
 	//create array to keep differnt noodes id
 	    var differentNode= [];
@@ -618,41 +620,65 @@ function analyseGraph(url,leftYear){
 		var k=0;
 		var sizeOfLargeJson=0;
 		var sizeOfSmallJson=0;
-	//console.log(Object.keys(graphLeft.nodes).length);
+	
 	if(  Object.keys(graphRight.nodes).length > Object.keys(graphLeft.nodes).length){
+		
+	
+		
 		sizeOfLargeJson=Object.keys(graphRight.nodes).length;
 		sizeOfSmallJson=Object.keys(graphLeft.nodes).length;
 		
-		for(var j=0;j<sizeOfLargeJson;j++){
-			for(var i=0;i<sizeOfSmallJson;i++){
-				if(graphLeft.nodes[j].id == graphRight.nodes[i].id){
-					++k;
-				}
-			}
-			if(k==0){
-				differentNode[elementOfD]=graphLeft.nodes[j].id;
-				++elementOfD;
-			}
-		} 
+		console.log("sizeOfLargeJson : "+sizeOfLargeJson);
+		console.log("sizeOfSmallJson : "+sizeOfSmallJson);
 		
-	}else{
-  		sizeOfLargeJson=Object.keys(graphLeft.nodes).length;
-		sizeOfSmallJson=Object.keys(graphRight.nodes).length;
+		/*for(var j=0;j<sizeOfLargeJson;j++){
+			console.log("print : "+Object.keys(graphRight.nodes).length +" : "+graphLeft.nodes[i].id);
+		}*/
+		
 	    for(var j=0;j<sizeOfLargeJson;j++){
+	        console.log(" j : "+j);
 	    	for(var i=0;i<sizeOfSmallJson;i++){
-				if(graphLeft.nodes[j].id == graphRight.nodes[i].id){
+	    		 console.log(" i : "+i);
+	    		console.log("compare : "+graphRight.nodes[j].id +" : "+graphLeft.nodes[i].id);
+	    		
+				if( graphRight.nodes[j].id ==graphLeft.nodes[i].id){
 					++k;
 				}
 		    }
-			if(k == 0){
+	    	if(k == 0){
+	    		console.log(" differnt nodes : "+graphRight.nodes[j].id);
+				differentNode[elementOfD]=graphRight.nodes[j].id;
+				++elementOfD;
+			}else{
+				k=0;
+			}
+		}  	
+	}else{
+  		sizeOfLargeJson=Object.keys(graphLeft.nodes).length;
+		sizeOfSmallJson=Object.keys(graphRight.nodes).length;
+		
+		
+
+	    for(var j=0;j<sizeOfLargeJson;j++){
+	        console.log(" j : "+j);
+	    	for(var i=0;i<sizeOfSmallJson;i++){
+	    		 console.log(" i : "+i);
+	    		console.log("compare : "+graphLeft.nodes[j].id +" : "+graphRight.nodes[i].id);
+	    		
+				if( graphLeft.nodes[j].id ==graphRight.nodes[i].id){
+					++k;
+				}
+		    }
+	    	if(k == 0){
+	    		console.log(" differnt nodes : "+graphLeft.nodes[j].id);
 				differentNode[elementOfD]=graphLeft.nodes[j].id;
 				++elementOfD;
 			}else{
 				k=0;
 			}
 		} 
-	 
 	} 
+	
 	if(elementOfD !==0){
 		var nu_of_different_companies=elementOfD+1;
 	}else{
