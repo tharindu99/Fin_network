@@ -22,6 +22,7 @@ public class base_network {
 	@Produces(MediaType.APPLICATION_JSON)
 	//	url parameter year is stored in int variable called year
 	public Response getResponse (@PathParam("param") int year){
+		String  company="alibaba";
 		
 		//	Create an instance of base_network_cntrl class
 		base_network_cntrl base_net_cntrl = new base_network_cntrl();
@@ -29,9 +30,11 @@ public class base_network {
 		//	Call the relevant method with requested year parameter 
 		JsonNode json_baseNet = base_net_cntrl.get_base_network(year);
 		
+	
+		
 		//	Create a Response and return a JSON with status code 200 OK
 		Response response = Response.ok(json_baseNet, MediaType.APPLICATION_JSON).build();		
 		return response;
-		
+	
 	}
 }
