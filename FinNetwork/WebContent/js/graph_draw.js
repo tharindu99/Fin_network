@@ -1,6 +1,8 @@
 function draw_me(url){
 
-console.log(url +" trying to draw");
+  //console.log(url +" trying to draw");
+  
+	
 
 d3.select("#container").selectAll("svg").remove();
 
@@ -14,8 +16,6 @@ var height = graphDiv.clientHeight;
 var node_color = ['red','blue'];
 
 svg = svg.call(d3.zoom().on("zoom", zoomed));
-
-
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -85,7 +85,6 @@ d3.json(  url , function(error, graph) {
           .on("drag", dragged)
           .on("end", dragended))
           .on('click', connectedNodes);
-
 /*var nodelabels = svg.selectAll(".nodelabel")
        .data(graph.nodes)
        .enter()
@@ -387,7 +386,6 @@ function draw_us(url,side){
 	          .on("drag", dragged)
 	          .on("end", dragended))
 	          .on('click', connectedNodes);
-
 	/*var nodelabels = svg.selectAll(".nodelabel")
 	       .data(graph.nodes)
 	       .enter()
@@ -691,20 +689,3 @@ function analyseGraph(url,otherYear){
 	}); 
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
