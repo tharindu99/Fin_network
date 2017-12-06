@@ -1,6 +1,6 @@
 function draw_me(url){
 
-  //console.log(url +" trying to draw");
+  console.log(url +" trying to draw");
   
 	
 

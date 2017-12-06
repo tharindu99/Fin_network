@@ -127,4 +127,52 @@ public class base_network_cntrl {
 		return base_net;
 		
 	}
+	
+//	take two String parameters and return ObjectNode -------------------------------------------------------------
+	public ObjectNode get_base_network(String input1,String data_status) {
+		System.out.println("Call for basenetwork controller...");
+		
+		//	Creata a session
+		Session session = hibernate_util.getSessionFactory().openSession();
+		//	Begin transaction
+		session.beginTransaction();		
+		
+		
+		
+		//	Select all the distinct source nodes from given year
+		Query querySource = session.createQuery("SELECT DISTINCT statement_id FROM Newnet WHERE subject_id LIKE :input1");
+		querySource.setParameter("input1", "%"+input1);
+		List<Integer> sources  = querySource.list();
+		
+		//	Select all the distinct target nodes from given year
+		Query queryTarget = session.createQuery("SELECT DISTINCT statement_id FROM Newnet WHERE subject_id LIKE :input1");
+		queryTarget.setParameter("input1", "%"+input1);
+		List<Integer> targets = queryTarget.list();
+		
+		// 	List of all the nodes for a given year 
+		sources.removeAll(targets);
+		sources.addAll(targets);
+		//	Now all the distinct nodes are stored in sources List
+		
+		//	It is passed to the query to retrieve all the node details
+		Query queryNodes = session.createQuery("FROM Newnet WHERE id IN (:ids)");
+		queryNodes.setParameter("ids", sources);
+		List<Node> nodes = queryNodes.list();	 	
+		
+		//	Convert both nodes and links to ArrayNodes
+		ObjectMapper mapper = new ObjectMapper();
+		ArrayNode array_node = mapper.valueToTree(nodes);
+	//	ArrayNode array_link = mapper.valueToTree(links);
+		
+		// 	Add both array_node and array_link to single ObjectNode which is the type of the output of the method
+		ObjectNode base_net = mapper.createObjectNode();
+		base_net.putArray("nodes").addAll(array_node);
+	//	base_net.putArray("links").addAll(array_link);
+		
+		session.getTransaction().commit();
+		session.close();
+		
+		//	Return the output
+		return base_net;
+	}
 }
