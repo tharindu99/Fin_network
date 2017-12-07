@@ -83,7 +83,7 @@
 							<div class="row x_title">
 								<div class="col-md-6">
 									<h3>
-										Financial Network Activities <small>FEIIIY2 data set</small>
+										Sub Company <small> open_trc data set</small>
 									</h3>
 								</div>
 								<div class="col-md-6">
@@ -150,9 +150,9 @@
              $('.ui-pnotify').remove();
        
      // draw_me("2011_data");
-      $('#2013').click(function(){ draw_me("file:///C:/Users/Kushan/Downloads/data.json"); $("#show_year").text("2013"); return false; });
-      $('#2014').click(function(){ draw_me("file:///C:/Users/Kushan/Downloads/data.json"); $("#show_year").text("2014");return false; });
-      $('#2015').click(function(){ draw_me("file:///C:/Users/Kushan/Downloads/data.json"); $("#show_year").text("2015");return false; });
+      $('#2013').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text(""); return false; });
+      $('#2014').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text("");return false; });
+      $('#2015').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text("");return false; });
       
   
      });

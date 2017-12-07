@@ -3,8 +3,8 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="com.finnetwork.models.OpenCorp_IBM" table="newnet">
-        <id name="statement_id" type="java.lang.Integer">
+    <class name="com.finnetwork.models.OpenCorp_IBM" table="open_trc">
+        <id name="statement_id" type="int">
             <column name="statement_id" />
             <generator class="assigned" />
         </id>
