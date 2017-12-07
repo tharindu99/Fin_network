@@ -8,6 +8,8 @@ import org.hibernate.query.Query;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.finnetwork.models.OpenCorp_IBM_Link;
+import com.finnetwork.models.OpenCorp_IBM_Node;
 import com.finnetwork.persistence.hibernate_util;
 
 public class OpenCorp_IBM_controller {
@@ -18,12 +20,12 @@ public class OpenCorp_IBM_controller {
 		Session session = hibernate_util.getSessionFactory().openSession();
 		session.beginTransaction();		
 		
-		Query subjectQuery = session.createQuery("SELECT DISTINCT subject_id AS id, subject_entity_name AS entity FROM OpenCorp_IBM");
-		List<String> subjectList = subjectQuery.list();
+		Query subjectQuery = session.createQuery("SELECT DISTINCT subject_id AS id, subject_entity_name AS equity FROM OpenCorp_IBM");
+		List<OpenCorp_IBM_Node> subjectList = subjectQuery.list();
 		System.out.println(subjectList.size());
 		
-		Query objectQuery = session.createQuery("SELECT object_id AS id, object_entity_name AS entity FROM OpenCorp_IBM");
-		List<String> objectList = objectQuery.list();
+		Query objectQuery = session.createQuery("SELECT object_id AS id, object_entity_name AS equity FROM OpenCorp_IBM");
+		List<OpenCorp_IBM_Node> objectList = objectQuery.list();
 		System.out.println(objectList.size());
 		
 		// nodes
@@ -33,7 +35,7 @@ public class OpenCorp_IBM_controller {
 		
 		// links
 		Query linkQuery = session.createQuery("SELECT subject_id AS source, object_id AS target FROM OpenCorp_IBM");
-		List<String> connectionList = linkQuery.list();
+		List<OpenCorp_IBM_Link> connectionList = linkQuery.list();
 		System.out.println("links " + connectionList.size());
 		
 		ObjectMapper mapper = new ObjectMapper();
