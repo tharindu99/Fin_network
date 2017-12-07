@@ -952,7 +952,7 @@ function draw_me_new(url){
 	function edge_click(d){
 	  new PNotify({
 	      title: 'Edge Details',
-	      text: 'Source: '+d.source.equity+'<br> Target: '+d.target.equity+'<br>Role: '+d.role+'<br>Senteces: '+d.three_sentences,
+	      text: 'Source: '+d.source.equity+'<br> Target: '+d.target.equity,
 	      type: 'success',
 	      styling: 'bootstrap3'
 	  });

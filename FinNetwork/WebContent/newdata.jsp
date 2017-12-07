@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Fin network New</title>
+<title>OPEN_TRC</title>
 
 <!-- Bootstrap -->
 <link href="vendors/bootstrap/dist/css/bootstrap.min.css"
@@ -33,8 +33,8 @@
 			<div class="col-md-3 left_col">
 				<div class="left_col scroll-view">
 					<div class="navbar nav_title" style="border: 0;">
-						<a href="index.html" class="site_title"> <!-- <i class="fa fa-paw"></i> -->
-							<span>Fin Network</span>
+						<a href="index.html" class="site_title"> <i class="fa fa-align-justify"></i> 
+							<span>OPEN_TRC</span>
 						</a>
 					</div>
 
@@ -46,13 +46,7 @@
 					<div id="sidebar-menu"
 						class="main_menu_side hidden-print main_menu">
 						<div class="menu_section">
-							<h3>General</h3>
-							<ul class="nav side-menu">
-							    <li><a href="newdata.jsp"><i class="glyphicon glyphicon-plus"></i> New Data Set</a></li>
-								
-					
-                     
-							</ul>
+							
 						</div>
 
 
@@ -83,7 +77,7 @@
 							<div class="row x_title">
 								<div class="col-md-6">
 									<h3>
-										Sub Company <small> open_trc data set</small>
+										Sub Companies <small> open_trc data set</small>
 									</h3>
 								</div>
 								<div class="col-md-6">
@@ -107,19 +101,12 @@
 				<div class="row">
 					<nav aria-label="Page navigation example" style="float:right;margin-top:0">
 						<ul class="pagination">
-							<li class="page-item"><a class="page-link" href="#"
-								aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
-									<span class="sr-only">Previous</span>
-							</a></li>
 							
-							<li class="page-item" id="2013"><a class="page-link" >2013</a></li>
-							<li class="page-item" id="2014"><a class="page-link" >2014</a></li>
-							<li class="page-item" id="2015"><a class="page-link" >2015</a></li>
+							
+					<!--  	<li class="page-item" id="2013"><a class="page-link" >2013</a></li> -->	
+							
 					
-							<li class="page-item" id=""><a class="page-link" href="#"
-								aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span
-									class="sr-only">Next</span>
-							</a></li>
+							
 						</ul>
 					</nav>
 				</div>
@@ -150,13 +137,16 @@
              $('.ui-pnotify').remove();
        
      // draw_me("2011_data");
-      $('#2013').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text(""); return false; });
-      $('#2014').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text("");return false; });
-      $('#2015').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text("");return false; });
-      
+    //  $('#2013').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text(""); return false; });
+    
   
      });
+     window.onload = function() {
+   	
+   		draw_me_new("../../FinNetwork/urlData.json");
+ 	};
     </script>
+    
 
 </body>
 </html>
