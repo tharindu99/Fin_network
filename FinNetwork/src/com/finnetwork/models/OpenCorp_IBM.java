@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "OpenCorp_IBM_graph_2", catalog = "TR_IBM")
+@Table(name = "newnet", catalog = "subanalysis")
 public class OpenCorp_IBM {
 
 	private int statement_id;
