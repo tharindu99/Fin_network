@@ -77,7 +77,7 @@
 							<div class="row x_title">
 								<div class="col-md-6">
 									<h3>
-										Sub Companies <small> open_trc data set</small>
+										Trc Data Set <small>/ IBM</small>
 									</h3>
 								</div>
 								<div class="col-md-6">
@@ -135,15 +135,12 @@
 	<script>
      $(document).ready(function (){
              $('.ui-pnotify').remove();
-       
-     // draw_me("2011_data");
-    //  $('#2013').click(function(){ draw_me_new("../../FinNetwork/rest/OpenCorp_IBM"); $("#show_year").text(""); return false; });
-    
+   
   
      });
      window.onload = function() {
    	
-   		draw_me_new("../../FinNetwork/urlData.json");
+    	 draw_me_new("../../FinNetwork/rest/OpenCorp_IBM");
  	};
     </script>
     

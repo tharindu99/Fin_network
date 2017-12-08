@@ -4,11 +4,9 @@
 <hibernate-configuration>
  <session-factory>
   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-<<<<<<< HEAD
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/open_trc</property>
-=======
-  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fin_network</property>
->>>>>>> branch 'TR_OpnC' of https://github.com/Karsha-Project-LSF/Fin_network.git
+
+
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.connection.password"></property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>

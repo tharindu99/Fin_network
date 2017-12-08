@@ -790,7 +790,7 @@ function draw_me_new(url){
 	      .style('font-family', 'sans-serif')
 	      .style("font-weight", "bold")
 	      .style('fill', '#55584E')
-	      .style("font-size", "11");
+	      .style("font-size", "10"); //changed font size
 
 	  simulation
 	      .nodes(graph.nodes)

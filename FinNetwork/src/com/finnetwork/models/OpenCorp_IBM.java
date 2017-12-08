@@ -9,11 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-<<<<<<< HEAD
 @Table(name = "open_trc", catalog = "open_trc ")
-=======
-@Table(name = "OpenCorp_IBM_graph_2", catalog = "fin_network")
->>>>>>> branch 'TR_OpnC' of https://github.com/Karsha-Project-LSF/Fin_network.git
+
 public class OpenCorp_IBM {
 
 	private int statement_id;
