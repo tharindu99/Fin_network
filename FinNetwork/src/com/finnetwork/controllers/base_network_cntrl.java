@@ -1,5 +1,6 @@
 package com.finnetwork.controllers;
 
+import java.util.Iterator;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -37,6 +38,16 @@ public class base_network_cntrl {
 		Query queryTarget = session.createQuery("SELECT DISTINCT target FROM Link WHERE fillingDate LIKE :year");
 		queryTarget.setParameter("year", "%"+year);
 		List<Integer> targets = queryTarget.list();
+		
+		Iterator itr = targets.iterator();
+		while(itr.hasNext()){
+		   Object[] obj = (Object[]) itr.next();
+		   //now you have one array of Object for each row
+		   String client = String.valueOf(obj[0]); // don't know the type of column CLIENT assuming String 
+		   Integer service = Integer.parseInt(String.valueOf(obj[1])); //SERVICE assumed as int
+		   
+		   System.out.println(client +"  "+service);
+		}
 		
 		// 	List of all the nodes for a given year 
 		sources.removeAll(targets);
