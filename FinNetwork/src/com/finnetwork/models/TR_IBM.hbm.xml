@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.finnetwork.models.TR_IBM" table="TR_IBM">
+        <id name="relationship_id" type="int">
+            <column name="relationship_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="subject_id" type="java.lang.String">
+            <column name="subject_id" />
+        </property>
+        <property name="subject_entity_name" type="java.lang.String">
+            <column name="subject_entity_name" />
+        </property>
+        <property name="object_id" type="java.lang.String">
+            <column name="object_id" />
+        </property>
+        <property name="object_entity_name" type="java.lang.String">
+            <column name="object_entity_name" />
+        </property>
+    </class>
+</hibernate-mapping>

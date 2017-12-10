@@ -14,7 +14,7 @@
   <property name="show_sql">true</property>
   
   
-  
+  <mapping class="com.finnetwork.models.TR_IBM" resource="com/finnetwork/models/TR_IBM.hbm.xml"/>
   <mapping class="com.finnetwork.models.OpenCorp_IBM" resource="com/finnetwork/models/OpenCorp_IBM.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

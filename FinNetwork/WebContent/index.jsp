@@ -49,7 +49,7 @@
 							<h3>General</h3>
 							<ul class="nav side-menu">
 								<li><a onclick="IBM_OC('IBM OC (Open Corporate)')" href="#"><i class="glyphicon glyphicon-plus"></i>  IBM_OC (Open Corporate)</a></li>
-                    
+                    			<li><a onclick="TR_dataSet('TR data set')" href="#"><i class="glyphicon glyphicon-plus"></i>  TR dataset</a></li>
 
 							</ul>
 						</div>
@@ -135,6 +135,12 @@
 		document.getElementById("page_title").innerHTML = title ;
 		draw_me_new("../../FinNetwork/rest/OpenCorp_IBM");
 	 }
+     
+     function TR_dataSet(title){
+    	console.log("TR clicked...........");
+ 		document.getElementById("page_title").innerHTML = title ;
+ 		draw_me_new("../../FinNetwork/rest/TR_IBM");
+     }
     </script>
 
 </body>
