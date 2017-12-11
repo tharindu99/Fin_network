@@ -49,7 +49,7 @@ public class TR_IBM {
 		this.subject_id = subject_id;
 	}
 
-	@Column(name = "sbject_entity_name")
+	@Column(name = "subject_entity_name")
 	public String getSubject_entity_name() {
 		return subject_entity_name;
 	}
