@@ -13,7 +13,7 @@ import org.eclipse.jdt.internal.compiler.flow.InsideSubRoutineFlowContext;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.finnetwork.controllers.SEC_controller;
 
-@Path("/sec/")
+@Path("/sec")
 public class SEC_data {
 
 	@GET
