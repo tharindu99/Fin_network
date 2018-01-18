@@ -31,8 +31,12 @@ public class SEC_data {
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/{companyName}/{year}")
-	public String getBaseNetworkYear(@PathParam("companyName") String companyName, @PathParam("year") int year) {
+	public Response getBaseNetworkYear(@PathParam("companyName") String companyName, @PathParam("year") int year) {
 		System.out.println("inside getBaseNetworkYear");
-		return "Hello " + companyName + " : " + year;
+		SEC_controller sec_controller = new SEC_controller();
+		JsonNode json_base_network_yearly = sec_controller.getDataYearWise(companyName, year);
+		
+		Response response = Response.ok(json_base_network_yearly, MediaType.APPLICATION_JSON).build();		
+		return response;
 	}
 }

@@ -56,5 +56,50 @@ public class SEC_controller {
 		
 		return base_network;
 	}
+	
+	public ObjectNode getDataYearWise(String companyName, int year) {
+		System.out.println("requested company : " + companyName + ", year : " + year);
+		
+		Session session = hibernate_util.getSessionFactory().openSession();
+		session.beginTransaction();		
+		
+		Query querysource = session.createQuery("SELECT id FROM SEC_Node WHERE equity = :companyName");
+		querysource.setParameter("companyName", companyName);
+		List sourceList = querysource.list();
+		System.out.println(companyName + " has id : " + sourceList.get(0));	
+		
+		Query queryLink = session.createQuery("FROM SEC_Link WHERE source = :sourceID AND year = :year");
+		queryLink.setParameter("sourceID", sourceList.get(0));
+		queryLink.setParameter("year", year);
+		List<SEC_Link> sec_links = queryLink.list();
+		System.out.println(sec_links.size());
+		
+		Query querytargets = session.createQuery("SELECT DISTINCT target FROM SEC_Link WHERE source = :sourceID AND year = :year");
+		querytargets.setParameter("sourceID", sourceList.get(0));
+		querytargets.setParameter("year", year);
+		List targetList = querytargets.list();
+		System.out.println("target size : " + targetList.size());
+		
+		sourceList.removeAll(targetList);
+		sourceList.addAll(targetList);
+		
+		Query queryNode = session.createQuery("FROM SEC_Node WHERE id IN (:ids)");
+		queryNode.setParameter("ids", sourceList);
+		List<SEC_Node> sec_nodes = queryNode.list();
+		System.out.println("link size : " + sec_nodes.size());
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+		ArrayNode arrayNode = objectMapper.valueToTree(sec_nodes);
+		ArrayNode arrayLink = objectMapper.valueToTree(sec_links);
+		
+		ObjectNode base_network_yearly = objectMapper.createObjectNode();
+		base_network_yearly.putArray("nodes").addAll(arrayNode);
+		base_network_yearly.putArray("links").addAll(arrayLink);
+		
+		session.getTransaction().commit();
+		session.close();
+		
+		return base_network_yearly;
+	}
 }
 
