@@ -13,9 +13,9 @@ import javax.persistence.Table;
 public class SEC_Link {
 	
 	private int id;
-	private double source;
+	private int source;
 	private int year;
-	private double target;
+	private int target;
 	private String Role;
 	private String ThreeSentences;
 	
@@ -23,7 +23,7 @@ public class SEC_Link {
 	
 	}
 	
-	public SEC_Link(double source, int year, double target, String Role, String ThreeSentences) {
+	public SEC_Link(int source, int year, int target, String Role, String ThreeSentences) {
 		this.source = source;
 		this.target = target;
 		this.year = year;
@@ -43,11 +43,11 @@ public class SEC_Link {
 	}
 
 	@Column(name = "source")
-	public double getSource() {
+	public int getSource() {
 		return source;
 	}
 
-	public void setSource(double source) {
+	public void setSource(int source) {
 		this.source = source;
 	}
 	
@@ -61,11 +61,11 @@ public class SEC_Link {
 	}
 
 	@Column(name = "target")
-	public double getTarget() {
+	public int getTarget() {
 		return target;
 	}
 
-	public void setTarget(double target) {
+	public void setTarget(int target) {
 		this.target = target;
 	}
 

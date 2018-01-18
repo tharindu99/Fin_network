@@ -8,13 +8,13 @@
             <column name="id" />
             <generator class="assigned" />
         </id>
-        <property name="source" type="double">
+        <property name="source" type="int">
             <column name="source" />
         </property>
         <property name="year" type="int">
             <column name="year" />
         </property>
-        <property name="target" type="double">
+        <property name="target" type="int">
             <column name="target" />
         </property>
         <property name="Role" type="java.lang.String">
