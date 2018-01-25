@@ -629,7 +629,7 @@ function draw_TR(filename,bind_id,company_id,year){
 
 
 function draw_me_single_equity(url,bind_id,company_id,year){
-
+	
     //d3.select("#container").selectAll("svg").remove();
     //var graphDiv = document.getElementById("container");
 	var graphDiv = document.getElementById(bind_id);
@@ -662,7 +662,11 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
         .force("center", d3.forceCenter(width / 2, height / 2));
 
     d3.json(url, function(error, graph) {
-        if (error) throw error;
+    	
+        if (error) {
+        	console.log(error);
+        	throw error;
+        }
 		
 		var modify_graph = {nodes:[], links:[]};
         Array.prototype.push.apply(modify_graph.links,graph.links.filter(function(d){return d.source === company_id | d.target == company_id;}));
