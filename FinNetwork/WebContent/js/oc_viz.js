@@ -1,4 +1,4 @@
-function TR_viz(filename){
+function TR_viz(url){
 
     d3.select("#container").selectAll("svg").remove();
     var graphDiv = document.getElementById("container");
@@ -31,7 +31,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
         .force("charge", d3.forceManyBody())
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    d3.json("OC/"+filename+".json", function(error, graph) {
+    d3.json(url, function(error, graph) {
         if (error) throw error;
 
         var nodes = graph.nodes,

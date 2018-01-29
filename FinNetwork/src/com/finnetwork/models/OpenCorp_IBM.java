@@ -9,17 +9,17 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "OpenCorp_IBM_graph_2", catalog = "TR_IBM")
+@Table(name = "OpenCorp_IBM_graph_2", catalog = "fin_network")
 public class OpenCorp_IBM {
 
 	private int statement_id;
 	private String predicate;
 	private String subject_entity_type;
-	private String subject_id;
+	private int subject_id;
 	private String subject_entity_name;
 	private String subject_opencorporates_url;
 	private String object_entity_type;
-	private String object_id;
+	private int object_id;
 	private String object_entity_name;
 	private String object_opencorporates_url;
 	private String statement_url;
@@ -63,11 +63,11 @@ public class OpenCorp_IBM {
 	}
 
 	@Column(name = "subject_id")
-	public String getSubject_id() {
+	public int getSubject_id() {
 		return subject_id;
 	}
 
-	public void setSubject_id(String subject_id) {
+	public void setSubject_id(int subject_id) {
 		this.subject_id = subject_id;
 	}
 
@@ -99,11 +99,11 @@ public class OpenCorp_IBM {
 	}
 
 	@Column(name = "object_id")
-	public String getObject_id() {
+	public int getObject_id() {
 		return object_id;
 	}
 
-	public void setObject_id(String object_id) {
+	public void setObject_id(int object_id) {
 		this.object_id = object_id;
 	}
 

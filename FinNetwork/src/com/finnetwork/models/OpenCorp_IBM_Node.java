@@ -1,23 +1,23 @@
 package com.finnetwork.models;
 
 public class OpenCorp_IBM_Node {
-	private String id;
+	private int id;
 	private String equity;
 	
 	public OpenCorp_IBM_Node() {
 		
 	}
 	
-	public OpenCorp_IBM_Node(String id, String equity) {
+	public OpenCorp_IBM_Node(int id, String equity) {
 		this.id = id;
 		this.equity = equity;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
