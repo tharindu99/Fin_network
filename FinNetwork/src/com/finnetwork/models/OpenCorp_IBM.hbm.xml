@@ -14,7 +14,7 @@
         <property name="subject_entity_type" type="java.lang.String">
             <column name="subject_entity_type" />
         </property>
-        <property name="subject_id" type="java.lang.String">
+        <property name="subject_id" type="int">
             <column name="subject_id" />
         </property>
         <property name="subject_entity_name" type="java.lang.String">
@@ -26,7 +26,7 @@
         <property name="object_entity_type" type="java.lang.String">
             <column name="object_entity_type" />
         </property>
-        <property name="object_id" type="java.lang.String">
+        <property name="object_id" type="int">
             <column name="object_id" />
         </property>
         <property name="object_entity_name" type="java.lang.String">

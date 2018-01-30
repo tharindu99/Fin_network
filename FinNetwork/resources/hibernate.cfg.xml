@@ -19,5 +19,6 @@
   <mapping class="com.finnetwork.models.SEC_Link" resource="com/finnetwork/models/SEC_Link.hbm.xml"/>
   <mapping class="com.finnetwork.models.TR_Node" resource="com/finnetwork/models/TR_Node.hbm.xml"/>
   <mapping class="com.finnetwork.models.TR_Link" resource="com/finnetwork/models/TR_Link.hbm.xml"/>
+  <mapping class="com.finnetwork.models.OpenCorp_IBM" resource="com/finnetwork/models/OpenCorp_IBM.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

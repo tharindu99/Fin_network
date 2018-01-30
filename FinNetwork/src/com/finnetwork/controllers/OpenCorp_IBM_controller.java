@@ -20,20 +20,20 @@ public class OpenCorp_IBM_controller {
 		Session session = hibernate_util.getSessionFactory().openSession();
 		session.beginTransaction();		
 		
-		Query subjectQuery = session.createQuery("SELECT DISTINCT  NEW com.finnetwork.models.OpenCorp_IBM_Node(subject_id AS id, subject_entity_name AS equity) FROM OpenCorp_IBM",OpenCorp_IBM_Node.class);
+		Query subjectQuery = session.createQuery("SELECT DISTINCT NEW com.finnetwork.models.OpenCorp_IBM_Node (subject_id AS id, subject_entity_name AS equity) FROM OpenCorp_IBM");
 		List<OpenCorp_IBM_Node> subjectList = subjectQuery.list();		
 		
-		Query objectQuery = session.createQuery("SELECT NEW com.finnetwork.models.OpenCorp_IBM_Node(object_id AS id, object_entity_name AS equity) FROM OpenCorp_IBM");
+		Query objectQuery = session.createQuery("SELECT DISTINCT NEW com.finnetwork.models.OpenCorp_IBM_Node (object_id AS id, object_entity_name AS equity) FROM OpenCorp_IBM");
 		List<OpenCorp_IBM_Node> objectList = objectQuery.list();
 		System.out.println(objectList.size());
 		
 		// nodes
 		subjectList.removeAll(objectList);
 		subjectList.addAll(objectList);		
-		System.out.println("final " + subjectList.size());
+		System.out.println("final nodes" + subjectList.size());
 		
 		// links
-		Query linkQuery = session.createQuery("SELECT NEW com.finnetwork.models.OpenCorp_IBM_Link(subject_id AS source, object_id AS target) FROM OpenCorp_IBM");
+		Query linkQuery = session.createQuery("SELECT NEW com.finnetwork.models.OpenCorp_IBM_Link (subject_id AS source, object_id AS target, context, predicate) FROM OpenCorp_IBM");
 		List<OpenCorp_IBM_Link> connectionList = linkQuery.list();
 		System.out.println("links " + connectionList.size());
 		
