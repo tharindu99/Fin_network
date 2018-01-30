@@ -1,7 +1,7 @@
-function TR_viz(url){
+function oc_viz(url){
 
     d3.select("#container").selectAll("svg").remove();
-    var graphDiv = document.getElementById("container");
+    var graphDiv = document.getElementById("oc_container");
 
     var svg = d3.select(graphDiv).append("svg")
                             .attr('width', '100%')

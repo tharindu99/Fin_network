@@ -34,7 +34,6 @@
 		id=0;
 	}
 	
-	
 %>
 <body class="nav-md">
     <div class="container body">
@@ -71,6 +70,18 @@
 							</div>
 						</div>
 					</div>
+					
+					<div class="dashboard_graph" id="oc_container" style="height: 700px" class="x_content" display:none>
+						<div class="row x_title">
+							<div class="col-md-6">
+							<h3><%=comapny_name%> <small>OC Dataset</small></h3>
+							</div>
+							<div class="col-md-6">
+							</div>
+						</div>
+					</div>
+					
+					
 					<div class="dashboard_graph" id="sec_container" display:none>		
 						<div class="row x_title">
 							<div class="col-md-6">
@@ -190,6 +201,7 @@
     <script src="js/graph_draw.js"></script>
     <script src="js/graph_per_company.js"></script>
     <script src="js/TR_viz.js"></script>
+    <script src="js/oc_viz.js"></script>
 
     <script>
      var data_set= '<%=data_set%>'; 
@@ -201,6 +213,7 @@
     	 
     	 document.getElementById("tr_container").style.display = "none";
     	 document.getElementById("sec_container").style.display = "block";
+    	 document.getElementById("oc_container").style.display = "none";
     	
 		graph_per_company("../../FinNetwork/rest/sec/"+comapny_name, "bind_all", id);
 		draw_me_single_equity("../../FinNetwork/rest/sec/"+comapny_name+"/2013","content_2013",id,2013);
@@ -213,7 +226,14 @@
      }else if(data_set== 'tr_data'){
     	 document.getElementById("tr_container").style.display = "block";
     	 document.getElementById("sec_container").style.display = "none";
+    	 document.getElementById("oc_container").style.display = "none";
     	 TR_viz("../../FinNetwork/rest/tr/"+comapny_name);
+     }
+     else if(data_set== 'oc_data'){
+    	 document.getElementById("oc_container").style.display = "block";
+    	 document.getElementById("sec_container").style.display = "none";
+    	 document.getElementById("tr_container").style.display = "none";
+    	 oc_viz("../../FinNetwork/rest/oc");
      }
     </script>
 	
