@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.finnetwork.models.OpenCorp_IBM" table="OpenCorp_IBM_graph_2">
+        <id name="statement_id" type="int">
+            <column name="statement_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="predicate" type="java.lang.String">
+            <column name="predicate" />
+        </property>
+        <property name="subject_entity_type" type="java.lang.String">
+            <column name="subject_entity_type" />
+        </property>
+        <property name="subject_id" type="int">
+            <column name="subject_id" />
+        </property>
+        <property name="subject_entity_name" type="java.lang.String">
+            <column name="subject_entity_name" />
+        </property>
+        <property name="subject_opencorporates_url" type="java.lang.String">
+            <column name="subject_opencorporates_url" />
+        </property>
+        <property name="object_entity_type" type="java.lang.String">
+            <column name="object_entity_type" />
+        </property>
+        <property name="object_id" type="int">
+            <column name="object_id" />
+        </property>
+        <property name="object_entity_name" type="java.lang.String">
+            <column name="object_entity_name" />
+        </property>
+        <property name="object_opencorporates_url" type="java.lang.String">
+            <column name="object_opencorporates_url" />
+        </property>
+        <property name="statement_url" type="java.lang.String">
+            <column name="statement_url" />
+        </property>
+        <property name="page_url" type="java.lang.String">
+            <column name="page_url" />
+        </property>
+    </class>
+</hibernate-mapping>
