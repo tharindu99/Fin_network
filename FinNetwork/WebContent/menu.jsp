@@ -77,7 +77,7 @@
 						<li><a><i class="fa fa-sitemap"></i> OC Dataset <span
 								class="fa fa-chevron-down"></span></a>
 							<ul class="nav child_menu">
-								<li><a href="data_visualizer.jsp?param1=IBM&param2=oc_data" id="sid_14">IBM</a></li>
+								<li><a href="data_visualizer.jsp?param1=IBM&param2=oc_data" id="sid_14">International Business Machines Corp</a></li>
 							
 			
 							</ul></li>

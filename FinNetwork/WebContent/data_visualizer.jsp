@@ -221,6 +221,7 @@
 		draw_me_single_equity("../../FinNetwork/rest/sec/"+comapny_name+"/2015","content_2015",id,2015);
 		draw_me_single_equity("../../FinNetwork/rest/sec/"+comapny_name+"/2016","content_2016",id,2016);
 		draw_me_single_equity("../../FinNetwork/rest/sec/"+comapny_name+"/2017","content_2017",id,2017);
+		
      
      });
      }else if(data_set== 'tr_data'){
@@ -228,14 +229,21 @@
     	 document.getElementById("sec_container").style.display = "none";
     	 document.getElementById("oc_container").style.display = "none";
     	 TR_viz("../../FinNetwork/rest/tr/"+comapny_name);
+    	
      }
      else if(data_set== 'oc_data'){
     	 document.getElementById("oc_container").style.display = "block";
     	 document.getElementById("sec_container").style.display = "none";
     	 document.getElementById("tr_container").style.display = "none";
     	 oc_viz("../../FinNetwork/rest/oc");
+    	
      }
     </script>
+    <script>
+	   $(document).ready(function (){
+	           $('.ui-pnotify').remove();
+	   });
+	</script>
 	
 	<script>
 	function singleGraph(evt, year) {

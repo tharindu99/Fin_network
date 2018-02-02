@@ -1,4 +1,5 @@
 function oc_viz(url){
+	console.log("key url : "+url);
 
     d3.select("#container").selectAll("svg").remove();
     var graphDiv = document.getElementById("oc_container");
