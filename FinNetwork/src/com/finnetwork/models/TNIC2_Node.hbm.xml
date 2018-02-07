@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.finnetwork.models.TNIC2_Node" table="tinic2_nodes">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="ticker_symbol" type="java.lang.String">
+            <column name="ticker_symbol" />
+        </property>
+        <property name="security" type="java.lang.String">
+            <column name="security" />
+        </property>
+        <property name="gics_Sector" type="java.lang.String">
+            <column name="gics_Sector" />
+        </property>
+         <property name="gics_sub_Industry" type="java.lang.String">
+            <column name="gics_sub_Industry" />
+        </property>
+        <property name="address_of_headquarters" type="java.lang.String">
+            <column name="address_of_headquarters" />
+        </property>
+        <property name="date_first_added" type="java.lang.String">
+            <column name="date_first_added" />
+        </property>
+         <property name="cik" type="java.lang.String">
+            <column name="cik" />
+        </property>
+        <property name="naics" type="java.lang.String">
+            <column name="naics" />
+        </property>
+        <property name="open_corporate_id" type="java.lang.String">
+            <column name="open_corporate_id" />
+        </property>
+        <property name="ConfirmCIK" type="java.lang.String">
+            <column name="ConfirmCIK" />
+        </property>
+    </class>
+</hibernate-mapping>

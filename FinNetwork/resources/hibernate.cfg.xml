@@ -6,7 +6,7 @@
   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fin_network</property>
   <property name="hibernate.connection.username">root</property>
-  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.password"></property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
   <property name="hibernate.search.autoregister_listeners">false</property>
   <property name="show_sql">true</property>
@@ -19,6 +19,8 @@
   <mapping class="com.finnetwork.models.SEC_Link" resource="com/finnetwork/models/SEC_Link.hbm.xml"/>
   <mapping class="com.finnetwork.models.TR_Node" resource="com/finnetwork/models/TR_Node.hbm.xml"/>
   <mapping class="com.finnetwork.models.TR_Link" resource="com/finnetwork/models/TR_Link.hbm.xml"/>
+  <mapping class="com.finnetwork.models.TNIC2_Node" resource="com/finnetwork/models/TNIC2_Node.hbm.xml"/>
+  <mapping class="com.finnetwork.models.TNIC2_Link" resource="com/finnetwork/models/TNIC2_Link.hbm.xml"/>
   <mapping class="com.finnetwork.models.OpenCorp_IBM" resource="com/finnetwork/models/OpenCorp_IBM.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

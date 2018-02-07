@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title></title>
 </head>
 <body>
 	<div class="col-md-3 left_col">
@@ -80,7 +80,13 @@
 								<li><a href="data_visualizer.jsp?param1=IBM&param2=oc_data" id="sid_14">International Business Machines Corp</a></li>
 							
 			
-							</ul></li>
+							</ul>
+						</li>
+						<li>
+							<a href="TRNIC2.jsp"> 
+								<i class="fa fa-sitemap" aria-hidden="true"></i> TRNIC
+							</a>
+						</li>
 						<li><a href="http://opensource.lk/"> <i
 								class="fa fa-users" aria-hidden="true"></i> People
 						</a></li>
