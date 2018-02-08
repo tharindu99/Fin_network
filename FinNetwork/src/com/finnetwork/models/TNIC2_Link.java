@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "tr_edges", catalog = "fin_network")
+@Table(name = "tnic2_edges", catalog = "fin_network")
 public class TNIC2_Link {
 	
 	private int id;

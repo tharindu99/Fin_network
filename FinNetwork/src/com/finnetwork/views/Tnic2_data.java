@@ -15,13 +15,24 @@ import com.finnetwork.controllers.TNIC2_controller;
 @Path("/tnic2")
 public class Tnic2_data {
 	
-	@GET
+	/*@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/{companyName}")
-	public Response getBaseNetwork(@PathParam("companyName") String companyName) {
+	@Path("/{cik}")
+	public Response getBaseNetwork(@PathParam("cik") String cik) {
 		System.out.println("inside getBaseNetwork TNIC");
 		TNIC2_controller tnic2_controller = new TNIC2_controller();
-		JsonNode json_base_network = tnic2_controller.getBaseNetwork(companyName);		
+		JsonNode json_base_network = tnic2_controller.getBaseNetwork(cik);		
+		
+		Response response = Response.ok(json_base_network, MediaType.APPLICATION_JSON).build();		
+		return response;
+	}*/
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/{cik}/{year}")
+	public Response getYearlyNetwork(@PathParam("cik") String companyName,@PathParam("year") int year) {
+		System.out.println("inside getBaseNetwork TNIC");
+		TNIC2_controller tnic2_controller = new TNIC2_controller();
+		JsonNode json_base_network = tnic2_controller.getBaseNetwork_annual(companyName,year);		
 		
 		Response response = Response.ok(json_base_network, MediaType.APPLICATION_JSON).build();		
 		return response;
