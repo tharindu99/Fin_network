@@ -1,6 +1,10 @@
+
+
 function TNIC2_viz(url,tag){
 	
-    d3.select(tag).selectAll("svg").remove();
+	d3.select("#"+tag).selectAll("svg").remove();
+	
+	previous_tag = tag;
     var graphDiv = document.getElementById(tag);
 
     var svg = d3.select(graphDiv).append("svg")
@@ -9,7 +13,10 @@ function TNIC2_viz(url,tag){
 
     var width = graphDiv.clientWidth;
     var height = graphDiv.clientHeight;
-
+   /* var color = d3.scaleLinear()
+					.domain([0, 0.9])
+					.range(["red", "green"]);*/
+    
     svg.append('defs').append('marker')
     .attrs({'id':'arrowhead',
         'viewBox':'-0 -5 10 10',
@@ -24,7 +31,7 @@ function TNIC2_viz(url,tag){
     .attr('fill', '#999')
     .style('stroke','none');
 
-var color = d3.scaleOrdinal(d3.schemeCategory20);
+  
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().distance(200).strength(0.1))
@@ -32,7 +39,15 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
         .force("center", d3.forceCenter(width / 2, height / 2));
 
     d3.json(url, function(error, graph) {
-        if (error) throw error;
+        if (error){
+        	console.log("error ..... : ");
+        	new PNotify({
+                title: 'NO Records Available !',
+                type: 'error',
+                styling: 'bootstrap3'
+            });
+        	throw error;
+        }
         console.log(graph);
         var nodes = graph.nodes,
             nodeById = d3.map(nodes, function(d) { return d.cik; }),
@@ -43,10 +58,11 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
             var s = link.source = nodeById.get(link.cik_1),
                 t = link.target = nodeById.get(link.cik_2),
                 i = {}
-                pred = link.predicts = link.score; // intermediate node
+                pred = link.predicts = link.score;
+                yr = link.year = link.year// intermediate node
             nodes.push(i);
             links.push({source: s, target: i}, {source: i, target: t});
-            bilinks.push([s, i, t,pred]);
+            bilinks.push([s, i, t,pred,yr]);
         });
 
         var link = svg.selectAll(".link")
@@ -54,6 +70,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
             .enter().append("path")
             .attr("class", "link")
             .attr("stroke","#bbb")
+            //.attr("stroke",function(d) {return color(d[3]);})
             .attr("fill","none")
             .attr('marker-end','url(#arrowhead)')
             .on('mouseover', edge_mouseover)
@@ -115,8 +132,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
     .style("pointer-events", "none")
     .attr("startOffset", "50%")
     .text(function(d){
-    	return '';
-        //return d[3];
+    	return d[3];
     });
 
 
@@ -127,11 +143,13 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 
   simulation.force("link")
       .links(links);
+  
 
   function ticked() {
     link.attr("d", positionLink);
     node.attr("transform", positionNode);
     edgepaths.attr("d",positionLink);
+    simulation.force("center", d3.forceCenter(width / 2, height / 2));
 
     // edgepaths.attr('d', function (d) {
     //     return 'M ' + d[0].x + ' ' + d[0].y + ' L ' + d[1].x + ' ' + d[1].y;
@@ -152,9 +170,9 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
   }
 
   //add zoom capabilities
-    var zoom_handler = d3.zoom()
+   /* var zoom_handler = d3.zoom()
     .on("zoom", zoom_actions);
-    zoom_handler(svg);
+    zoom_handler(svg);*/
 
     var linkedByIndex = {};
     for (i = 0; i < graph.nodes.length; i++) {
@@ -213,7 +231,7 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
     	//console.log(d);
         new PNotify({
             title: 'Edge Details',
-            text: 'Source: '+d[0].security+'<br> Target: '+d[2].security+'<br>Score: '+d[3],
+            text: 'Source: '+d[0].security+'<br> Target: '+d[2].security+'<br>Score: '+d[3]+'<br>Year: '+d[4],
             type: 'success',
             styling: 'bootstrap3'
         });

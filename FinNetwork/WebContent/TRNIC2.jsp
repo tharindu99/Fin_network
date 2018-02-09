@@ -71,59 +71,30 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <div class="col-xs-2">
-                      <!-- required for floating -->
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs tabs-left">
-                        <li class="active"><a href="#id2015" data-toggle="tab">2015</a></li>
-                        <li><a href="#id2014" data-toggle="tab">2014</a></li>
-                        <li><a href="#id2013" data-toggle="tab">2013</a></li>
-                        <li><a href="#id2012" data-toggle="tab">2012</a></li>
-                        <li><a href="#id2011" data-toggle="tab">2011</a></li>
-                        <li><a href="#id2010" data-toggle="tab">2010</a></li>
-                        <li><a href="#id2009" data-toggle="tab">2009</a></li>
-                        <li><a href="#id2008" data-toggle="tab">2008</a></li>
-                        <li><a href="#id2007" data-toggle="tab">2007</a></li>
-                        <li><a href="#id2006" data-toggle="tab">2006</a></li>
-                        <li><a href="#id2005" data-toggle="tab">2005</a></li>
-                        <li><a href="#id2004" data-toggle="tab">2004</a></li>
-                        <li><a href="#id2003" data-toggle="tab">2003</a></li>
-                        <li><a href="#id2002" data-toggle="tab">2002</a></li>
-                        <li><a href="#id2001" data-toggle="tab">2001</a></li>
-                        <li><a href="#id2000" data-toggle="tab">2000</a></li>
-                        <li><a href="#id1999" data-toggle="tab">1999</a></li>
-                        <li><a href="#id1998" data-toggle="tab">1998</a></li>
-                        <li><a href="#id1997" data-toggle="tab">1997</a></li>
-                        <li><a href="#id1996" data-toggle="tab">1996</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="col-xs-10">
-                      <!-- Tab panes -->
-                      <div class="tab-content">
-                        <div class="tab-pane active" id="id2015"><div id="content_2015" style="height:650px;"></div></div>
-                        <div class="tab-pane" id="id2014"><div id="content_2014" style="height:650px;"></div></div>
-                        <div class="tab-pane" id="id2013"><div id="content_2013" style="height:650px;"></div></div>
-                        <div class="tab-pane" id="id2012">2012</div>
-                        <div class="tab-pane" id="id2011">2011</div>
-                        <div class="tab-pane" id="id2010">2010</div>
-                        <div class="tab-pane" id="id2009">2009</div>
-                        <div class="tab-pane" id="id2008">2008</div>
-                        <div class="tab-pane" id="id2007">2007</div>
-                        <div class="tab-pane" id="id2006">2006</div>
-                        <div class="tab-pane" id="id2005">2005</div>
-                        <div class="tab-pane" id="id2004">2004</div>
-                        <div class="tab-pane" id="id2003">2003</div>
-                        <div class="tab-pane" id="id2002">2002</div>
-                        <div class="tab-pane" id="id2001">2001</div>
-                        <div class="tab-pane" id="id2000">2000</div>
-                        <div class="tab-pane" id="id1999">1999</div>
-                        <div class="tab-pane" id="id1998">1998</div>
-                        <div class="tab-pane" id="id1997">1997</div>
-                        <div class="tab-pane" id="id1996">1996</div>
-                      </div>
-                    </div>		
-						
+                	<button id="grph2015" type="button" class="btn btn-default">2015</button>
+					<button id="grph2014" type="button" class="btn btn-default">2014</button>
+					<button id="grph2013" type="button" class="btn btn-default">2013</button>
+					<button id="grph2012" type="button" class="btn btn-default">2012</button>
+					<button id="grph2011" type="button" class="btn btn-default">2011</button>
+					<button id="grph2010" type="button" class="btn btn-default">2010</button>
+					<button id="grph2009" type="button" class="btn btn-default">2009</button>
+					<button id="grph2008" type="button" class="btn btn-default">2008</button>
+					<button id="grph2007" type="button" class="btn btn-default">2007</button>
+					<button id="grph2006" type="button" class="btn btn-default">2006</button>
+					<button id="grph2005" type="button" class="btn btn-default">2005</button>
+					<button id="grph2004" type="button" class="btn btn-default">2004</button>
+					<button id="grph2003" type="button" class="btn btn-default">2003</button>
+					<button id="grph2002" type="button" class="btn btn-default">2002</button>
+					<button id="grph2001" type="button" class="btn btn-default">2001</button>
+					<button id="grph2000" type="button" class="btn btn-default">2000</button>
+					<button id="grph1999" type="button" class="btn btn-default">1999</button>
+					<button id="grph1998" type="button" class="btn btn-default">1998</button>
+					<button id="grph1997" type="button" class="btn btn-default">1997</button>
+					<button id="grph1996" type="button" class="btn btn-default">1996</button>
+                   
+                    <div id="content_btn" style="height:650px;"></div>
+                    
+                   
 				</div>
            </div>
            </div>
@@ -155,7 +126,7 @@
 
     <script>
      $(document).ready(function (){
-    	//$("#company_network").hide();
+    	$("#company_network").hide();
      	$('.ui-pnotify').remove(); 
      	
      	$.getJSON("rest/tnic2/company",
@@ -186,33 +157,37 @@
      					company_cik = cik_no[1];
      					company_tsy = tsy[0];
      					$("#company_network").show();
-     					$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+"</h2>");
+     					$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2015 </h2>");
+     					TNIC2_viz("rest/tnic2/"+company_cik+"/2015","content_btn");
      					
-     					$("#select_company").click(function(){});
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2015","content_2015");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2014","content_2014");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2012","content_2012");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2011","content_2011");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2010","content_2010");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2009","content_2009");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2008","content_2008");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2007","content_2007");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2006","content_2006");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2005","content_2005");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2004","content_2004");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2003","content_2003");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2002","content_2002");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2001","content_2001");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/2000","content_2000");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/1999","content_1999");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/1998","content_1998");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/1997","content_1997");
-     					TNIC2_viz("rest/tnic2/"+company_cik+"/1996","content_1996"); 
-     					
-     					
+     					$("#grph2015").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2015 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2015","content_btn");});
+     					$("#grph2014").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2014 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2014","content_btn");});	
+     					$("#grph2013").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2013 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2013","content_btn");});
+     					$("#grph2012").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2012 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2012","content_btn");});
+     					$("#grph2011").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2011 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2011","content_btn");});
+     					$("#grph2010").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2010 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2010","content_btn");});
+     					$("#grph2009").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2009 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2009","content_btn");});
+     					$("#grph2008").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2008 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2008","content_btn");});
+     					$("#grph2007").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2007 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2007","content_btn");});
+     					$("#grph2006").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2006 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2006","content_btn");});
+     					$("#grph2005").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2005 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2005","content_btn");});
+     					$("#grph2004").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2004 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2004","content_btn");});
+     					$("#grph2003").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2003 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2003","content_btn");});
+     					$("#grph2002").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2002 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2002","content_btn");});
+     					$("#grph2001").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2001 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2001","content_btn");});
+     					$("#grph2000").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 2000 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/2000","content_btn");});
+     					$("#grph1999").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1999 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1999","content_btn");});
+     					$("#grph1998").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1998 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1998","content_btn");});
+     					$("#grph1997").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1997 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1997","content_btn");});
+     					$("#grph1996").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1996 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1996","content_btn");});
+     					//TNIC2_viz("rest/tnic2/"+company_cik+"/2015","content_2015");
+     					//TNIC2_viz("rest/tnic2/"+company_cik+"/2014","content_2014");
      				}
      			}
      		}
+     		
+     					
+     					
      		
      		
      		//console.log(company_cik+"  "+ company_tsy);
