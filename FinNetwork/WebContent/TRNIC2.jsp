@@ -180,8 +180,7 @@
      					$("#grph1998").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1998 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1998","content_btn");});
      					$("#grph1997").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1997 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1997","content_btn");});
      					$("#grph1996").click(function(){$("#company_header").html("<h2>"+company_tsy+ " | CIK : " +company_cik+" | Year : 1996 </h2>");TNIC2_viz("rest/tnic2/"+company_cik+"/1996","content_btn");});
-     					//TNIC2_viz("rest/tnic2/"+company_cik+"/2015","content_2015");
-     					//TNIC2_viz("rest/tnic2/"+company_cik+"/2014","content_2014");
+     					
      				}
      			}
      		}
