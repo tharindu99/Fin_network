@@ -22,7 +22,7 @@ public class TNIC2_controller {
 	public ObjectNode getBaseNetwork_annual(String cik, int year) {
 		System.out.println("Requested company TNIC2: " + cik + " " + year);
 
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();
 
 		Query querysource = session
@@ -52,7 +52,7 @@ public class TNIC2_controller {
 	public ObjectNode getCompanyData() {
 		System.out.println("Requested company data TNIC2 ");
 
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();
 		Query querysource = session
 				.createQuery("SELECT concat(ticker_symbol,' : ' ,security,' : ' ,gics_Sector,' : ' ,gics_sub_Industry,'  cik: ' ,cik,' naics: ' ,naics) as company FROM TNIC2_Node");

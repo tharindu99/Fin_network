@@ -17,7 +17,7 @@ public class SEC_controller {
 	public ObjectNode getBaseNetwork(String companyName) {
 		System.out.println("Requested company : " + companyName);
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();		
 		
 		Query querysource = session.createQuery("SELECT id FROM SEC_Node WHERE equity = :companyName");
@@ -60,7 +60,7 @@ public class SEC_controller {
 	public ObjectNode getDataYearWise(String companyName, int year) {
 		System.out.println("requested company : " + companyName + ", year : " + year);
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();		
 		
 		Query querysource = session.createQuery("SELECT id FROM SEC_Node WHERE equity = :companyName");
