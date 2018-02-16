@@ -629,7 +629,7 @@ function draw_TR(filename,bind_id,company_id,year){
 
 
 function draw_me_single_equity(url,bind_id,company_id,year){
-	
+	console.log(url+" "+bind_id+" "+company_id+" "+year);
     //d3.select("#container").selectAll("svg").remove();
     //var graphDiv = document.getElementById("container");
 	var graphDiv = document.getElementById(bind_id);

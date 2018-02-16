@@ -19,7 +19,7 @@ public class base_network_cntrl {
 		System.out.println("Call for basenetwork controller...");
 		
 		//	Creata a session
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		//	Begin transaction
 		session.beginTransaction();		
 		
@@ -69,7 +69,7 @@ public class base_network_cntrl {
 		System.out.println("Call for basenetwork controller...");
 		
 		//	Creata a session
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		//	Begin transaction
 		session.beginTransaction();	
 			

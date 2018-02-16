@@ -12,7 +12,7 @@ public class IDController {
 	public static int getID(String companyName) {
 		System.out.println("Searching for : " + companyName);
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();
 		
 		Query queryID = session.createQuery("SELECT id FROM SEC_Node WHERE equity = :companyName");

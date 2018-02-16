@@ -20,7 +20,7 @@ public class SearchController {
 	public static List<String> searchCompanies() {
 		System.out.println("Call for Search Comapanies ...");	
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();
 		
 		Query queryCIK = session.createQuery("SELECT DISTINCT CONCAT('CIK:', FILER_CIK) FROM FeiiiY2Working");
@@ -43,7 +43,7 @@ public class SearchController {
 	public ObjectNode getCompanyDetails(String companyName) {
 		System.out.println("Call for get company details..." + companyName);
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();		
 		
 		Query queryFillerEntities = session.createQuery("SELECT DISTINCT FILER_NAME FROM FeiiiY2Working WHERE FILER_NAME LIKE :companyName or FILER_CIK LIKE :companyName");

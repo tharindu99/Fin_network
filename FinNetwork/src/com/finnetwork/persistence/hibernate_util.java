@@ -1,5 +1,6 @@
 package com.finnetwork.persistence;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
@@ -21,8 +22,9 @@ public class hibernate_util {
 			throw new ExceptionInInitializerError(th);
 		}
 	}
-	public static SessionFactory getSessionFactory() {
-		return sessionFactory;
+	public static Session getSession() {
+		final Session session = sessionFactory.openSession();
+		return session;
 	}
 	public static void shutdown() {
 		 sessionFactory.close();

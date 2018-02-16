@@ -17,7 +17,7 @@ public class OpenCorp_IBM_controller {
 	public ObjectNode get_OpenCorp_IBM() {
 		System.out.println("Call for OpenCorp_IBM...");
 
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();		
 		
 		Query subjectQuery = session.createQuery("SELECT DISTINCT NEW com.finnetwork.models.OpenCorp_IBM_Node (subject_id AS id, subject_entity_name AS equity) FROM OpenCorp_IBM");

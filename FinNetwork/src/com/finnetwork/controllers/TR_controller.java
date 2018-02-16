@@ -17,7 +17,7 @@ public class TR_controller {
 	public ObjectNode getBaseNetwork(String companyName) {
 		System.out.println("Requested company tr: " + companyName);
 		
-		Session session = hibernate_util.getSessionFactory().openSession();
+		Session session = hibernate_util.getSession();
 		session.beginTransaction();		
 		
 		Query querysource = session.createQuery("SELECT id FROM TR_Node WHERE equity = :companyName");
