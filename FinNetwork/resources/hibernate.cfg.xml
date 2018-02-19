@@ -34,5 +34,7 @@
   <mapping class="com.finnetwork.models.TNIC2_Node" resource="com/finnetwork/models/TNIC2_Node.hbm.xml"/>
   <mapping class="com.finnetwork.models.TNIC2_Link" resource="com/finnetwork/models/TNIC2_Link.hbm.xml"/>
   <mapping class="com.finnetwork.models.OpenCorp_IBM" resource="com/finnetwork/models/OpenCorp_IBM.hbm.xml"/>
+  <mapping class="com.finnetwork.models.TRDF_gt_Node" resource="com/finnetwork/models/TRDF_gt_Node.hbm.xml"/>
+  <mapping class="com.finnetwork.models.TRDF_gt_Link" resource="com/finnetwork/models/TRDF_gt_Link.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 14, 2017 3:28:52 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.finnetwork.models.TRDF_gt_Node" table="trdf_gt_nodes">
+        <id name="company_id" type="java.lang.String">
+            <column name="company_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="commonName_attr" type="java.lang.String">
+            <column name="commonName_attr" />
+        </property>
+        <property name="hasShortName_attr" type="java.lang.String">
+            <column name="hasShortName_attr" />
+        </property>
+        <property name="exchangeTicker_attr" type="java.lang.String">
+            <column name="exchangeTicker_attr" />
+        </property>
+         <property name="RIC_attr" type="java.lang.String">
+            <column name="RIC_attr" />
+        </property>
+        <property name="taxID_attr" type="java.lang.String">
+            <column name="taxID_attr" />
+        </property>
+        <property name="geoName_attr" type="java.lang.String">
+            <column name="geoName_attr" />
+        </property>
+         <property name="hasCIK_attr" type="java.lang.String">
+            <column name="hasCIK_attr" />
+        </property>
+        <property name="hasDateOfIncorporation_attr" type="java.lang.String">
+            <column name="hasDateOfIncorporation_attr" />
+        </property>
+        <property name="hasIPODate_attr" type="java.lang.String">
+            <column name="hasIPODate_attr" />
+        </property>
+        <property name="hasInactiveDate_attr" type="java.lang.String">
+            <column name="hasInactiveDate_attr" />
+        </property>
+        <property name="hasLEI_attr" type="java.lang.String">
+            <column name="hasLEI_attr" />
+        </property>
+        <property name="hasOrganizationFoundedDate_attr" type="java.lang.String">
+            <column name="hasOrganizationFoundedDate_attr" />
+        </property>
+        <property name="hasPermId_attr" type="java.lang.String">
+            <column name="hasPermId_attr" />
+        </property>
+        <property name="hasPrimaryCIK_attr" type="java.lang.String">
+            <column name="hasPrimaryCIK_attr" />
+        </property>
+        <property name="hasPrimaryCusip6_attr" type="java.lang.String">
+            <column name="hasPrimaryCusip6_attr" />
+        </property>
+        <property name="industryName_attr" type="java.lang.String">
+            <column name="industryName_attr" />
+        </property>
+        <property name="name_attr" type="java.lang.String">
+            <column name="name_attr" />
+        </property>
+        <property name="organizationCountryCode_attr" type="java.lang.String">
+            <column name="organizationCountryCode_attr" />
+        </property>
+        <property name="organizationCountry_attr" type="java.lang.String">
+            <column name="organizationCountry_attr" />
+        </property>
+    </class>
+</hibernate-mapping>

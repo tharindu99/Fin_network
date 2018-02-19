@@ -9,33 +9,34 @@ import javax.ws.rs.core.Response;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.finnetwork.controllers.TR_controller;
 import com.finnetwork.controllers.TNIC2_controller;
+import com.finnetwork.controllers.TRDF_gt_controller;
 
-@Path("/tnic2")
-public class Tnic2_data {
-	
+
+@Path("/trdf_gt")
+public class TRDF_gt {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/{cik}/{year}")
-	public Response getYearlyNetwork(@PathParam("cik") String companyName,@PathParam("year") int year) {
-		System.out.println("inside getBaseNetwork TNIC");
-		TNIC2_controller tnic2_controller = new TNIC2_controller();
-		JsonNode json_base_network = tnic2_controller.getBaseNetwork_annual(companyName,year);		
-		
+	@Path("/{id}")
+	public Response getNetwork(@PathParam("id") String id) {
+		System.out.println("inside getBaseNetwork TRDF_gt");
+		TRDF_gt_controller trdf_gt_controller = new TRDF_gt_controller();
+		JsonNode json_base_network = trdf_gt_controller.getBaseNetwork(id);		
 		Response response = Response.ok(json_base_network, MediaType.APPLICATION_JSON).build();		
 		return response;
 	}
+	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/company")
 	public Response getCompanyData(){
-		TNIC2_controller tnic2_controller = new TNIC2_controller();
-		ObjectNode json_company_data = tnic2_controller.getCompanyData();
+		TRDF_gt_controller trdf_gt_controller = new TRDF_gt_controller();
+		ObjectNode json_company_data = trdf_gt_controller.getCompanyData();
 		Response response = Response.ok(json_company_data.toString(), MediaType.APPLICATION_JSON).build();	
 		System.out.println(json_company_data.toString());
 		return response;
 	}
+	
 
 }
