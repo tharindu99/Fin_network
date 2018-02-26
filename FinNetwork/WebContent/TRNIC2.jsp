@@ -131,6 +131,7 @@
      	
      	$.getJSON("rest/tnic2/company",
      		function(data) {
+     		console.log(data.company);
      		$('#company_search').autoComplete({
                 minChars: 1,
                 source: function(term, suggest){
