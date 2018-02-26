@@ -26,7 +26,7 @@ public class TRDF_gt_controller {
 		session.beginTransaction();
 
 		Query querysource = session
-				.createQuery("FROM TRDF_gt_Link WHERE (source = :id ) OR (target = :id )");
+				.createQuery("FROM TRDF_gt_Link t WHERE (source = :id ) OR (target = :id )");
 		querysource.setParameter("id", id);
 		
 		List<TRDF_gt_Link> trdf_gt_edges = querysource.list();
@@ -58,7 +58,7 @@ public class TRDF_gt_controller {
 		Session session = hibernate_util.getSession();
 		session.beginTransaction();
 		Query querysource = session
-				.createQuery("SELECT concat(commonName_attr,' : ' ,geoName_attr,'  CIK :',hasCIK_attr,' uri_id :',company_id ) from TRDF_gt_Node where hasCIK_attr is not null");
+				.createQuery("SELECT concat(commonName_attr,' CIK: ',hasCIK_attr,' uri_id: ',company_id ) from TRDF_gt_Node where hasCIK_attr is not null");
 
 		List sourceList = querysource.list();
 

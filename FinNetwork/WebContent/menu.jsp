@@ -87,6 +87,11 @@
 								<i class="fa fa-sitemap" aria-hidden="true"></i> TNIC
 							</a>
 						</li>
+						<li>
+							<a href="TRDF_gt.jsp"> 
+								<i class="fa fa-sitemap" aria-hidden="true"></i>TRDF ground truth
+							</a>
+						</li>
 						<li><a href="http://opensource.lk/"> <i
 								class="fa fa-users" aria-hidden="true"></i> People
 						</a></li>
